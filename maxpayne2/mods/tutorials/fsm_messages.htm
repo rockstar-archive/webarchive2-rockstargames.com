@@ -1,0 +1,1014 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - List of FSM messages</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<base target="main">
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p>&nbsp;</p>
+      <h1>FSM Messages in MaxED2</h1>
+
+      <blockquote>
+        <p>This is the full list of commands available to you in Max Payne 2 and
+        MaxED2. See more about the usage of commands and FSM-scripting from the <a href="fsms.htm"><b>Dynamic
+        Content article</b></a>.</p>
+
+      </blockquote>
+
+<table width="630" border=1 cellspacing=0 cellpadding=3 bordercolorlight="#FFFFFF" bordercolordark="#C0C0C0">
+
+<tr>
+<th valign="top" align="left" nowrap bgcolor="#C0C0C0"><p><b>Message</b></p></th>
+<th valign="top" align="left" nowrap bgcolor="#C0C0C0"><p><b>Parameters</b></p></th>
+<th valign="top" align="left" bgcolor="#C0C0C0"><p><b>Description</b></p></th>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_Play3DSound</b></td>
+<td valign="top" align="left" nowrap>sound category name,<br>sound name,<br> attachment bone name<br>
+  (empty = no bone attachment)</td>
+<td valign="top" align="left">Plays a 3D sound in game world</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_PlayFloating3DSound</b></td>
+<td valign="top" align="left" nowrap>sound category name,<br> sound name,<br> create to bone<br>
+  (empty = no bone offset)</td>
+<td valign="top" align="left">Same as A_Play3DSound but it never moves from it's starting position</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_PlayMusic</b></td>
+<td valign="top" align="left" nowrap>song name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_PlayMusicAt</b></td>
+<td valign="top" align="left" nowrap>song name,<br> playing position (seconds),<br> fade time</td>
+<td valign="top" align="left">start playing music at defined spot</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_PlaySound</b></td>
+<td valign="top" align="left" nowrap>Sound category name,<br> Sound name</td>
+<td valign="top" align="left">Plays a 2D sound</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_StopAll3DSounds</b></td>
+<td valign="top" align="left" nowrap>bone name<br>
+  (empty = stop all)</td>
+<td valign="top" align="left">Stops all 3dsounds played from the defined bone</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_SetVolumeOverride</b></td>
+<td valign="top" align="left" nowrap>volume</td>
+<td valign="top" align="left">Resets volume of the specified object,<br> 0 - 1.0</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>A_RemoveVolumeOverride</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">removes a set A_SetVolumeOverride</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_AddCommand</b></td>
+<td valign="top" align="left" nowrap>move,<br> act,<br> command</td>
+<td valign="top" align="left">AI control</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_AddPatrolCommand</b></td>
+<td valign="top" align="left" nowrap>1st waypoint,<br> 2nd waypoint,<br> 3rd waypoint</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_Dump</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Dumps receivers AI state </td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnableFeeling</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Whether a character can feel</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnableHearing</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Whether a character can hear</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnablePerceiving</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Whether a character has any senses</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnableSeeing</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">whether a character can see</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnableVisualization</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Visualizes AI functionality</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_EnableVoiceEvents</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Controls automatic voice events</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_PushCommand</b></td>
+<td valign="top" align="left" nowrap>move,<br> act,<br> command</td>
+<td valign="top" align="left">Similar as AI_AddCommand, except that it bypasses all previously stacked commands</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_PushPatrolCommand</b></td>
+<td valign="top" align="left" nowrap>1st waypoint,<br> 2nd waypoint,<br> 3rd waypoint</td>
+<td valign="top" align="left">Similar as AI_AddPatrolCommand, except that it bypasses all previously stacked commands</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_ResetOnActivate</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Resets OnActive event</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_RevealTarget</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Reveals the location of character's set target</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_SetTactic</b></td>
+<td valign="top" align="left" nowrap>tactic name</td>
+<td valign="top" align="left">Sets a tactic mode</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_SetTarget</b></td>
+<td valign="top" align="left" nowrap>target name/group</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_SetTargetGroups</b></td>
+<td valign="top" align="left" nowrap>group 1 name,<br> group 2 name</td>
+<td valign="top" align="left">Sets two groups as targets</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AI_StopScripting</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Stops current scripting and makes the character return to tactic mode</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AIN_CreateAIBlock</b></td>
+<td valign="top" align="left" nowrap>radius</td>
+<td valign="top" align="left">Creates a dynamic AI block which blocks the AI net</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>AIN_RemoveAllAIBlocks</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Removes all AI blocks</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_AddHealth</b></td>
+<td valign="top" align="left" nowrap>amount (>0)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_AnimateTexture</b></td>
+<td valign="top" align="left" nowrap>group,<br> frame,<br> timeout (0 = forever)</td>
+<td valign="top" align="left">Obsolete? Might work, but is not currently in use.</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_CauseDamage</b></td>
+<td valign="top" align="left" nowrap>Amount (>0)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_DisplayCrosshair</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Dump</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Dumps character info to console. Debug feature.</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableAutoAimTarget</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableDOCollisions</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles character collisions against dynamic objects</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableCinematicMode</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Enables cinematic mode. In cinematic mode the character has no generic collisions nor gravity and it enables the use of cinematic lighting</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableEyeBlink</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles character eye blinking. The eyes will be left at the state they are in when the message is sent</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableProjectileCollisions</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles character's collisions against projectiles</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_EnableShadow</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles character's shadows</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_ShowSkinItem</b></td>
+<td valign="top" align="left" nowrap>skin item name,<br> visible (bool)</td>
+<td valign="top" align="left">Controls character skin items like helmets or ear radios</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_ForceUpdate</b></td>
+<td valign="top" align="left" nowrap>duration</td>
+<td valign="top" align="left">Forces an update to the character</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_FreeRagdoll</b></td>
+<td valign="top" align="left" nowrap>X random rotation (m/s),<br> Y random roration (m/s),<br> Z random rotation (m/s)</td>
+<td valign="top" align="left">Activates ragdolls for a character</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Hide</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Controls character visibility. Character will not be processed at all when hidden</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Jump</b></td>
+<td valign="top" align="left" nowrap>Velocity change upwards (m/s)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Kill</b></td>
+<td valign="top" align="left" nowrap>Static death animation index (0-4),<br> 0 kills to current animation pose</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_PickupAmmo</b></td>
+<td valign="top" align="left" nowrap>weapon name,<br> amount</td>
+<td valign="top" align="left">Gives character ammo</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_PickupWeapon</b></td>
+<td valign="top" align="left" nowrap>weapon name</td>
+<td valign="top" align="left">Gives character a weapon</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Reload</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Forces character to reload weapon</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_RemoveAllWeapons</b></td>
+<td valign="top" align="left" nowrap>Weapon name<br>
+  (left with infinite ammo)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_RemoveAllWeaponsMelee</b></td>
+<td valign="top" align="left" nowrap>Weapon name (left as melee)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetAnimationDumping</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Dumps characters animation states</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetCinematicLighting</b></td>
+<td valign="top" align="left" nowrap>bool,<br> float heading angle (0..360),<br> float pitch angle (-90..90)</td>
+<td valign="top" align="left">Sets cinematic lighting for a character. Character must be in C_EnableCinematicMode(true);</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetDodgeImmortal</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetHealth</b></td>
+<td valign="top" align="left" nowrap>amount (0-1.0)</td>
+<td valign="top" align="left">Sets character health</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetIdle</b></td>
+<td valign="top" align="left" nowrap>animation name,<br> looping (bool)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetImmortal</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetInfiniteAmmo</b></td>
+<td valign="top" align="left" nowrap>weapon name,<br> bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetInvulnerable</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SetCombatAnimations</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Makes the character use combat animations</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_SubAnimate</b></td>
+<td valign="top" align="left" nowrap>subanimation name</td>
+<td valign="top" align="left">Does a subanimation</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Teleport</b></td>
+<td valign="top" align="left" nowrap>Waypoint / Trigger / FSM name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>C_Use</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Character activates a use trigger</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AnimateAbsolute</b></td>
+<td valign="top" align="left" nowrap>camera path name,<br> room name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AnimateInPlace</b></td>
+<td valign="top" align="left" nowrap>camera path name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AnimateParented</b></td>
+<td valign="top" align="left" nowrap>camera path name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AnimatePlayerParented</b></td>
+<td valign="top" align="left" nowrap>camera path name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AttachToDO</b></td>
+<td valign="top" align="left" nowrap>skippable (bool)</td>
+<td valign="top" align="left">Attaches the camera to a dynamic object</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_AttachToDOWithLookAt</b></td>
+<td valign="top" align="left" nowrap>target name (character/fsm/do),<br> skippable (bool)</td>
+<td valign="top" align="left">Attaches the camera to a dynamic object with a target,<br> which the camera then follows</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>CAM_DetachFromDO</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">detaches the camera from any do and returns to player view</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DG_CreateDanger</b></td>
+<td valign="top" align="left" nowrap>radius,<br> duration,<br> explosion (bool)</td>
+<td valign="top" align="left">Creates a danger zone</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DG_RemoveAllDangers</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Removes all danger zones originated from the receiver object</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_Animate</b></td>
+<td valign="top" align="left" nowrap>animation name</td>
+<td valign="top" align="left">Runs a specified animation on the dynamic object</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_TextureAnimate</b></td>
+<td valign="top" align="left" nowrap>texture animation command</td>
+<td valign="top" align="left">Runs a texture animation on the dynamic object</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_EnableCharacterCollisions</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles collisions against characters</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_EnableContinuousUpdate</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles continous updated</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_EnablePhysics</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Release dynamic object to physics</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_Hide</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Toggles dynamic object visibility. Hidden objects will not be updated</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_InvertAnimation</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Inverts dynamic object animation</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_PauseAnimation</b></td>
+<td valign="top" align="left" nowrap>duration</td>
+<td valign="top" align="left">Pauses dynamic object animation for a specified time</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_ResumeAnimation</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Resumes stopped dynamic object animation</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_SetHitpoints</b></td>
+<td valign="top" align="left" nowrap>amount</td>
+<td valign="top" align="left">Sets hitpoints for a dynamic object</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>DO_StopAnimation</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">stops dynamic object animation</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_Randomize</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Randomizes the state the object is in</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_Send</b></td>
+<td valign="top" align="left" nowrap>Command name</td>
+<td valign="top" align="left">Sends a custom event</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_SendConditional</b></td>
+<td valign="top" align="left" nowrap>command name,<br> StoryEvent name</td>
+<td valign="top" align="left">Sends the specified custom event if the specified storyevent is set to TRUE</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_Switch</b></td>
+<td valign="top" align="left" nowrap>state name</td>
+<td valign="top" align="left">Switches object state</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_StartTimer</b></td>
+<td valign="top" align="left" nowrap>FSM timer name</td>
+<td valign="top" align="left">starts a timer</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_PauseTimer</b></td>
+<td valign="top" align="left" nowrap>FSM timer name</td>
+<td valign="top" align="left">pauses a timer</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>FSM_ResumeTimer</b></td>
+<td valign="top" align="left" nowrap>FSM timer name</td>
+<td valign="top" align="left">resumes a paused timer</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeControlledGameSpeed</b></td>
+<td valign="top" align="left" nowrap>target multiplier,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeFog</b></td>
+<td valign="top" align="left" nowrap>target FOG color,<br> FOG start (meters),<br> FOG end (meters),<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeFOV</b></td>
+<td valign="top" align="left" nowrap>target multiplier,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeGameSpeed</b></td>
+<td valign="top" align="left" nowrap>target multiplier,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeGlobalGameSpeed</b></td>
+<td valign="top" align="left" nowrap>target multiplier,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeMotionBlur</b></td>
+<td valign="top" align="left" nowrap>target blur amount,<br> color multiplier RGB,<br> wave speed,<br> wave amplitude,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ChangeRemapEffect</b></td>
+<td valign="top" align="left" nowrap>target remap amount (0..1),<br> color multiplier RGB,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_EnableBulletTime</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_EnableBulletTimeBlock</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_EnableExit</b></td>
+<td valign="top" align="left" nowrap>exit name,<br> bool</td>
+<td valign="top" align="left">Toggles exits</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_EnableExitAIActivation</b></td>
+<td valign="top" align="left" nowrap>exit name,<br> bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_Init</b></td>
+<td valign="top" align="left" nowrap>level name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_PrintFSM</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_PrintScene</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_RedirectInput</b></td>
+<td valign="top" align="left" nowrap>trigger name<br>
+  (empty = detach input redirection)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ResetLevelItems</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap>
+<b>
+GM_SendEndOfGameMessages</b>
+</td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td valign="top" align="left">Sends the messages defined in data\difficulty.txt, according to current game level</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SendMessageBatch</b></td>
+<td valign="top" align="left" nowrap>message batch name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetCameraCollisions</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetDebugFrameLength</b></td>
+<td valign="top" align="left" nowrap>frame length,<br> step-by-step mode</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetGameLevel</b></td>
+<td valign="top" align="left" nowrap>gamelevel name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetPlayerControlledSlowMotion</b></td>
+<td valign="top" align="left" nowrap>amount (0-1.0)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetPlayerControls</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_TransferPlayerWeaponTo</b></td>
+<td valign="top" align="left" nowrap>character name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetSecondaryCharacter</b></td>
+<td valign="top" align="left" nowrap>character name</td>
+<td valign="top" align="left">Enables a health tracker on the hud of the specified character. Can not be toggled off</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetPlayerLookAtCharacter</b></td>
+<td valign="top" align="left" nowrap>character name,<br> radius</td>
+<td valign="top" align="left">Makes the player look at the specified character if in range</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_SetStoryEventOccured</b></td>
+<td valign="top" align="left" nowrap>storyevent name,<br> occured (bool)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_ClearAllStoryEvents</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_DumpStoryEvents</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_StorePlayerInventory</b></td>
+<td valign="top" align="left" nowrap>slot (0 = cinematics, 1 or 2)</td>
+<td valign="top" align="left">Stores player inventory in specified slot</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>GM_RestorePlayerInventory</b></td>
+<td valign="top" align="left" nowrap>slot (0 = cinematics, 1 or 2)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>LI_ActivateLevelItem</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>LI_CreateLevelItemToBone</b></td>
+<td valign="top" align="left" nowrap>levelitem name,<br> count,<br> bone name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>LI_RemoveLevelItem</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPGNM_Dump</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPGNM_MarkAllNotesRead</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<td valign="top" align="left" nowrap><b>MPGNM_PickUpNote</b></td>
+<td valign="top" align="left" nowrap>graphic novel page name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPGNM_RemoveAllNotes</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPGNM_RemoveNote</b></td>
+<td valign="top" align="left" nowrap>graphic novel page name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_ChangeHUDVisibility</b></td>
+<td valign="top" align="left" nowrap>target multiplayer,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_EnableHUD</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_FadeToColor</b></td>
+<td valign="top" align="left" nowrap>start color,<br> end color,<br> fade time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_FlashToColor</b></td>
+<td valign="top" align="left" nowrap>end color,<br> fade in time,<br> stay in time,<br> fade out time</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_Print</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintBulletTimeTip</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintDirect</b></td>
+<td valign="top" align="left" nowrap>string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintInventory</b></td>
+<td valign="top" align="left" nowrap>string table string,<br> slot number (0-3)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintObjective</b></td>
+<td valign="top" align="left" nowrap>string table string,<br> slot number,<br> (0-2)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintShootDodgeTip</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintTip</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintTipAlways</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_PrintTipNYM</b></td>
+<td valign="top" align="left" nowrap>string table string</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_ShowIntroductionSprite</b></td>
+<td valign="top" align="left" nowrap>string from HUD Introduction sprites</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPHM_ShowObjectives</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPS_ConsoleModeToggle</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPS_SaveScreenShot</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPS_PlayVideo</b></td>
+<td valign="top" align="left" nowrap>pathname to video file,<br> sound track (default 0)</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>MPS_StatisticsModeToggle</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>P_CreateProjectile</b></td>
+<td valign="top" align="left" nowrap>projectile name,<br> amount</td>
+<td valign="top" align="left">Creates a projectile to object pivot</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>P_CreateProjectileToBone</b></td>
+<td valign="top" align="left" nowrap>projectile name,<br> amount,<br> bone name</td>
+<td valign="top" align="left">creates a projectile to object bone</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>PS_StartEffect</b></td>
+<td valign="top" align="left" nowrap>particle name,<br> bone name<br>
+  (empty = no bone offset)</td>
+<td valign="top" align="left">Starts a particle effect</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>PS_StopAllEmissions</b></td>
+<td valign="top" align="left" nowrap>bone name<br>
+  (empty = stop all)</td>
+<td valign="top" align="left">stops particle effects</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_AutoSaveGame</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_LoadGame</b></td>
+<td valign="top" align="left" nowrap>slot number</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_LoadGameFromFile</b></td>
+<td valign="top" align="left" nowrap>file name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_LoadLastSavedGame</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_ModeSwitch</b></td>
+<td valign="top" align="left" nowrap>mode name</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_ModeSwitchToPreviousMode</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_Quit</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>S_SaveGame</b></td>
+<td valign="top" align="left" nowrap>slot number</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>T_Activate</b></td>
+<td class="grey" valign="top" align="left" nowrap>&nbsp;</td>
+<td class="grey" valign="top" align="left">&nbsp;</td>
+</tr>
+
+<tr>
+<td valign="top" align="left" nowrap><b>T_Enable</b></td>
+<td valign="top" align="left" nowrap>bool</td>
+<td valign="top" align="left">Controls whether a trigger is active or not</td>
+</tr>
+
+</table>
+        <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>

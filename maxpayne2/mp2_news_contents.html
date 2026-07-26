@@ -1,0 +1,397 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Rockstar Games Presents Max Payne 2: The Fall of Max Payne</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">  
+#divUpControl{position:absolute; width:400; left:40; top:70; z-index:1;} 
+#divDownControl{position:absolute; width:400; left:40; top:360; z-index:1;} 
+#divContainer{position:absolute; width:400; height:281; overflow:hidden; top:80; left:40; clip:rect(0,400,281,0); visibility:hidden} 
+#divContent{position:absolute; top:60; left:40;font-size:11px;font-family:Verdana;line-height:18px;text-align:justify;}
+</style>
+<script language="JavaScript">
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) {
+	x.src=x.oSrc;
+  }
+  CeaseScroll();
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; 
+  	for(i=0;i<(a.length-2);i+=3)
+		if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	if (a[0]=='Image2') PerformScroll(7);
+	else PerformScroll(-7);
+}
+
+
+// begin absolutely positioned scrollable area object scripts 
+/*
+Extension developed by David G. Miles (www.z3roadster.net/dreamweaver)
+Original Scrollable Area code developed by Thomas Brattli 
+To add more shock to your site, visit www.DHTML Shock.com
+*/
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=(navigator.userAgent.indexOf("Opera")>-1 && document.getElementById)?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=lib_bwcheck()
+
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+	divUpArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+	else divDownArrow.css.visibility='hidden' 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+	divDownArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+	else divUpArrow.css.visibility='hidden' 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+	divUpArrow=new ConstructObject('divUpControl') 
+	divDownArrow=new ConstructObject('divDownControl') 
+	divUpArrow.css.visibility='hidden' 
+} 
+// end absolutely positioned scrollable area object scripts 
+
+window.focus();
+
+</script>	
+	
+
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"></head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF" onLoad="InitialiseScrollableArea()">
+
+				 <table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+    <td colspan="2"><img src="images/spacer.gif" width="1" height="55"><br>
+      <img src="images/spacer.gif" width="40" height="1"><img src="images/headline_news.gif" width="80" height="13"></td>
+	</tr>
+	<tr>
+		
+    <td valign="top" width="400"><br>
+      <img src="images/spacer.gif" width="418" height="1" alt="" border="0"></td>
+		
+	</tr>
+	
+	
+</table>
+
+
+</body>
+<!-- begin absolutely positioned scrollable area object--> 
+<div id="divUpControl" align="center" style="visibility:hidden;"> <a href="javascript:;" onMouseOver="MM_swapImage('Image1','','images/scrollup_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrollup.gif" width="400" height="11" alt="" border="0" name="Image1"></a></div>
+<div id="divDownControl" align="center"> <a href="javascript:;" onMouseOver="MM_swapImage('Image2','','images/scrolldown_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrolldown.gif" width="400" height="11" alt="" border="0" name="Image2"></a></div>
+
+
+
+<div id="divContainer"> 
+  <div id="divContent">
+
+<font size="1" face="Tahoma, Arial, Helvetica">
+<strong>Max Payne 2 In Stores Now for PlayStation®2</strong>
+<br><br>
+The trifecta is now complete. After critically-acclaimed releases on PC and Xbox®, Max Payne 2 is now available for PlayStation 2.
+<br><br>
+"This is a stylish, story-drenched action shooter for hard-boiled fans of the genre." - GameSpy PS2 Preview
+<br><br>
+All the cinematic action, bullet-time gunplay and epic film noir love story of Max Payne 2: The Fall of  Max Payne, now on your choice of three game systems.
+<br><br>
+Click the "Buy Now" link above for online retailer options, or visit your closest game store to purchase.
+<br><br>
+<strong>Max Payne 2 In Stores Now for Xbox</strong>
+<br><br>
+On the heels of Max Payne 2's October release on PC, console owners can now share in what is already among the most critically acclaimed games of the year. 
+<br><br>
+First up, the Xbox release spreads a little Thanksgiving cheer as it hits stores a full week earlier than previously announced - a bullet-time ballet to help wile away the hours of your long holiday weekend and beyond.
+<br><br>
+Click the Buy Now link above for online retailer options, or visit your nearest local retailer today.
+<br><br>
+<strong>Max Payne 2 Xbox Earns GameZone Editors' Choice</strong>
+<br><br>
+GameZone recently posted <a target="_blank" href="http://xbox.gamezone.com/gzreviews/r20516.htm"><font color="#CC0000">their review</font></a> of Max Payne 2: The Fall of Max Payne for Xbox, awarding it an Editors' Choice:
+<br><br>
+"Max Payne 2 is an action-packed work of brilliance that fans of the action/crime genre will simply love to sink their teeth into."
+GameZone - 9.3/10, Editors' Choice
+<br><br>
+<strong>IGN Xbox Awards Editors' Choice to Max Payne 2</strong>
+<br><br>
+IGN has <a target="_blank" href="http://xbox.ign.com/articles/442/442059p1.html"><font color="#CC0000">reviewed</font></a> the Xbox release of Max Payne 2, scoring the game a 9.0 and awarding it their prestigious editors' choice award.
+<br><br>
+"The physics system of MP2 is outstanding... close-ups of faces are remarkably realistic...<br>
+a story that stands on its own in terms of drama. The visuals are excellent, the voice work is superior... a rare find."
+<br>
+-IGN Xbox, 9.0, Editors' Choice
+<br><br>
+<strong>GamePro Previews Max Payne 2 for Xbox</strong>
+<br><br>
+GamePro has posted their <a target="_blank" href="http://www.gamepro.com/microsoft/xbox/games/previews/31706.shtml"><font color="#CC0000">hands-on preview</font></a> of Max Payne 2 for Xbox and came away impressed:
+<br><br>
+"After a little hands-on time with the Xbox version, it’s pretty clear that the game should rock regardless of what platform it’s on." - GamePro.com
+<br><br>
+Look for their review online soon.
+<br><br>
+<strong>Max Payne 2 PC Demo Released</strong>
+<br><br>
+PC owners can now get a free taste of Max Payne 2's celebrated action gameplay with the newly released downloadable demo. 
+<br><br>
+The 250MB download features the first several levels from the retail version of the game, along with the unlockable Dead Man Walking mode available as a bonus.
+<br><br>
+Check the required system specifications at our specs page linked above, then head on over to the downloads section to grab the file.
+<br><br>
+<strong>Max Payne 2 PS2 and Xbox Media Released</strong>
+<br><br>
+Max Payne 2: The Fall of Max Payne hits PlayStation®2 and Xbox® on December 3, 2003.
+<br><br>
+Those of you who prefer gaming on a big screen can now preview your next purchase with all-new media available on the expanded gallery page linked above, including two exclusive screenshots you won't find anywhere else. 
+<br><br>
+Watch for more media for the upcoming console releases in the coming weeks.
+<br><br>
+<strong>Bonus Chapters and Downloadable Theme Song Now Available</strong>
+<br><br>
+Two all-new chapters for the Dead Man Walking mode in Max Payne 2 have been released for download.  In addition, as a special additional bonus, we have now posted the popular Max Payne 2 theme song in MP3 format for your listening pleasure.  Get them in the downloads section linked above.
+<br><br>
+<strong>Max Payne 2 Mod Tools Released</strong>
+<br><br>
+Amateur and professional game designers alike can now download the newly released Max Payne 2 modification tools from the "mods" section in the menu above.  These tools will allow you to create new weapons, viewpoints, or even whole new levels to add to the game.  An official tutorial is coming soon, but a detailed readme file is included with the tools to help get you started.
+<br><br>
+<strong>Max Payne 2 First Review Roundup</strong>
+<br><br>
+The first wave of reviews for Max Payne 2: The Fall of 
+Max Payne have hit the net, and the critics have been 
+blown away. 
+<br><br>
+Read on for a sampling of scores and quotes from some of the most reputable of PC gaming outlets:
+<br><br>
+<strong><a target="_blank" href="http://www.gamespy.com/reviews/october03/maxpayne2pc/"><font color="#CC0000">GameSpy - 5/5, EDITORS’ CHOICE AWARD</font></a></strong>
+"Max Payne 2 has a very tight graphics engine, whose 
+hi-res textures and clever level design make every location feel like a real place -- or the set of an action movie.. 
+The action in Max Payne 2 is as adrenaline-pumping as anything you'd see on the silver screen, and you're in control." 
+<br><br>
+<strong><a target="_blank" href="http://pc.ign.com/articles/455/455259p1.html"><font color="#CC0000">IGN - 9.4/10, EDITORS’ CHOICE AWARD</font></a></strong>
+"A story that stands on its own in terms of drama...the 
+game world is chock-full of visual and aural detail and 
+stylish action..." 
+<br><br>
+<strong><a target="_blank" href="http://www.gamespot.com/pc/action/maxpayne2/review.html"><font color="#CC0000">GameSpot - 9.0/10, "SUPERB", EDITORS’ CHOICE AWARD</font></a></strong>
+"A style of action that no game since Max Payne has 
+managed to deliver with nearly the same level of 
+greatness--though a number of games have tried... 
+Max Payne 2 is just a remarkable production."
+<br><br>
+<strong><a target="_blank" href="http://www.worthplaying.com/article.php?sid=13782"><font color="#CC0000">WorthPlaying.com - 9.4/10, EDITORS’ CHOICE AWARD</font></a></strong>
+"Characters leave very realistic shadows on the ground, gunfire gives everything around it a soft glow, and 
+the explosive crackle of an exploding ammo can is not to be missed... 
+Max Payne 2 is an awesome game in every sense of the word." 
+<br><br>
+<strong><A href="http://www.gamersdepot.com/games/action/maxpayne2/002.htm" target="_blank"><FONT color="#CC0000">GamersDepot.com - DROOL AWARD</font></a></strong>
+"This game is incredible on all fronts — graphics, production, storyline, game play, physics, and performance. MP2 is engrossing through and through, and gives players a feeling like never before that they’ve actually stepped into the story."  
+<br><br>
+<strong><a href="http://www.icronticgames.com/index.php?location=1&&articleid=548" target="_blank"><FONT color="#CC0000">Icrontic Games - 96%, Editor's Choice</font></a></strong>
+"Max Payne 2 will undoubtedly be game of the year..."
+<br><br>
+<strong>MAX PAYNE 2 IN STORES NOW FOR PC</strong>
+<br><br>
+The wait is over, the day of reckoning now at hand.  Max Payne 2: The Fall of Max Payne is now in stores for the PC platform.
+<br><br>
+"A breathtaking, original ballet of death." - Computer Gaming World
+<br><br>
+After all the previews, all the press quotes, all the hands-on impressions, now's the chance to finally experience Max Payne 2 for yourself.  Visit your local retailer today, or click on the Buy Now section above for direct links to online retailers.
+<br><br>
+The European release will hit on October 24th.
+<br><br>
+
+<strong>Max Payne 2 GamePro Game of the Week</strong>
+<br><br>
+It isn't even on store shelves yet, but already GamePro has listed Max Payne 2: The Fall of Max Payne as their Game of the Week.  Noting that their actual review is still to come, the article is nevertheless chock full of superlatives in describing the game.  Read the full article <a href="http://www.gamepro.com/computer/pc/games/features/31385.shtml" target="_blank"><font color="#CC0000">here</font></a>, and check their site at a later date for the full review.
+<br><br>
+"It's just a kick-ass game." - <strong>GamePro</strong>
+<br><br>
+<strong>IGN Hands-on Preview/Impressions</strong>
+<br><br>
+IGN has posted their initial impressions of the first two chapters of Max Payne 2.  For those of you who just can't wait for the full reviews to hit next week, this is your chance to read an early teaser of what's to come.  Beware, though, as the article may contain some minor plot spoilers about these initial chapters.  Check out the full write-up <a href="http://pc.ign.com/articles/454/454096p1.html" target="_blank"><font color="#CC0000">here</font></a> for a wealth of new info on the story, new gameplay features, and the new Dead Man Walking bonus mode.
+<br><br>
+
+<strong>New Trailer and Gameplay Clips</strong>
+<br><br>
+A brand new official trailer and three more gameplay clips are now available in the gallery section, linked above.  The newest clips show off the enhanced Bullet Time 2.0 effects, the improved NPC artificial intelligence, and the Havok 2.0 physics engine in action.  As always, all movies are available in either small-format QuickTime or larger Windows Media 9 versions.
+<br><br>
+<strong>Max Payne 2 Previews and Interviews</strong>
+<br><br>
+The release date for Max Payne 2 is only a week away and the ramp-up of previews and hands-on impressions continues.  Developer Remedy is doing their part to provide as much first-hand information as they can in a continuing series of developer interviews.  Check the following links below for interviews and updated previews, and be sure to secure your copy of the game upon release by pre-ordering at our Buy Now section in the navigation bar above.
+<br><br>
+* <a target="_blank" href="http://www.gamespot.com/pc/action/maxpayne2/news_6076514.html"><font color="#CC0000">Gamespot Preview/Developer Interview</font></a><br>
+* <a target="_blank" href="http://pc.ign.com/articles/453/453588p1.html"><font color="#CC0000">IGN Developer Interview</font></a><br>
+* <a target="_blank" href="http://www.ugo.com/channels/games/features/maxpayne_2/"><font color="#CC0000">UGO Preview</font></a><br>
+* <a target="_blank" href="http://www.shacknews.com/extras/e_maxpayne2/"><font color="#CC0000">Shacknews Preview</font></a>
+<br><br>
+<strong>Second Round Gameplay Clips and More New Screenshots</strong>
+<br><br>
+A flood of new media has been uploaded to the gallery page, including six new gameplay clips and nine brand new screenshots.  The movies are once again available individually in both 800x600 Windows Media 9 and 320x240 QuickTime formats, as well as in full zip files for easy one-time download.  The screenshots are, as always, available in small form or in full 1600x1200 glory.  Click the gallery link above for all the goodies.
+<br><br>
+<strong>Updated Online Previews</strong>
+<br><br>
+GameSpy, IGN and GameSpot have all updated their respective previews for Max Payne 2 with hands-on impressions.  Visit the following links for more:
+<br><br>
+* <a target="_blank" href="http://www.gamespy.com/previews/september03/maxpaynepc/"><font color="#CC0000">GameSpy Preview</font></a><br>
+* <a target="_blank" href="http://www.gamespot.com/pc/action/maxpayne2/preview_6076135.html"><font color="#CC0000">GameSpot Preview</font></a><br>
+* <a target="_blank" href="http://pc.ign.com/articles/452/452085p1.html"><font color="#CC0000">IGN Preview</font></a>
+
+<br><br>
+
+<strong>New Max Payne 2 Media</strong>
+<br><br>
+Four new gameplay movies, a graphic novel clip and the first official Max Payne 2 trailer have been posted to the gallery section linked in the navigation bar above.  See the rag doll physics of the Havok 2 engine, the enhanced bullet time effects and more.  In addition, you'll find five all-new high resolution screenshots available for download.
+<br><br>
+
+
+<strong>Max Payne 2 Developer Interviews</strong>
+<br><br>
+Lead designer Petri J&auml;rvilehto and head writer Sam Lake have been making the rounds on major web sites discussing Max Payne 2: The Fall of Max Payne.  Read their respective takes on the game by visiting the interview pages at <a href="http://www.gamespot.com/pc/action/maxpayne2/news_6075506.html" target="_blank"><font color="#CC0000">Gamespot</font></a>, <a href="http://pc.ign.com/articles/450/450824p1.html" target="_blank"><font color="#CC0000">IGN</font></a>, or <a href="http://www.homelanfed.com/index.php?id=17350" target="_blank"><font color="#CC0000">HomeLAN Federation</font></a>.
+<br><br>
+
+
+<strong>Max Payne 2 Release Date</strong>
+<br><br>
+Rockstar Games and Remedy Entertainment announced today that Max Payne 2: The Fall of Max Payne will be on US store shelves for the PC platform on October 15, 2003.  Pre-order your copy by following the link to our "Buy Now" page above.
+<br><br>
+
+<strong>Game Informer Preview</strong>
+<br><br>
+Game Informer dedicates nine full pages to Max Payne 2 in their September 2003 issue, including a wealth of screenshots and in-depth gameplay coverage.  For those of you not up on the classics of cinema, there's even a film noir primer to familiarize yourself with some of the inspirations for Max Payne 2's story and visual style.
+<br><br>
+"... a tragedy with enough violence, intrigue, and diabolical plot twists to satisfy any fan of life’s seedier side... simply gorgeous.  Seeing it in action, we marveled at the level of detail that Remedy has achieved.  The nighttime city looks eerily real, as we saw rain splashing on the ground and neon lights reflecting on puddles and casting real-time shadows.  During combat, shotgun blasts showered sparks off a parked van, which then exploded in a huge pyrotechnic display.  Texturing has been improved exponentially, as has nearly every aspect of the game’s visuals… it would be difficult to bet against Max Payne 2.”
+<br><br>
+Pick this issue up at newsstands now.
+<br><br>
+
+
+<strong>Gamespy and Gamespot Previews</strong>
+<br><br>
+Gamespy and Gamespot have posted their respective previews of Max Payne 2, both focusing on the new story elements and upgraded graphics.  Each preview also includes exclusive screenshots, so be sure to click through to both for the most complete info and visuals.
+<br><br>
+"Fans of the original game can rest assured that Max Payne 2 should easily surpass whatever bars the first game raised." - <i>Gamespy</i>
+<br><br>
+"With improved real-time shadows, dynamic lighting and destructive elements, things really are getting pushed to the max (pun intended)... and maybe beyond." - <i>Gamespy</i>
+<br><br>
+"Many, many aspects of the original game's presentation have been updated and improved for the sequel" - <i>Gamespot</i>
+<br><br>
+<a href="http://www.gamespy.com/previews/august03/maxpayne2pc/" target="_blank"><font color="#CC0000">Gamespy preview</font></a>
+<br><br>
+<a href="http://www.gamespot.com/pc/action/maxpayne2/preview_6073326.html" target="_blank"><font color="#CC0000">Gamespot preview</font></a>
+
+      <br><br><strong>IGN Preview</strong><br>
+
+<br>"Though the bar for shooter graphics are being raised considerably by the next generation, Max Payne 2 looks good enough to jockey for position with the pack leaders."
+
+<br><br>IGN's preview of Max Payne 2 has been posted, with a bit more information on the Havok physics engine and the new character animations in the game, as well as the obvious graphical upgrades.  Click <a href="http://pc.ign.com/articles/433/433505p1.html" target="_blank"><font color="#CC0000">here</font></a> to read the full article.
+      
+      <br><br><strong>Max Payne 2 CGW Cover Story</strong> <br>
+      <br>
+      The first details of Max 
+      Payne 2 have reached newsstands with an extended feature in the September 
+      2003 issue of Computer Gaming World. With information on the game's plot 
+      and story, its newly beefed-up character A.I., and upgraded graphical 
+      effects complete with comments by lead designer Petri J&auml;rvilehto, 
+      your appetite will be sufficiently whetted. <br>
+      <br>
+      "More of Max Payne's singular brand of action can only be a good thing." 
+      <br>
+	  <br>
+	  "A breathtaking, original ballet of death."
+      <br>
+	  <br>
+      Visit <a href="http://www.computergamingworld.com" target="_blank"><font color="#CC0000">http://www.computergamingworld.com</font></a> 
+      for more information on this month's issue. <br>
+      <br>
+      <strong>Remedy Confirms Max Payne 2 Mod Tools</strong> <br><br>Max Payne 2 will 
+      ship with an improved modding toolset in the package, as confirmed by Remedy's 
+      Petri J&auml;rvilehto. Those who supported the original Max Payne with add-ons 
+      such as Kenneth Yeung's <a href="http://kungfu.maxpayneheadquarters.com/" target="_blank"><font color="#CC0000">Kung 
+      Fu mod</font></a> and TheManCalledZee's <a href="http://narc.maxpayneheadquarters.com/" target="_blank"><font color="#CC0000">N.A.R.C. 
+      mod</font></a> can get to work the day of Max Payne 2's Fall 2003 release. </font>
+</div>
+</div>
+<!-- end absolutely positioned scrollable area object --> 
+
+
+</html>

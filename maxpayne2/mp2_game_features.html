@@ -1,0 +1,206 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>GRAND THEFT AUTO VICE CITY</title>
+<style type="text/css">  
+#divUpControl{position:absolute; width:400; left:40; top:70; z-index:1;} 
+#divDownControl{position:absolute; width:400; left:40; top:360; z-index:1;} 
+#divContainer{position:absolute; width:400; height:281; overflow:hidden; top:80; left:40; clip:rect(0,400,281,0); visibility:hidden} 
+#divContent{position:absolute; top60; left:0;font-size:11px;font-family:Verdana;line-height:18px;text-align:justify;}
+</style>
+<script language="JavaScript">
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) {
+	x.src=x.oSrc;
+  }
+  CeaseScroll();
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; 
+  	for(i=0;i<(a.length-2);i+=3)
+		if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	if (a[0]=='Image2') PerformScroll(7);
+	else PerformScroll(-7);
+}
+
+
+// begin absolutely positioned scrollable area object scripts 
+/*
+Extension developed by David G. Miles (www.z3roadster.net/dreamweaver)
+Original Scrollable Area code developed by Thomas Brattli 
+To add more shock to your site, visit www.DHTML Shock.com
+*/
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=(navigator.userAgent.indexOf("Opera")>-1 && document.getElementById)?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=lib_bwcheck()
+
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+	divUpArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+	else divDownArrow.css.visibility='hidden' 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+	divDownArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+	else divUpArrow.css.visibility='hidden' 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+	divUpArrow=new ConstructObject('divUpControl') 
+	divDownArrow=new ConstructObject('divDownControl') 
+	divUpArrow.css.visibility='hidden' 
+} 
+// end absolutely positioned scrollable area object scripts 
+
+window.focus();
+
+</script>	
+	
+
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#FFFFFF" onLoad="InitialiseScrollableArea()">
+
+				<table border="0" cellpadding="0" cellspacing="0">
+	<tr>
+    <td colspan="2"><img src="images/spacer.gif" width="1" height="55"><br>
+      <img src="images/spacer.gif" width="40" height="1"><img src="images/headline_game.gif" width="63" height="13"></td>
+	</tr>
+	<tr>
+		
+    <td valign="top" width="400"><br>
+      <img src="images/spacer.gif" width="400" height="1" alt="" border="0"></td>
+		
+	</tr>
+	
+	
+</table>
+
+
+</body>
+<!-- begin absolutely positioned scrollable area object--> 
+<div id="divUpControl" align="center" style="visibility:hidden;"> <a href="javascript:;" onMouseOver="MM_swapImage('Image1','','images/scrollup_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrollup.gif" width="400" height="11" alt="" border="0" name="Image1"></a></div>
+<div id="divDownControl" align="center"> <a href="javascript:;" onMouseOver="MM_swapImage('Image2','','images/scrolldown_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrolldown.gif" width="400" height="11" alt="" border="0" name="Image2"></a></div>
+<div id="divContainer"> 
+  <div id="divContent">
+
+<font size="1" face="Tahoma, Arial, Helvetica">
+     
+     In 2001, Max Payne arrived to set the benchmark for action gaming, earning
+     countless awards and revolutionizing the genre with cinematic combat
+     sequences fuelled by the groundbreaking use of slow motion and compulsive
+     narrative-driven gameplay. Now, working together with Rockstar Games' New
+     York-based production team, Remedy has combined Max Payne's hallmark
+     gameplay with all new innovations and unmatched production values. Max Payne 2: 
+	 The Fall of Max Payne has raised the bar for action games all over again.<br>
+      <br>
+      FEATURES INCLUDE:<br>
+      <br>
+      <li>Storyline - a violent, Film Noir love story between a cop and a femme
+fatale murder suspect, between Max Payne and Mona Sax. Dark, tragic and
+intense, the story is a thrill-ride of shocking twists and revelations. <br>
+      <li>Max Payne's signature slow motion gunplay has been improved on every
+level. Get ready for Bullet Time 2.0. <br>
+      <li>New guns and new moves make action more cinematic and intense than ever
+before.
+ <br>
+      <li>Fully integrated Havok physics engine allows for interactive environments
+creating incredible combat scenes. Ragdoll characters and physics in slow
+motion create breath-taking combat scenes.
+ <br>
+      <li> All new AI - cooperative NPC's fight with Max and more believable enemies
+      create tension and more interesting and varied challenge.
+      <br>
+      <li>A stunning level of detail: Extremely detailed environments with
+photorealistic textures, highly enhanced radiosity lighting and extremely
+lifelike characters (including facial animations &amp; lip synchronization)
+provide a visually staggering cinematic experience.
+        <br>
+      <li> Massive production values - including a motion picture stunt crew,
+professional talent for voice acting and graphic novels, motion capture and
+authentic digital source material from New York City.
+</li>
+</font>
+</div>
+</div>
+<!-- end absolutely positioned scrollable area object --> 
+
+
+</html>

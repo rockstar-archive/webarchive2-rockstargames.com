@@ -1,0 +1,155 @@
+* { margin:0; padding:0; }
+h2 { font-size:140%; }
+
+body { background: #000 url(../../../img/global/max.jpg@) no-repeat top left; font-size:12px; font-family:Arial; }
+body.controller_agegate { background: #000; }
+
+#page { width:900px; margin:0 auto;}
+#page .header { margin:30px 0 50px; }
+#page .header * { display:block; margin:0 auto; }
+
+#page .header .rockstar_presents { width:241px; height:16px; }
+body.i18n.de_de #page .header .rockstar_presents { width:269px; height:19px; }
+body.i18n.fr_fr #page .header .rockstar_presents { width:269px; height:19px; }
+
+#page .header .release_date { width:202px; height:28px; background-position:0 -16px; margin-top:10px; }
+body.i18n.de_de #page .header .release_date { width:350px; height:32px; background-position:0 -19px;}
+body.i18n.fr_fr #page .header .release_date { width:291px; height:26px; background-position:0 -19px;}
+body.i18n.it_it #page .header .release_date { width:289px; height:26px; background-position:0 -16px;}
+
+#page .footer { text-align:center; margin:50px 0; }
+#page .footer .logos { margin-bottom:30px; }
+#page .footer ul li { margin-right:25px; }
+#page .footer ul li.last { margin-right:0; }
+#page .footer ul li.privacy a { background-position:0 -174px;  width:110px; height:13px; }
+#page .footer ul li.legal a { background-position:0 -161px;  width:41px; height:13px; }
+body.i18n.de_de #page .footer ul li.privacy a { background-position:0 -180px; }
+body.i18n.de_de #page .footer ul li.legal a { background-position:0 -167px; }
+body.i18n.es_es #page .footer ul li.privacy a { background-position:0 -180px; }
+body.i18n.es_es #page .footer ul li.legal a { background-position:0 -167px; }
+body.i18n.fr_fr #page .footer ul li.privacy a { background-position:0 -180px; }
+body.i18n.fr_fr #page .footer ul li.legal a { background-position:0 -167px; }
+body.i18n.it_it #page .footer ul li.privacy a { background-position:0 -180px; }
+body.i18n.it_it #page .footer ul li.legal a { background-position:0 -167px; }
+
+#page .footer ul.logos li a { display:block; background-repeat:no-repeat; background-image: url(../../../img/global/footer.png@c=2); }
+#page .footer ul.logos li.rating a { width:144px; height:60px; background-position:0 -142px; }
+body.i18n.de_de #page .footer ul.logos li.rating a,
+	body.i18n.es_es #page .footer ul.logos li.rating a,
+	body.i18n.fr_fr #page .footer ul.logos li.rating a,
+	body.i18n.it_it #page .footer ul.logos li.rating a
+	{
+		width:49px; height:65px; background: url(https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne3/img/de_de/rating.gif);
+	}
+#page .footer ul.logos li.xbox360 a { width:111px; height:25px; background-position:0 -46px; }
+#page .footer ul.logos li.xboxlive a { width:61px; height:29px; background-position:0 -202px; }
+#page .footer ul.logos li.pc a { width:32px; height:46px; background-position:0 -142px; }
+#page .footer ul.logos li.ps a { width:184px; height:29px; background-position:0 -113px; }
+#page .footer ul.logos li.rockstar a { width:45px; height:42px; background-position:0 -71px; }
+#page .footer ul.logos li.pc { width:32px; height:46px; background-image: url(../../../img/global/footer.png@c=2);  }
+
+body.i18n.en_us #page .sprite { background-repeat:no-repeat; background-image: url(../../../img/en_us/splash_sprite.png@c=2); }
+body.i18n.de_de #page .sprite { background-repeat:no-repeat; background-image: url(https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne3/img/de_de/splash_sprite.png?c=3); }
+body.i18n.es_es #page .sprite { background-repeat:no-repeat; background-image: url(https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne3/img/es_es/splash_sprite.png?c=2); }
+body.i18n.fr_fr #page .sprite { background-repeat:no-repeat; background-image: url(https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne3/img/fr_fr/splash_sprite.png?c=2); }
+body.i18n.it_it #page .sprite { background-repeat:no-repeat; background-image: url(https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne3/img/it_it/splash_sprite.png?c=2); }
+
+#page a.sprite { display:block; }
+
+body.controller_agegate { color:#f00; } 
+body.controller_agegate #page > div { text-align:center; }
+body.controller_agegate.action_ref  #page > div form .submit { margin-top:20px;  }
+body.controller_agegate h2 { text-align:center; }
+body.controller_agegate #page .footer ul li.rating { display:none; }
+
+body.controller_index #page > div .screenshots h2 { width:178px; height:23px;  margin:0 auto 10px;  background-position:0 -44px;  }
+body.i18n.de_de.controller_index #page > div .screenshots h2 { background-position:0 -51px;  }
+body.i18n.es_es.controller_index #page > div .screenshots h2 { background-position:0 -51px;  }
+body.i18n.fr_fr.controller_index #page > div .screenshots h2 { width:246px; height:23px; background-position:0 -46px;  }
+body.i18n.it_it.controller_index #page > div .screenshots h2 { width:125px; height:23px; background-position:0 -42px;  }
+
+body.controller_index #page > div .news { text-align:center; margin-bottom:35px; }
+body.controller_index #page > div .news h2 { width:175px; height:18px; background: url(../../../img/en_us/title-latestnews.gif); margin:0 auto 5px; }
+body.controller_index #page > div .news ul li { list-style:none; font-size:100%; }
+body.controller_index #page > div .news ul li a { color:#fff; text-decoration:none; }
+body.controller_index #page > div .news ul li a:hover { text-decoration:underline; }
+body.controller_index #page > div .news a.more { color:#f00; margin-top:3px; }
+
+body.controller_index #page > div .screenshots { width:510px; margin:0 auto 30px; }
+body.controller_index #page > div .screenshots ul li { margin:0 7px 7px 0; padding:0px; border:1px solid #333; }
+body.controller_index #page > div .screenshots ul li:hover { border-color:#ccc; } 
+body.controller_index #page > div .screenshots ul li.last { margin-right:0; }
+body.controller_index #page > div .screenshots ul li img { display:block; }
+body.controller_index #page > div .downloads_link a { background-position:0 -83px;  width:308px; height:13px;margin:0 auto 30px auto;  }
+body.controller_index #page > div .downloads_link a:hover { background-position:0 -96px; }
+body.i18n.de_de.controller_index #page > div .downloads_link a { background-position:0 -89px; width:338px;  }
+body.i18n.de_de.controller_index #page > div .downloads_link a:hover { background-position:0 -102px; }
+body.i18n.es_es.controller_index #page > div .downloads_link a { background-position:0 -89px; width:338px;  }
+body.i18n.es_es.controller_index #page > div .downloads_link a:hover { background-position:0 -102px; }
+body.i18n.fr_fr.controller_index #page > div .downloads_link a { background-position:0 -89px; width:338px;  }
+body.i18n.it_it.controller_index #page > div .downloads_link a { background-position:0 -89px; width:291px; }
+body.i18n.it_it.controller_index #page > div .downloads_link a:hover { background-position:0 -102px; }
+
+body.controller_index #page > div .updates h2 { width:144px; height:16px; margin:0 auto 10px;  background-position:0 -66px;  }
+body.i18n.de_de.controller_index #page > div .updates h2 { width:333px; height:15px; background-position:0 -74px; }
+body.i18n.es_es.controller_index #page > div .updates h2 { width:333px; height:15px; background-position:0 -74px; }
+body.i18n.fr_fr.controller_index #page > div .updates h2 { width:381px; height:16px; background-position:0 -69px; }
+body.i18n.it_it.controller_index #page > div .updates h2 { width:340px; height:15px; background-position:0 -65px; }
+
+body.controller_index #page > div .updates { text-align:center; }
+body.controller_index #page > div .updates div { width:186px;margin:0 auto 5px; }
+body.controller_index.i18n.en_us #page > div .updates div a { width:100%; height:100%; display:block; background-image:url(../../../img/en_us/updates_sprite.png@c=2); }
+body.controller_index #page > div .updates .subscribe { width:210px; height:13px; }
+body.controller_index #page > div .updates .subscribe a {  background-position:0 -125px;  }
+body.controller_index #page > div .updates .subscribe a:hover { background-position:0 -97px;  }
+body.controller_index #page > div .updates .facebook {  width:140px; height:13px; }
+body.controller_index #page > div .updates .facebook a {  background-position:0 -139px;  }
+body.controller_index #page > div .updates .facebook a:hover {  background-position:0 -110px;  }
+body.controller_index #page > div .updates .twitter {  width:153px; height:13px; }
+body.controller_index #page > div .updates .twitter a { background-position:0 -17px; }
+body.controller_index #page > div .updates .twitter a:hover { background-position:0 -2px; }
+
+body.i18n.de_de.controller_index #page > div .updates .rss a { background-position:0 -115px; }
+body.i18n.de_de.controller_index #page > div .updates .rss a:hover { background-position:0 -128px; }
+body.i18n.es_es.controller_index #page > div .updates .rss a { background-position:0 -115px; }
+body.i18n.es_es.controller_index #page > div .updates .rss a:hover { background-position:0 -128px; }
+body.i18n.fr_fr.controller_index #page > div .updates .rss a { background-position:0 -115px; }
+body.i18n.fr_fr.controller_index #page > div .updates .rss a:hover { background-position:0 -128px; }
+body.i18n.it_it.controller_index #page > div .updates .rss a { background-position:0 -115px; }
+body.i18n.it_it.controller_index #page > div .updates .rss a:hover { background-position:0 -128px; }
+
+
+
+body.i18n.de_de.controller_index #page > div .updates .subscribe a{ background-position:0 -141px;  }
+body.i18n.de_de.controller_index #page > div .updates .subscribe a:hover { background-position:0 -154px; }
+body.i18n.es_es.controller_index #page > div .updates .subscribe a{ background-position:0 -141px;  }
+body.i18n.es_es.controller_index #page > div .updates .subscribe a:hover { background-position:0 -154px; }
+body.i18n.fr_fr.controller_index #page > div .updates .subscribe a{ background-position:0 -141px;  }
+body.i18n.fr_fr.controller_index #page > div .updates .subscribe a:hover { background-position:0 -154px; }
+body.i18n.it_it.controller_index #page > div .updates .subscribe a{ background-position:0 -141px;  }
+body.i18n.it_it.controller_index #page > div .updates .subscribe a:hover { background-position:0 -154px; }
+
+body.controller_downloads #page > div.content {}
+body.controller_downloads #page > div.content h1 { margin:0 auto 20px; width:428px; height:56px; background-position:0 -188px; }
+body.i18n.de_de.controller_downloads #page > div.content h1 { background-position:0 -198px; }
+body.i18n.es_es.controller_downloads #page > div.content h1 { background-position:0 -198px; }
+body.i18n.fr_fr.controller_downloads #page > div.content h1 { width:644px; height:45px; background-position:0 -198px; }
+body.i18n.it_it.controller_downloads #page > div.content h1 { width:428px; height:56px; background-position:0 -198px; }
+
+body.controller_downloads #page > div.content h2 { margin:0 auto; }
+body.controller_downloads #page > div.content .avatars {  margin-bottom:30px; }
+body.controller_downloads #page > div.content .avatars h2 { width:209px; height:39px; background-position:0 -243px;  margin-bottom:10px; }
+body.controller_downloads #page > div.content .wallpapers { margin-bottom:30px; }
+body.controller_downloads #page > div.content .wallpapers h2 { width:306px; height:41px; background-position:0 -284px;  }
+body.controller_downloads #page > div.content .buddyicons { text-align:center; }
+body.controller_downloads #page > div.content .buddyicons h2 { width:312px; height:40px; background-position:0 -324px; margin-bottom:10px; }
+body.i18n.de_de.controller_downloads #page > div.content .buddyicons h2 { background-position:0 -334px; }
+body.i18n.es_es.controller_downloads #page > div.content .buddyicons h2 { background-position:0 -334px; }
+body.i18n.fr_fr.controller_downloads #page > div.content .buddyicons h2 { background-position:0 -334px; }
+
+body.controller_downloads #page > div.content .buddyicons .buddyicon { width:48px; margin-right:20px;  }
+body.controller_downloads #page > div.content .avatars { text-align:center; }
+body.controller_downloads #page > div.content .avatars .avatar { width:80px; margin-right:20px;  }
+body.controller_downloads #page > div.content .backlink { display:none; }
+body.controller_downloads #page > div.content a { color:#fff; }
+body.controller_downloads #page > div.content .wp_series { width: 160px; margin: 0 auto; }

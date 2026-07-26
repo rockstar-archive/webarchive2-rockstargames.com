@@ -1,0 +1,400 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+
+<title>Rockstar Games Presents Max Payne 2: The Fall of Max Payne</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">  
+#divUpControl{position:absolute; width:550; left:140; top:40; z-index:1;} 
+#divDownControl{position:absolute; width:550; left:140; top:360; z-index:1;} 
+#divContainer{position:absolute; width:545; height:313; overflow:hidden; top:47; left:142; clip:rect(0,540,313,0); visibility:visible} 
+#divContent{position:absolute; top:45; left:400;font-size:11px;font-family:Verdana;line-height:18px;text-align:justify;}
+</style>
+<script language="javascript" src="flashdetection.js"></script>
+<Script language="javascript">
+// begin absolutely positioned scrollable area object scripts 
+/*
+Extension developed by David G. Miles (www.z3roadster.net/dreamweaver)
+Original Scrollable Area code developed by Thomas Brattli 
+To add more shock to your site, visit www.DHTML Shock.com
+*/
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=(navigator.userAgent.indexOf("Opera")>-1 && document.getElementById)?1:0
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=lib_bwcheck()
+
+var speed=50 
+ 
+var loop, timer 
+ 
+function ConstructObject(obj,nest){ 
+    nest=(!nest) ? '':'document.'+nest+'.' 
+    this.el=bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.css=bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?eval(nest+'document.'+obj):0; 
+    this.scrollHeight=bw.ns4?this.css.document.height:this.el.offsetHeight 
+    this.clipHeight=bw.ns4?this.css.clip.height:this.el.offsetHeight 
+    this.up=MoveAreaUp;this.down=MoveAreaDown; 
+    this.MoveArea=MoveArea; this.x; this.y; 
+    this.obj = obj + "Object" 
+    eval(this.obj + "=this") 
+    return this 
+} 
+function MoveArea(x,y){ 
+    this.x=x;this.y=y 
+    this.css.left=this.x 
+    this.css.top=this.y 
+} 
+ 
+function MoveAreaDown(move){ 
+	if(this.y>-this.scrollHeight+objContainer.clipHeight){ 
+	divUpArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".down("+move+")",speed) 
+	} 
+	else divDownArrow.css.visibility='hidden' 
+} 
+function MoveAreaUp(move){ 
+	if(this.y<0){ 
+	divDownArrow.css.visibility='visible'
+    this.MoveArea(0,this.y-move) 
+    if(loop) setTimeout(this.obj+".up("+move+")",speed) 
+	} 
+	else divUpArrow.css.visibility='hidden' 
+} 
+ 
+function PerformScroll(speed){ 
+	if(initialised){ 
+		loop=true; 
+		if(speed>0) objScroller.down(speed) 
+		else objScroller.up(speed) 
+	} 
+} 
+ 
+function CeaseScroll(){ 
+    loop=false 
+    if(timer) clearTimeout(timer) 
+} 
+var initialised; 
+function InitialiseScrollableArea(){ 
+    objContainer=new ConstructObject('divContainer') 
+    objScroller=new ConstructObject('divContent','divContainer') 
+    objScroller.MoveArea(0,0) 
+    objContainer.css.visibility='visible' 
+    initialised=true; 
+	divUpArrow=new ConstructObject('divUpControl') 
+	divDownArrow=new ConstructObject('divDownControl') 
+	divUpArrow.css.visibility='hidden' 
+} 
+// end absolutely positioned scrollable area object scripts 
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; 
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) {
+	x.src=x.oSrc;
+  }
+  CeaseScroll();
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; 
+  	for(i=0;i<(a.length-2);i+=3)
+		if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	if (a[0]=='Image2') PerformScroll(7);
+	else PerformScroll(-7);
+}
+</SCRIPT>
+
+
+</head>
+
+
+
+<body link="#BB0000" vlink="#BB0000" alink="#BB0000" leftmargin="0" topmargin="0" onLoad="InitialiseScrollableArea()">
+
+				<table width="830" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="images/spacer.gif" w="140" h="1"></td><td width="690" valign="top">
+<br><img height="13" width="52" src="images/awards_title.gif">
+</td></tr></table>
+</body>
+
+
+<!-- begin absolutely positioned scrollable area object--> 
+<div id="divUpControl" align="center" style="visibility:hidden;"> <a href="javascript:;" onMouseOver="MM_swapImage('Image1','','images/scrollup_large_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrollup_large.gif" width="550" height="11" alt="" border="0" name="Image1"></a></div>
+<div id="divDownControl" align="center"> <a href="javascript:;" onMouseOver="MM_swapImage('Image2','','images/scrolldown_large_r.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="images/scrolldown_large.gif" width="550" height="11" alt="" border="0" name="Image2"></a></div>
+<div id="divContainer"> 
+  <div id="divContent">
+<table width="550"  border="0" cellpadding="0" cellspacing="8">
+      <tr>
+      <td width="90" align="center" valign="top"><img src="image/gamerstemple.gif" width="75" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Award of Excellence - 95%<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Max Payne 2 is a cinematic game that plays like an interactive movie, a stylish film noir experience that no gamer should miss.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-Gamers' Temple Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" align="center" valign="top"><img src="image/gcm-eca.gif" width="90" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editor's Choice - 9.2 out of 10<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Not only has the bullet-time system been refined, the audio-visual presentation is flawless and the addition of a second playable character and tightly integrated story makes this one of the best action games of the year.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-Game Chronicles Magazine Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" align="center" valign="top"><img src="image/3davenue.gif" width="90" height="45"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Quality Award - 91 out of 100<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Max Payne 2 is definitely one of the best games on the Xbox thus far and if you're a fan of the third person shooter genre a must own.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-3DAvenue.com Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	 <tr>
+      <td width="90" align="center" valign="top"><img src="image/gamingmedia.gif" width="89" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Gold Medal Award - 90%<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Max Payne 2 is a fun game, definitely one that has occupied my nights for the last few days.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-Gaming-Media.com Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	 <tr>
+      <td width="90" align="center" valign="top"><img src="image/gameover.gif" width="90" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Choice Award - 92%<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Mature in its theme and more confident in their execution this time around, Remedy has made a refined graceful action title that is part of what's giving gaming a good name to the rest of the entertainment industry today.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-Game-Over.net Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	 <tr>
+      <td width="90" align="center" valign="top"><img src="image/bestchar.gif" width="85" height="89"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Best Character 2003<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Max Payne 2: The Fall of Max Payne is a game that shouldn't be overlooked by any gamer.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-Extreme Gamer Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	 <tr>
+      <td width="90" align="center" valign="top"><img src="image/gamesfirst.gif" width="40" height="67"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>First Place Trophy - 5 out of 5<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;Max Payne 2 is a an absolutely killer title that any action gamer should play.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-GamesFirst! Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" valign="top"><img src="image/gamepro_choice.gif" width="90" height="49"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 4.5 out of 5<br>
+        <br>
+      </strong></font><font size="1" face="Tahoma, Arial, Helvetica">&quot;In bullet time, you can see every individual bullet trailing superheated wakes as they fly in slow motion toward you, and you can hear every slowed, muted shot. Sound design and visual appearance have rarely worked this well together before.&quot;<br>
+          <br>
+      </font><font size="1" face="Tahoma, Arial, Helvetica"><strong>-GamePRO Review, Issue #184<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" valign="top"><img src="image/gamespy_gameoftheyear.gif" width="90" height="88"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Top Ten PC Game of the Year 2003<br>
+        <br>
+      </strong>&quot;Great level design, a great story arc, superb action -- this game is polished all around, worthy of a mention among our favorites for this year..&quot;<br>
+      <br>
+      <strong>-Gamespy Game of the Year Awards <br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" align="center" valign="top"><img src="image/gamerspulse.gif" width="79" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Seal of Excellence - 46 out of 50</strong><br>
+        <br>
+      &quot;The gritty, film noir storytelling, intense bullet time action sequences and painstaking attention to detail in every area make Max Payne 2: The Fall of Max Payne a must-have for every action fan.&quot;<strong><br>
+      <br>
+      -GamersPulse Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" valign="top"><img src="image/alloutgames.gif" width="90" height="87"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Seal of Approval - 93%<br>
+        <br>
+      </strong>&quot;This is one fantastic game, full of artistic expression and insanely entertaining gameplay.&quot;<br>
+      <br>
+      <strong>-Alloutgames.com Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" align="center" valign="top"><img src="image/icrontic.gif" width="80" height="80"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editor's Choice - 96%<br>
+        <br>
+      </strong>&quot;The whole effect is spectacular and often while in Bullet Time, Max will pull off some trade mark manoeuvres that can only be seen to be believed. It's fluid and exciting.&quot;<br>
+      <br>
+      <strong>-Icrontic Games Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+	<tr>
+      <td width="90" valign="top"><img src="image/ign_rsb_ecaward.gif" width="90" height="30"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 9.4 out of 10</strong><br>
+        <br>
+      &quot;A story that stands on its own in terms of drama...the game world is chock-full of visual and aural detail and stylish action...&quot;<strong><br>
+      <br>
+      -IGN Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+   <tr>
+      <td width="90" valign="top"><img src="image/gamespy_editorschoice.gif" width="90" height="85"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 5 out of 5</strong><br>
+        <br>
+      &quot;Some of the greatest action gaming you can find on any system.&quot;<br>
+      <br>
+      <strong>-Gamespy Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+   <tr>
+      <td valign="top"><img src="image/gamespot_editorschoice.gif" width="90" height="40"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 9.0 out of 10<br>
+        <br>
+      </strong>&quot;A style of action that no game since Max Payne has managed to deliver with nearly the same level of greatness--though a number of games have tried... Max Payne 2 is just a remarkable production.&quot;<br>
+      <br>
+      <strong>-Gamespot Review<br>
+      <br>
+      </strong></font></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><img src="image/gi_logo.gif" width="90" height="18"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Game of the Month - 9.25 out of 10<br>
+        <br>
+      </strong>&quot;Awsome.&quot; <br>
+&quot;Max Payne 2 delivers in every way possible.&quot;<strong><br>
+<br>
+-GAME INFORMER Review <br>
+<br>
+</strong></font></td>
+    </tr>
+	    <tr>
+      <td align="center" valign="top"><img src="image/gamersdepot_drool.gif" width="57" height="80"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Drool Award - 5.5 out of 6<br>
+        <br>
+      </strong>&quot;This game is incredible on all fronts-graphics, production, storyline, game play, physics, and performance. MP 2 is engrossing through and through, and gives players a feeling like never before that they've actually stepped into the story.&quot;<strong><br>
+      <br>
+      -GamersDepot Review<br>
+      <br> 
+      </strong></font></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><img src="image/gamershell_gold.gif" width="78" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Gold Award - 9.5 out of 10<br>
+        <br>
+      </strong>&quot;This game has what it takes to become GOTY 2003.&quot; <br>
+&quot;Must buy for every self-respecting action fan, Max Payne 2 has definitely made itself a spot in the history of videogames as one of the few sequels that has surpassed an already excellent predecessor.&quot;<br>
+<br>
+<strong>-GamersHell Review<br>
+<br>
+</strong></font></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top"><img src="image/worthplaying-award1.jpg" width="77" height="90"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 9.4 out of 10<br>
+        <br>
+      </strong>&quot;Max Payne 2 is an awesome game in every sense of the word.&quot;<strong><br>
+      <br>
+      -WorthPlaying.com Review</strong></font></td>
+    </tr>
+    <tr>
+      <td valign="top"><img src="image/gamingnexus_award.gif" width="90" height="88"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 91 out of 100<br>
+        <br>
+      </strong>&quot;Improved graphics, great gameplay, and fun levels make <strong>Max Payne 2: The Fall of Max Payne</strong> a great PC game.&quot;<strong><br>
+      <br>
+      -Gaming Nexus Review</strong></font></td>
+    </tr>
+   <tr>
+      <td valign="top"><img src="image/cgw-edch.jpg" width="90" height="89"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 4.5 out of 5<br>
+        <br>
+      </strong>&quot;Gorgeous.&quot; <br>
+&quot;A tightly wrapped of ballet of death.&quot;<strong><br>
+<br>
+-COMPUTER GAMING WORLD Review<br>
+<br>
+</strong></font></td>
+    </tr>
+     <tr>
+      <td valign="top"><img src="image/gamezone.jpg" width="80" height="57"></td>
+      <td width="1" bgcolor="#000000"><img src="image/spacer.gif" width="1" height="1"></td>
+      <td width="427" valign="top"><font size="1" face="Tahoma, Arial, Helvetica"><strong>Editors' Choice Award - 4.5 out of 5</strong><br>
+        <br>
+        &quot;Gorgeous.&quot; <br>
+&quot;A tightly wrapped of ballet of death.&quot;<strong><br>
+<br>
+-COMPUTER GAMING WORLD Review </strong></font></td>
+    </tr>
+  </table>
+</div></div>
+</html>
+

@@ -1,0 +1,153 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>ParticleFX - Introduction</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<base target="main">
+<script type="text/javascript" src="https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne/cookieCheck.js"></script>
+<!-- Header Analytics (UA-15984839-3) -->
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(["_setAccount", "UA-15984839-3"]);
+				_gaq.push(["_trackPageview"]);
+				(function() {
+					var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+					ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+					var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+				})();
+				
+				(function(window) {
+					var domReady = function($) {
+						var filetypes = /\.(zip|exe|dmg|pdf|doc*|xls*|ppt*|mp3|jpg|themepack|wmv|mp4|mov|flv)$/i;
+						$("a").filter(function() { return !$(this).data("notrack"); }).each(function() {
+							var href = $(this).attr("href");
+							if(!href)
+								return;
+							if(href.substr(0, 4) == "aim:") {
+								$(this).click(function() {
+									var url = href.replace("aim:", "");
+									_gaq.push(["_trackEvent", "Download", "Click-aim", url]);
+								});
+								return;		
+							}
+
+							if(href.substr(0, 7) == "mailto:") {
+								$(this).click(function() {
+									var emailAddr = href.replace("mailto:", "");
+									_gaq.push(["_trackEvent", "Email", "Click", emailAddr]);
+								});
+								return;
+							}
+
+							if(!href.match(/^https?\:/))
+								return;
+
+							if(href.match(filetypes)) {
+								$(this).click(function() {
+									var extParts = href.split(".");
+									var ext = extParts[extParts.length - 1];
+									_gaq.push(["_trackEvent", "Download", "Click-" + ext, href]);
+
+									if($(this).attr("target") == "_blank")
+										return;
+									setTimeout(function() { location.href = href }, 250);
+									return false;
+								});
+								return;
+							}
+							
+							if(href.indexOf(document.domain) >= 0)
+								return;
+
+							$(this).click(function() {
+								var link = href.replace(/^https?\:\/\//, "");
+								_gaq.push(["_trackEvent", "External", "Click", link]);
+								if($(this).attr("target") == "_blank")
+									return;
+								setTimeout(function() { location.href = href }, 250);
+								return false;
+							});
+						});
+					};
+
+					if(!window.jQuery || typeof(window.jQuery) != "function") {
+						(function() {
+							var jq = document.createElement("script"); jq.type = "text/javascript";
+							jq.src = "http://media.rockstargames.com/js/jquery/jquery-1.4.4.min.js";
+							var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(jq, s);
+						})();
+						
+						var ljq;
+						var _ljqi = 0;
+						(ljq = function() {
+							if(_ljqi > 20)
+								return;
+							if(window.jQuery && typeof(window.jQuery) == "function")
+								return window.jQuery(document).ready(domReady);
+							_ljqi++;
+							setTimeout(ljq, 250);
+						})();
+					} else {
+						window.jQuery(document).ready(domReady);
+					}
+				})(window);
+			</script>
+<!-- End Header Analytics (UA-15984839-3) -->
+</head>
+
+<body onLoad="javascript:cookieCheck();">
+
+				<!--
+				Start of DoubleClick Floodlight Tag: Please do not remove
+				Activity name of this tag: Rockstar Games Homepage
+				URL of the webpage where the tag is expected to be placed: http://www.rockstargames.com/
+				This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+				Creation Date: 02/01/2011
+				-->
+				<script type="text/javascript">
+					var axel = Math.random() + "";
+					var a = axel * 10000000000000;
+					document.write('<iframe style="position:absolute;left:-10000px;top:-10000px" src="http://fls.doubleclick.net/activityi;src=3055121;type=rocks806;cat=rocks465;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+				</script>
+				<noscript>
+					<iframe style="position:absolute;left:-10000px;top:-10000px" src="http://fls.doubleclick.net/activityi;src=3055121;type=rocks806;cat=rocks465;ord=1?" width="1" height="1" frameborder="0"></iframe>
+				</noscript>
+				<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      &nbsp;
+      <h1 align="left">
+      ParticleFX Tutorial</h1>
+        <h2>What is ParticleFX</h2>
+      <blockquote>
+      <p>ParticleFX is a powerful particle effect editing tool that was used to create all the fire, smoke, explosions, muzzle flashes and snowstorms you saw in Max Payne. The idea of the tool was to give the graphic artists a separate environment for particle effect creation and previewing, allowing to effectively focus on the effects themselves.<br>
+      <br>
+      The purpose of this documentation is to introduce you to the basics of ParticleFX, give you a step-by-step tutorial in creating a particle effect, and familiarize you  with all the parameters available.</p>
+      <p><span lang="EN-US">This should cover most of the
+      issues and features of ParticleFX. We sincerely hope you find this tutorial helpful and informative.</span></p>
+      <p>Please note, that these Tutorials&nbsp; are
+      work-in-progress. Remedy will make frequent updates: plenty of new items
+      will be added and old ones fixed in the following weeks.</p>
+      <p>Yours,<br>
+      Max Payne <span lang="EN-US"> development </span>team</p>
+      </blockquote>
+      <p align="center" class="small">&nbsp;--- Last modified: <!--webbot
+      bot="Timestamp" S-Type="EDITED" S-Format="%d.%m.%Y" startspan -->05.12.2001<!--webbot
+      bot="Timestamp" endspan i-checksum="12492" -->
+      ---</p>
+      <hr noshade size="1" color="#C0C0C0">
+        <p class="small">Legal information</p>
+        <p class="small">The copyrighted materials of Max Payne, an audio-visual interactive game, including but not limited to graphics, art & textures; levels, maps & environments (or portions thereof); music, sounds & voices; game objects & weapons; interface; game story & graphic novel screens; and trademarks such as BULLET TIME and SHOOTDODGE, under copyright and trademark laws (herein known as the Copyrighted Game Elements), MAY NOT BE USED COMMERCIALLY, to commercially benefit the end-user or other party, directly or indirectly, including the benefit of other related or unrelated commercial products.</p>
+        <p class="small">These Copyrighted Game Elements may only be used by legal owners of the Max Payne game, for personal or shared enjoyment with other legal owners of the Max Payne game, for the purpose of prolonging their game play enjoyment of the Max Payne game.  This license grants the right to legal owners of the Max Payne game to share and upload modified versions of the Copyrighted Game Elements to online web sites, FTP sites and online libraries, for the express and limited purpose of sharing with other legal owners of the Max Payne game.  No other distribution, public or otherwise, is allowed.</p>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

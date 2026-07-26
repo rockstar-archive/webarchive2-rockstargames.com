@@ -1,0 +1,256 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+
+if (bName == "Netscape" && bVer < "5") {
+document.write('<LINK REL=stylesheet HREF="style_ns.css" TYPE="text/css">');
+}
+else {
+document.write('<LINK REL=stylesheet HREF="style_ie.css" TYPE="text/css">');
+}
+// End --> 
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" background="../images/maxbg.gif">
+<table border="0" colspacing="0" cellpadding="0">
+<tr><td rowspan="2"><img src="../images/1x1pix.gif" width="15"></td>
+<td colspan="2"><img src="../images/1x1pix.gif" height="10"></td></tr>
+
+<tr><td width="680">
+
+		<P> &nbsp;</p>
+<h1>GRAPHICS CARD TROUBLESHOOTING</H1>
+      
+     <p>Max Payne 2 requires a 100% DirectX 9 compatible video card with at least 32 MB of video memory. <br>
+     <A HREF="graphics.htm#supported">List of Supported graphics cards</A>.</P>
+
+<!------------------------------------------------------------------------> 
+
+<h2>GENERIC GUIDELINES</h2>
+
+<blockquote>
+	<P>For optimum performance, your game graphics will be set to recommended settings. You can customize your settings by going to the Options menu from the Main Dialog.</P>
+	<ol>
+	<li>Video cards with 32MB of video memory should only use the low detail settings and run at a maximum resolution of 800x600 without anti-aliasing.
+	<li>Video cards with 64MB of video memory should only use the medium detail settings and run at a maximum resolution of 1280x1024 without anti-aliasing.
+	<li>Video cards with 128MB of video memory can use the maximum settings and run in up to 1600x1200 resolutions (or 1280x1024 with anti-aliasing).
+	</ol>
+</blockquote>
+<h2>IMPORTANT NOTES</H2>
+	
+	<b>If you have any problems with graphics, please do the following first:</B>
+	<br><br>
+	<blockquote><p>
+	<b>1.</B> Update your graphics card drivers.<br>
+	<b>2.</B> Lower your resolution and graphic detail settings from Max Payne 2 Options Dialog. <br>
+	<b>3.</B> Disable Anti-Aliasing from the Max Payne 2 options dialog.<br>
+	</blockquote><p>
+
+<h2>ADJUSTING OPTIONS</H2>
+	<p>
+	The Options are described in tooltips. Hover your mouse over the text and you will get a yellow text popup describing
+	what the option adjusts and how it affects performance.<br><br>
+	
+	Lowering the resolution will increase performance as well.
+	</P>
+<a name="howto"></A>
+	<H2>HOW TO...</H2>
+	<blockquote><p>
+	
+	<B>1. UPDATE DRIVERS</B> - See <a href="graphics.htm#drivers">below</A> for a list of manufacturers 
+	and follow your manufacturers' instructions on updating the drivers. 
+	<br><br>
+	
+	<B>2. CHECK DIRECTX FUNCTIONALITY</B> - If you get an error message saying "Max Payne requires a DirectX 9 compatible graphics card",
+	you can check your DirectX version and functionality by using "DXDiag" application that comes with your system. Click Start -> Run, then
+	enter "dxdiag". Select the Display tab and click on "Test Direct3D". After all tests are completed, you should get a "Direct3D test 
+	results: All tests were successful." message. You can also verify functionality with other DirectX games.
+	<br><br>
+		
+	<b><i>If Direct3D does not work</i></b>, there is something wrong in your system configuration. Verify in Dxdiag that Direct3D Acceleration and 
+	AGP Texture Acceleration are enabled (if they are disabled, enable them). If you still have problems, we recommend that you reinstall 
+	the latest DirectX and graphics card drivers and try again. 
+	<br><br>
+	<B>3. INCREASE AGP APERTURE SIZE</B> - <i>Warning, only for advanced users</I>. <br>
+	Go to your computers' BIOS and look for 
+	a setting called AGP Aperture Size. We recommend setting it 128MB, or if you have 512MB or more system memory, to 256MB. 
+	This will increase the available memory for textures and thus may increase performance.
+    
+    </p></blockquote>
+
+<!------------------------------------------------------------------------>
+	  <a name="drivers"></A>
+      <h2>DRIVERS<br></h2>
+      <blockquote> 
+        <p>
+
+        You should first upgrade to the latest drivers to your graphics card. Here is a list of
+        links to a few of the most common graphics card manufacturers' web sites:
+        <ul>
+        <li><a href="http://www.ati.com/support/" target="_blank">ATI</A> (Radeon series)
+        <li><a href="http://www.nvidia.com" target="_blank">NVIDIA</A> (GeForce, GeForce FX, NForce)
+        <li><a href="http://support.intel.com/support/graphics/" target="_blank">Intel</A> (i845/i865)
+        <li><a href="http://www.matrox.com/mga/support/home.cfm" target="_blank">Matrox</A> (Parhelia)
+        <li>You can also check your computer manufacturer's web site. <a href="http://www.take2games.com/index.php?p=support_pc" target="_blank">Here's a list</A>.
+        </UL>
+
+	</blockquote>
+
+<h2>GENERIC GRAPHICS PROBLEMS</h2>
+
+		<blockquote><p>
+		<b>Anti-Aliasing (FSAA)<BR></B>
+		If you are running in high resolutions or with FSAA enabled and experience random 
+		freezing with the game, please lower your resolution and/or disable FSAA. Many 3D accelerators
+		simply run out of resources when running the game in high resolution.
+		<br><br>
+		We do not recommend you to enable anti-aliasing from the graphics cards' control panel, but 
+		to use the options in Max Payne 2 instead.  Otherwise you may be able to start the game
+		with a resolution and settings with which you will not have enough graphics memory to play the game.
+		<br><br>
+		<b>Textures missing</b><br>
+		Please lower the texture detail and color depth settings in the Max Payne 2 Options dialog
+		and disable anti-aliasing. Also, updating drivers and increasing AGP Aperture Size to 128MB 
+		in your BIOS may help.
+		<br><br>
+		<b>Graphics bleeding over the monitor screen</B><br>
+		Please adjust your monitor or change the resolution. The most compatible resolutions are 640x480, 800x600 and 1024x768.
+		<br><br>
+		<b>Multiple graphics cards</B><br>
+		If you have multiple graphics cards in your PC, or a graphics card capable of outputting to multiple
+		monitors, Max Payne 2 may not display all of them in the startup dialog. The primary graphics card
+		should always be displayed and we recommend that only it is used for playing the game.
+		<br><br>
+		<b>Start menu or System Tray programs flash on screen during gameplay</B><br>
+		If this problem bothers you, please disable all background applications such as e-mail software,
+		Winamp or ICQ.
+		<br><br>
+		</P>
+		</blockquote>
+	<h2>GRAPHICS CARD SPECIFIC PROBLEMS</H2>		
+		<blockquote><p>
+		<b>NVIDIA GEFORCE, GEFORCE FX GRAPHICS CARDS</B>
+		<br><br>
+		<b><i>Anti-aliasing</I></B> may not work together with post processing effects on GeForce and GeForce FX cards 
+		that have less than 128 MB of memory. Possible side effects are texture corruption, textures 
+		turning to yellow or other graphical glitches. Please disable anti-aliasing from Max Payne 2 options
+		and from the driver control panel if you have problems.
+		<br><br>
+		<b><i>"High Detail" Post-Process effects</i></b> work on:
+		<ul>
+		<li>GeForce3 & GeForce 4 Series with 40.xx or newer drivers
+		<li>GeForce FX series with 45.23 or newer drivers
+		</UL>
+		<p>Motion blur or Bullet Time Tone Mapping will look black or have a single, solid color if you have 21.* or 30.* series 
+		drivers (or 44.03 for GeForceFX). It's time to upgrade those drivers.
+		<br><br>
+		<b><i>Video Playback</i></B> may not work with 44.03 drivers on GeForce FX cards. This includes the 
+		intro, attract, credits and "Previously on Max Payne" videos. Please upgrade your drivers to 45.23 or newer.
+		<br><br>
+		<b><i>Mirrors</i></b> are supported only by GeForceFX cards. Even then, we recommend keeping them disabled on GeForceFX 5200 for performance reasons.
+		<br><br></P>
+		<p>
+		<b>INTEL i845 (INTEGRATED)</B><br>
+		We recommend you to run with minimum details in 640x480 resolution. Cube mapping option should not be used as it may cause visual artefacts.
+		<br><br></P>
+		<p><b>ATI RADEON</B>
+		<br><br>
+		<b>General:</B> 
+		Some older ATI Radeon based cards don't support the in-game Gamma control. You should 
+		adjust gamma from ATI Radeon's display driver control panel if needed.<br><br>
+		<b>Radeon 8500, 9000, 9100 and 9200 series:</B><br>
+		Pixel Shader Skinning looks incorrect. This may be fixed to future ATI drivers.<br>
+		<br><br>
+		<b>Matrox Parhelia</B><br>
+		<br>
+		16x Anti-Aliasing doesn't work if enabled from Max Payne 2 Options (You will get an error message). Please enable from Matrox Display Control Panel if you wish to use it.
+		<br><br>
+		Parhelia doesn't render cube mapping if you are running on Software T&L. Please use Hardware T&L as this card supports it and it is faster.
+		
+		</P>
+      </blockquote>
+
+    <!------------------------------------------------------------------------> 
+    
+    <a name="supported"></A>
+    <h2>SUPPORTED GRAPHICS CARDS</h2>
+	<blockquote>
+	<P>Max Payne 2 requires a DirectX 9 compatible graphics card in order to run. 
+
+	The following table lists graphics cards (3D accelerator chipsets) supported by Max Payne 2:</P>
+
+	<table border="0" cellpadding="1" cellspacing="1">
+
+	<ul>
+	<li>ATI Radeon series
+	<li>NVIDIA GeForce, GeForce FX and NForce series
+	<li>Intel Extreme Graphics 2 (integrated i865G)
+	<li>Matrox Parhelia
+	<li>SiS Xabre series
+	<li>3dlabs Wildcat VP
+
+	</table>
+	<p>
+	<b>Notes:</B> There may be certain issues with specific settings with the above accelerators.
+	See above for more details. Additionally, most 3D accelerators listed will not run satisfactorily on maximum detail level settings.</P>
+		
+	<p>The following <i>unsupported</I> 3D Accelerators may work with Max Payne 2, but all game visuals may not be correct 
+	and performance may be unsatisfactory:</P>
+	<ul>
+	<li>ATI Rage 128, 128 Pro
+	<li>Intel Extreme Graphics (integrated i845G)
+	<li>Matrox G400, G450, G550
+	<li>NVIDIA RIVA TNT, TNT2, TNT2 m64
+	<li>PowerVR Kyro II
+	<li>S3 Savage4, S3 ProSavage and integrated solutions based on S3 cores
+	<li>SiS 315 series
+	</ul>
+	<p>We recommend that minimum details and 640x480 resolution be used with the above graphics cards.
+	Please note that we can not give technical support for these graphics cards.</P>
+
+	<p>
+	The following <i>unsupported</I> 3D accelerators do not work with Max Payne 2:</P>
+	<ul>
+	<li>3dfx Voodoo, Voodoo2, Voodoo3, Voodoo Rush
+	<li>3Dlabs Permedia, Permedia2
+	<li>ATI RAGE II/II+/IIc, RAGE PRO, Rage Fury Maxx
+	<li>Cirrus Logic Laguna3D (CL5465)
+	<li>Intel i740, i810 integrated, i815 integrated
+	<li>Matrox Millennium II, Mystique, G200
+	<li>NVIDIA RIVA 128/128ZX
+	<li>PowerVR Neon 250i
+	<li>S3 Savage 2000, Savage3D, Trio64 3D, Virge/DX/GX/VX
+	<li>Rendition Verite V1000/V2200
+	<li>Some older integrated / laptop display adapters (Neomagic, Trident)
+	</UL>
+	</blockquote>
+
+	<!------------------------------------------------------------------------>
+
+
+
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+<p>&nbsp;</P>
+
+
+</td></tr></table>
+
+
+</body>
+</html>

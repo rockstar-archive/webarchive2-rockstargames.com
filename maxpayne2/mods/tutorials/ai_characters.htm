@@ -1,0 +1,555 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - AI Characters</title>
+<base target="main">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p align="left">&nbsp;</p>
+      <h1 align="left">AI Characters</h1>
+      <blockquote>
+        <p align="left">In this tutorial we will build an AI-network, one character that can combat against the player, and a simple script for the
+        character.</p>
+        <p align="left">Download the level files for this tutorial from <b><a href="downloads/AI_examples.zip">AI_examples.zip</a></b></p>
+        <ul>
+          <li>
+            <p align="left"><b>Work.lv2</b> is a good starting point for this
+            tutorial.</li>
+          <li>
+            <p align="left"><b>Result.lv2</b> is what the end result should be
+            after this tutorial.</li>
+        </ul>
+      </blockquote>
+      <h2 align="left">AI-Network Creation</h2>
+      <blockquote>
+        <p align="left">The characters in Max Payne 2 use a manually built AI-network to navigate and sample the environments. It consists of "AI-Nodes" that connect to each others, creating a network of connections over the level.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_010.jpg" width="400" height="300"><br>
+      <i>AI-nodes as seen in MaxED2</i></p>
+      <p align="center"><img border="0" src="images/ai_020.jpg" width="400" height="300"><br>
+      <i>AI-network as seen in the game</i></p>
+      <blockquote>
+        <p align="left">In other words, if you want to have a character to move from point A to point B, there needs to be an AI-network there, otherwise the characters don't know where they can or can't move. And you need to build the AI-network yourself by placing nodes, which will connect to each others automatically.</p>
+        <p align="left">To begin with the tutorial, open up the "Work" level of this tutorial to MaxED2.</p>
+        <p align="left">Before creating any characters, let's first create an AI-network to the level. To do that we need to place AI-nodes onto the floors. Let's create the first one to a corner, any corner will do.</p>
+        <p align="left">In F4-mode place the grid onto the floor (SHIFT-A), switch to F3-mode and point at the grid point where you want the AI-node to be created.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_030.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">From the spawned "New entity" dialog select an entity type called
+        &quot;AIN&quot;.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_040.gif" width="465" height="98"></p>
+      <blockquote>
+        <p align="left">MaxED2 will still show you the properties of the newly created entity. We don't want to change any of them so press OK.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_050.gif" width="577" height="250"></p>
+      <blockquote>
+        <p align="left">A blue sphere will appear onto the grid. If not, check your display filter (F1) for "AI-Nodes"</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_060.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">This is an AI-node and an AI-network will be calculated between the nodes that you place.</p>
+        <p align="left">To continue building the AI network, copy/paste AI nodes to each corner of the two rooms, and two more nodes to both sides of the doorway.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_070.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">After grouping the nodes to the rooms (CTRL-E in F5), you now have little bit more than bare minimum of the AI-net built. If you export the level to the game you can view the resulting AI-net by pressing F8 in the game in developer mode.</p>
+        <p align="left"><b>Extra words about proper AI-node placement</b><br>
+        As the enemies must use the AI-net in order to move around the level and seek for their target, you must not leave any areas into the levels that aren't overseen by an AI-node (otherwise the enemies cannot follow the player properly). Also every AI-node must have a connection to another AI-node so they will all build an island. There can be multiple independent AI-net islands in the level, but the enemies cannot move from one island to another by themselves.</p>
+        <p align="left">The AI-system of Max Payne 2 utilizes environment sampling also via the AI-nodes. For example the AI-characters can determine in real-time if any of the AI-nodes nearby is in cover from their target ("Cover node") or is a valid shooting spot against their target (i.e. has Line-Of-Fire,
+        &quot;LOF-node&quot;).</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_075.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">And as such is the case, it is usually a good idea to just mechanically cover the areas so that every inward corner has an AI-node (because corners are the last resort for cover; this way enemies will more likely find cover when needed) and every outward corner has AI-nodes built around them.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_080.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">Ample amounts of AI-nodes don't really slow the game down at all so you don't need to worry about that. The orientation of the AI-nodes doesn't have any effect on anything either.</p>
+        <p align="left"><b>Extra words about AI-Net debug tools and troubleshooting</b><br>
+        When you are making AI-nets you will notice that when you visualize the AI-net in the
+        game (F8), the nodes and the connections are sometimes drawn with different colors. All the AI-nodes in the same AI-net islands are drawn with the same color, so you can easily see if one location has an AI-net connection to another. If the AI-nodes are in different colors you will know there is no connection.</p>
+        <p align="left">If the node connections are drawn in white when there is a two-way connection. If the connections are drawn in gradient blue when there is a one-way connection. The bright end is the source node and the dim end is the destination node. If the connections are drawn in gray when they are dynamically disabled (With AIN_CreateAIBlock message)</p>
+        <p align="left">When calculating the connections between nodes, the system does a simple Line-of-Sight (LOS) check between the nodes that are found from the exact same height. Thus the system doesn't notice pits between such nodes (and basically you could build AI-nets into thin air if the nodes just are at the same height), and it is recommended to use AI_Node_Collision_Nodraw material category to build geometry between such nodes. This material can be used to build geometry that the AI-node connection calculation treats as solid geometry but it doesn't get exported to the game. Which also means you can built bridges with AI_Node_Collision_Nodraw to create AI-nets over pits.</p>
+        <p align="left">For nodes that are on different heights, the system does a more complex test to see if a character could actually run from one node to another. In practice this means that the pits mentioned above would be taken into account also by lifting the nodes on the other side of the pit slightly.</p>
+        <p align="left">For building AI-net that makes the enemies jump down from ledges, it is recommended to place the AI-nodes right along the edge, and to place another AI node right below.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_085.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">The maximum height for an AI-connection to drop vertically is 5 meters.
+        <b> Thus also with long staircases you will need to have AI-nodes placed along the stairs so that the vertical length between two nodes is never more than 5 meters.</b> The nodes simply will not connect otherwise. Also it is highly recommended to pad all the staircase with character colliding slides (You can use CharacterCollision_Nodraw material category).</p>
+        <p align="left">Dynamic Objects aren't taken into account with AI-net calculations and all the connections pass through them. If you need to block connections through DOs, you need to close the connections dynamically or built a separate AI_Node_Collision_Nodraw object.&nbsp;</p>
+        <p align="left">Also the nodes check the connection only against the nodes that reside in the same room or in the neighboring rooms. I.e. No connections will be made through two exits, which means every room must have at least one node if you want the AI-characters to be able to navigate through..</p>
+      </blockquote>
+      <h2 align="left">Character Creation</h2>
+      <blockquote>
+        <p align="left">Now that we have an AI-net in place, we can create the first enemy to the level. Again place the grid onto the floor, point at a desired location in F3 mode, and press "N". From the "New entity" dialog select entity type "Enemy". It doesn't matter if the character is not standing along an AI-Net path as long as it has a direct access to an AI-node.</p>
+        <p align="left">At the "Entity properties" window we are only interested of the enemy "skin" selection for now. All the different looking enemies of Max Payne 2 are found from the "Skins" drop-down dialog.  Let's choose C03_Russian_A for this tutorial.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_090.gif" width="577" height="390"></p>
+      <blockquote>
+        <p align="left">TIP: It is usually a good idea to rename every entity that has an FSM with something that You find descriptive. As the complexity in your level goes up, you don't necessarily want to have every character called
+        &quot;Enemy_XX&quot;</p>
+        <p align="left">A cyan sphere will appear onto the floor, marking the startup location of the enemy. If not, check your display filter (F1) for
+        &quot;Keypoints&quot;</p>
+      </blockquote>
+      <h2 align="left">AI Controls</h2>
+      <blockquote>
+        <p align="left">By default, the character will not actually do anything but stand there. We will still need to command it into some combat tactic. We can do this with a message called "AI_SetTactic" which takes the name of a tactic as a parameter. So open the FSM dialog for the enemy (Select the enemy and hit "B" in F5-mode), and to the "Startup" event add:</p>
+        <blockquote>
+          <p align="left" class="fixed">This-&gt;AI_SetTactic( Combat );</p>
+        </blockquote>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_100.gif" width="517" height="268"></p>
+      <blockquote>
+        <p align="left">Now export to the game and the character will combat against Max.</p>
+        <p align="left"><b>Extra words about enemy groups</b><br>
+        In the entity properties window of the character you saw a drop-down dialog called "Group". This refers to a system that you can use to bundle multiple enemies into groups, which will cause them to share their perceiving senses, and when setting targets they can be referred to by their group name. You can add and manage groups from "Edit groups" button. Group called "PLAYER_GROUP" is reserved for making AI-characters to belong to the same group as the player.</p>
+        <p align="left"><b>Extra words about AI-controls</b><br>
+        If you want to freely try out various AI-controls, here's a brief reference for the commands:</p>
+        <p align="left" class="fixed"><b>AI_SetTarget( Target );</b></p>
+        <ul>
+          <li>
+            <p align="left">Sets the combat target for an AI-character.</li>
+          <li>
+            <p align="left">Takes a name of a character, FSM, trigger, DO or a group number as a parameter.</li>
+          <li>
+            <p align="left">Special target names are:<br>
+            <b>Player</b> - This is the default<br>
+            <b>Enemies</b> - Refers to all of the characters whose target is set to
+            &quot;player&quot; i.e. the enemies of the player.</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_SetTargetGroups(  Target1, Target2 );</b></p>
+        <ul>
+          <li>
+            <p align="left">Sets two combat targets for an AI-character.</li>
+          <li>
+            <p align="left">Takes the names of groups as parameters</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_SetTactic( Name );</b></p>
+        <ul>
+          <li>
+            <p align="left">Sets the combat tactic for the AI character. The tactics determine the AI-behavior and are hard-coded.</li>
+          <li>
+            <p align="left">Takes a tactic name as a parameter<br>
+            <b>Combat</b> - Shoots at the target and when target lots runs towards an AI-Node with Line-of-fire (LOF) to target..<br>
+            <b>Cover</b> - Tries to run to cover nodes.<br>
+            <b>CoverCombat</b> - Shoots at the target and seeks for cover periodically<br>
+            <b>Follow</b> - Follows the player, doesn't combat. Usable with friendly NPCs.<br>
+            <b>FollowCombat</b> - Follows the player but fights against its targets at the same time. Should use with target set to "Enemies"<br>
+            <b>GuardCombat</b> - Like CoverCombat but doesn't follow its target very far, but stays put instead.<br>
+      "Idle" - Stands idle. This is the default.</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_RevealTarget();</b></p>
+        <ul>
+          <li>
+            <p align="left">Forces the character to get alerted and start hunting their target.</li>
+        </ul>
+        <p align="left" class="fixed"><b>AI_EnableHearing( true/false );<br>
+        AI_EnableSeeing( true/false );<br>
+        AI_EnableFeeling( true/false );</b></p>
+        <ul>
+          <li>
+            <p align="left">Sets "True" or "False" for different sensory systems of the character.</li>
+          <li>
+            <p align="left">All default to "True".</li>
+        </ul>
+        <p align="left" class="fixed"><b>AI_ResetOnActivate();</b></p>
+        <ul>
+          <li>
+            <p align="left">Resets the OnActivate event to its initial state.</li>
+          <li>
+            <p align="left">OnActivate is an event that all the characters have in their FSM, and it is sent only once, when they perceive their target for the first time. This message can be used to reset the OnActivate event so that it is sent again when perceiving a target for the next time.<br>
+          </li>
+        </ul>
+        <p align="left" class="fixed"><b>AI_EnableVoiceEvents( true/false );</b></p>
+        <ul>
+          <li>
+            <p align="left">Can be used to disable the automatic shouting of the enemies.</li>
+        </ul>
+      </blockquote>
+      <h2 align="left">Inventory Controls</h2>
+      <blockquote>
+      <p align="left">Here are the controls for managing the inventories of the enemies.
+      <p align="left" class="fixed"><b>C_RemoveAllWeapons( weapon ) ;</b>
+        <ul>
+          <li>
+            <p align="left">Removes all weapons except the one defined as a parameter, which will instantly appear in hand and get infinite ammo.</li>
+          <li>
+            <p align="left">Takes a weapon name or "empty" as a parameter.</li>
+        </ul>
+      <p align="left" class="fixed"><b>C_RemoveAllWeaponsMelee( weapon );</b>
+        <ul>
+          <li>
+            <p align="left">Removes all weapons except the one defined as a parameter, which will instantly appear in hand. Doesn't give any ammo.</li>
+          <li>
+            <p align="left">Takes weapon names or "empty" as a parameter.</li>
+        </ul>
+      <p align="left" class="fixed"><b>C_PickupWeapon( weapon );</b>
+        <ul>
+          <li>
+            <p align="left">Adds a weapon to the character's inventory. Without any ammo.</li>
+          <li>
+            <p align="left">The enemies will automatically use the most powerful weapon in their inventory that has ammo.</li>
+        </ul>
+      <p align="left" class="fixed"><b>C_PickupAmmo( weapon , amount );</b>
+        <ul>
+          <li>
+            <p align="left">Adds ammo to the character's inventory.</li>
+        </ul>
+      <p align="left" class="fixed"><b>C_SetInfiniteAmmo( weapon, true/false );</b>
+        <ul>
+          <li>
+            <p align="left">Sets infinite ammo for a weapon</li>
+        </ul>
+      <p align="left" class="fixed"><b>P_CreateProjectileToBone ( ProjectileName, Amount, Bone );</b>
+        <ul>
+          <li>
+            <p align="left">Drops a projectile from a bone of the enemy. Handy for dropping grenades and painkillers from the pockets of the killed enemies. The projectiles that can be picked up are prefixed with "Enemy_". For example;</li>
+        </ul>
+        <blockquote>
+          <p align="left" class="fixed">This->P_CreateProjectileToBone ( Enemy_Painkiller, 1 , "Bip01 L Gun");</p>
+          <p align="left">will drop a painkiller from the left gunbone of the enemy. The bone name is in quotation marks because it includes spaces.</p>
+        </blockquote>
+      </blockquote>
+      <h2 align="left">Character Scripting</h2>
+      <blockquote>
+      <p align="left">You can also manually script the characters to do various things. Basically the scripting system works so that you can send bunch of commands to a character which it will store as a stack and will execute one by one. For example you can script a character to walk to a specific waypoint, then animate, then crouch and shoot.
+      <p align="left">Here's brief descriptions about the commands.
+      <p align="left" class="fixed"><b>AI_AddCommand( Move, Act,  Parameters );</b>
+        <ul>
+          <li>
+            <p align="left">Adds a script command. Sequential commands are added to a script stack.</li>
+          <li>
+            <p align="left">The third parameter should be empty quotation marks when not used</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_PushCommand( Move,  Act,  Parameters );</b>
+        <ul>
+          <li>
+            <p align="left">Pushes a script command as first item to the stack, to be executed immediately.</li>
+          <li>
+            <p align="left">The third parameter should be empty quotation marks when not used</li>
+        </ul>
+        <blockquote>
+      <p align="left"><b>The actual script commands for the above:</b><br>
+          <table border="1" width="85%" cellspacing="0">
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      MOVE&nbsp;</b></td>
+              <td width="33%" valign="top" align="left"><b>	ACT&nbsp;</b></td>
+              <td width="34%" valign="top" align="left"><b>	PARAMETERS</b></td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      Stand</b> - Stands at spot. This command is infinitely long, so the script stack will not advance by itself after this command.</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Aim / LookAt / LookAtPlayer / Shoot / Reload / Throwgrenade / Throwmolotov</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      Crouch</b> - Crouches at spot. This command is infinitely long.&nbsp;</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Aim / LookAt / LookAtPlayer / Shoot / Reload</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      Walk</b> - Walks to a waypoint</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Aim / LookAt / LookAtPlayer / Shoot</b></td>
+              <td width="34%" valign="top" align="left">	The absolute hierarchy name of a waypoint. E.g. "::room::waypoint1"</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      Run</b> - Runs to a waypoint</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Aim / LookAt / LookAtPlayer / Shoot&nbsp;</b></td>
+              <td width="34%" valign="top" align="left">	The absolute hierarchy name of a waypoint. E.g. "::room::waypoint1"</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      Animate</b> - Performs a full-body animation</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Lookat / LookAtPlayer</b></td>
+              <td width="34%" valign="top" align="left">	Full-body animation name</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      AnimateNoBlend</b> - Performs a full-body animation without blending in the beginning and the end.&nbsp;</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Lookat / LookAtPlayer</b></td>
+              <td width="34%" valign="top" align="left">	Full-body animation name</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      AnimateLooping</b> - Performs a full-body animation and loops it. This command is infinitely long.&nbsp;</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Lookat / LookAtPlayer</b></td>
+              <td width="34%" valign="top" align="left">	Full-body animation name</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      AnimateLoopingNoBlend</b> - Performs a full-body animation and loops it, without blending in the beginning and the end. This command is infinitely long.&nbsp;</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / Lookat / LookAtPlayer</b></td>
+              <td width="34%" valign="top" align="left">	Full-body animation name</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      SubAnimate</b> - Performs a sub-animation.</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing&nbsp;</b></td>
+              <td width="34%" valign="top" align="left">	Sub-animation name</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      DodgeBackward</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      DodgeForward</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      DodgeLeft</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      DodgeRight</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      ShootDodgeBackward</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      ShootDodgeForward</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      ShootDodgeLeft</b>&nbsp;</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      ShootDodgeRight</b></td>
+              <td width="33%" valign="top" align="left"><b>	Nothing / LookAt</b></td>
+              <td width="34%" valign="top" align="left">-</td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top" align="left"><b>
+      FSMSend</b> - A special command for triggering a custom event from the script stack.</td>
+              <td width="33%" valign="top" align="left"><b>	Nothing&nbsp;</b></td>
+              <td width="34%" valign="top" align="left">	Custom event name</td>
+            </tr>
+          </table>
+      <p align="left">
+      <br>
+      <b>
+      About the "Act" commands:</b><br>
+      <b>Aim</b> - Aims towards the target (or where the AI thinks the target is)<br>
+      <b>
+      LookAt</b> - Orientates towards the target (or where the AI thinks the target is)<br>
+      <b>
+      LookAtPlayer</b> - Orientates towards the player<br>
+      <b>
+      Shoot</b> - Shoots at the target if there's LOF<br>
+      <b>
+      Reload</b> - Reloads<br>
+      <b>
+      ThrowGrenade</b> - Throws a grenade (if there is one in the inventory)<br>
+      <b>
+      ThrowMolotov</b> - Throws a molotov (if there is one in the inventory)
+      <p align="left">Note that all the above scripting causes "force update" to the characters, except for STAND, CROUCH and ANIMATELOOPING, for which you should use the manual command "C_ForceUpdate( time );"
+        </blockquote>
+      <p align="left" class="fixed"><b>AI_AddPatrolCommand( Waypoint,  Waypoint,  Waypoint );</b>
+        <ul>
+          <li>
+            <p align="left">The same function as AI_AddCommand except that it takes three waypoints as a parameter. The character will then patrol around these waypoints.</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_PushPatrolCommand( Waypoint,  Waypoint,  Waypoint );</b>
+        <ul>
+          <li>
+            <p align="left">The same function as AI_PushCommand except that it takes three waypoints as a parameter. The character will then patrol around these waypoints.</li>
+        </ul>
+      <p align="left" class="fixed"><b>AI_StopScripting();</b>
+        <ul>
+          <li>
+            <p align="left">Empties the script stack and goes into the AI-tactic behavior.</li>
+        </ul>
+        <p align="left" class="fixed"><b>AI_EnablePerceiving( true/false );</b></p>
+        <ul>
+          <li>
+            <p align="left">This is a very important message. The character scripting works so that<b> the enemies will stop their scripting as soon as they perceive their target.</b> So in the cases where you want a character to perform a script without interruptions, you must disable the sensory systems of the character. You can do this by using the before mentioned AI_EnableHearing / Seeing / Feeling -messages, but in most cases it is far easier to use the special command AI_EnablePerceiving( false );, which blocks all the sensory systems regardless of their state, for the period of the scripting. When the AI returns to the tactic behavior, AI_EnablePerceiving automatically returns to true, and the sensory systems behave like they did before.</li>
+        </ul>
+        <p align="left">Before going any further, let's add a simple script stack to our character in the tutorial level. There's a small pile of explosive objects in the level, so let's say we want the character to be aiming at the door initially, and when seeing the player, to dodge into the pile of explosives for cover.</p>
+        <p align="left">First let's move the character to a convenient spot, some 4-5 meters away from the explosive pile, orientated towards the doorway.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_110.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">To make the character aim towards the door at startup, we add couple of messages to its StartUp event, so it will look like this:</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_120.gif" width="632" height="270"></p>
+      <blockquote>
+        <p align="left">In short, we disabled hearing so that the enemy won't drop out from the script as the player is making noise in the previous room, and we added a script command to perform an animation that just aims forwards.</p>
+        <p align="left">The <b> OnActivate</b> event is an event that is triggered when a character perceives its target for the first time, so we will use that to trigger the script for dodging to cover. It should look like this:</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_130.gif" width="613" height="190"></p>
+      <blockquote>
+        <p align="left">We disable the perceiving again as we want the enemy to perform the script through, and we add a script command to dodge left. We also enabled hearing back on, although
+        <b> it doesn't actually affect the behavior during this script </b> (since all the perceiving is blocked anyway), but
+        it is here so that the enemy will have hearing after the script.</p>
+        <p align="left"><b>Extra words about the hard-coded events for the characters:</b><br>
+        The other hard-coded events for characters are triggered as follows;<br>
+        <b>
+      OnDeath</b> - When character dies<br>
+        <b>
+      OnLowHealt</b> - When less health than 50%<br>
+        <b>
+      OnPlayerAttack</b> - When getting hit by a player's bullet<br>
+        <b>
+      OnUse</b> - When being "used" by the player</p>
+        <p align="left">Now you can export it and try it in the game. Also try it out by having the character AI debug info on (press F7 in the game, in developer mode). The debug info is printed right on top of the characters in the game world. It looks something like this:</p>
+        <p align="center" class="fixed">(20:6) ::Big_Room::Character_00.AI<br>
+      Target player AP[PSHF]<br>
+      Script : ANIMATELOOPING, NOTHING, index 522</p>
+        <p align="left">The information is:</p>
+        <ul>
+          <li>
+            <p align="left"><b>(20:6)</b> - The index number of the character AI, This is assigned at runtime and can be used to refer to the AI during the game, via the console. E.g. 20:6->AI_EnableVisualization(True);</li>
+          <li>
+            <p align="left"><b>::Big_Room::Character_00.AI</b> - The full hierarchy name of the character AI</li>
+          <li>
+            <p align="left"><b>Target player</b> - The target of the enemy is player</li>
+          <li>
+            <p align="left"><b>AP[PSHF] </b> - <b>A</b>lerted state / <b>P</b>erceiving target[
+            <b>P</b>erceiving enabled / <b>S</b>eeing enabled / <b>H</b>earing enabled /
+            <b>F</b>eeling enabled ] (Just displays a "-" if the corresponding flag is disabled)</li>
+          <li>
+            <p align="left"><b>Script : ANIMATELOOPING, NOTHING, index 522</b> - The script stack, just has one item in this example. The index number is the internal index number of the animation the character is performing.</li>
+        </ul>
+      </blockquote>
+      <p align="left"><b>Extra words about AI debugging</b></p>
+      <blockquote>
+        <p align="left">Here is more AI debugging information which you should find very useful; You can dump information about the state of an AI character with AI_Dump -message. It requires .AI suffix to the receiver so it gets sent to the AI-component of the character, e.g.</p>
+        <blockquote>
+          <p align="left" class="fixed">::Room::e1.AI->AI_Dump();</p>
+        </blockquote>
+        <p align="left">You can also dump the state of the character itself, by C_Dump. It doesn't have a suffix at all. E.g.</p>
+        <blockquote>
+          <p align="left" class="fixed">::Room::e1->C_Dump();</p>
+        </blockquote>
+        <p align="left">And you can turn on some AI visualizations by sending AI_EnableVisualization( true ); to the AI component. E.g.</p>
+        <blockquote>
+          <p align="left" class="fixed">::Room::e1.AI->AI_EnableVisualization( true );</p>
+        </blockquote>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_140.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">The character can see his target as his line-of-sight is true (right yellow line. It is dim when LOS false), but he cannot shoot as his line-of-fire is false (gray line). It is bright white when LOF true). He is running along the blue line.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/ai_150.jpg" width="400" height="300"></p>
+      <blockquote>
+        <p align="left">The bright cyan sphere here is where the AI character thinks his target is, and the dim cyan sphere is where the AI system has determined the character should run to get to shoot at the target. It is currently the running destination.</p>
+      </blockquote>
+      <h2 align="left">Final words</h2>
+      <blockquote>
+        <p align="left">Now you should be equipped to start building your own combat and scripted scenes. For the end, let's still mention that the player character also has an AI so if you just disable the player controls by MaxPayne_GameMode->GM_SetPlayerControls( False ); you can have the player character doing AI combat and scripted just like any other character in the game.</p>
+        <p align="left">Also note that the AI net that was built in this tutorial is too sparse to really work well. You shouldn't have very large distances between AI-nodes. Even then I don't recommend you fill empty room with lots of AI nodes if you intent to add any geometry into the rooms that must be taken into the account with the AI-net, as you will be adding more nodes
+        later anyway, and this way it won't become a mess of nodes that easily.</p>
+        <p align="left">If you don't seem to get the desired behavior when building scenes involving enemy groups, scripting, and OnActivate, here's some detailed information
+        about OnActivate group behavior when using AI_EnablePerceiving:</p>
+        <ul>
+          <li>
+            <p align="left">Enemy "Alert" flag is set when target perceived (or revealed)</li>
+        </ul>
+        <blockquote>
+          <ul>
+            <li>
+              <p align="left">Enemies hunt you in their tactics when they are "alert"</li>
+          </ul>
+        </blockquote>
+        <ul>
+          <li>
+            <p align="left">OnActivate is sent when target perceived (but not when revealed)</li>
+        </ul>
+        <blockquote>
+          <ul>
+            <li>
+              <p align="left">Target perceiving is shared to the group</li>
+            <li>
+              <p align="left">Enemy can be "alert" without its OnActivate being
+              sent</li>
+          </ul>
+        </blockquote>
+        <ul>
+          <li>
+            <p align="left">AI_EnablePerceiving( False ); blocks target perceiving, both in and
+            out</li>
+        </ul>
+        <blockquote>
+          <ul>
+            <li>
+              <p align="left">Alert-flag is set to a character when it sees the target even when blindfolded (Alert never broadcasts to the group, only OnActivate which will in set Alert flag on to the
+              rest)</li>
+          </ul>
+        </blockquote>
+        <p align="left"><b>Here's few more messages you should find useful:</b></p>
+        <p align="left" class="fixed">AIN_CreateAIBlock( radius );</p>
+        <ul>
+          <li>
+            <p align="left">Blocks all the node connections by the radius</li>
+        </ul>
+        <p align="left" class="fixed">AIN_RemoveAllBlocks();</p>
+        <ul>
+          <li>
+            <p align="left">Removes all the node blocks created by the receiver</li>
+        </ul>
+        <p align="left" class="fixed">DG_CreateDanger( radius, time, BoolExplosion );</p>
+        <ul>
+          <li>
+            <p align="left">Creates a danger that the enemies will flee from</li>
+          <li>
+            <p align="left">If it's an explosion danger, the enemies just cover from the center point of the explosion, even if they are within the radius</li>
+        </ul>
+        <p align="left" class="fixed">DG_RemoveAllDangers( );</p>
+        <ul>
+          <li>
+            <p align="left">Removes all the dangers from the receiver</li>
+        </ul>
+        <p align="left" class="fixed">
+      C_Hide( true/false );</p>
+        <ul>
+          <li>
+            <p align="left">Can be used to hide a character (It will freeze completely). When unhidden the character will continue doing whatever it was
+            doing</li>
+          <li>
+            <p align="left">Almost every enemy in Max Payne 2 is actually hidden at startup and then unhidden only once the player is approaching the areas where they are, to ensure the enemies won't become alerted too
+            early</li>
+        </ul>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>

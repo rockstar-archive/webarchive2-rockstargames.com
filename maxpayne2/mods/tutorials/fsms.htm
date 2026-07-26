@@ -1,0 +1,279 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - Dynamic Content (FSMs)</title>
+<base target="main">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p align="left">&nbsp;</p>
+      <h1 align="left">Dynamic Content (FSMs)</h1>
+      <blockquote>
+        <p align="left">In this tutorial we will build a simple FSM-script and learn the theory of more complex machines. If you
+        are not familiar with the FSM-scripting of the original Max Payne, there is some reminding material
+        towards the end of this tutorial about FSM messages in general.</p>
+        <p align="left">Download the level files for this tutorial<b> <a href="downloads/FSMs_examples.zip">FSMs_examples.zip</a></b></p>
+        <ul>
+          <li>
+            <p align="left"><b>FSMs_work.lv2</b> is a good starting point for this tutorial.</li>
+          <li>
+            <p align="left"><b>FSMs_result.lv2</b> is what the end result should be after this tutorial.</li>
+        </ul>
+      </blockquote>
+      <h2 align="left">Introduction</h2>
+      <blockquote>
+      <p align="left">Just like in original Max Payne, in Max Payne 2 the gameplay scripting is implemented with
+      <b> Finite State Machines</b> (FSM). There are no hard-coded dynamic entities
+      such as doors and lifts, but rather all these are built out of various simple
+      entities like <b> dynamic objects</b> (DO), <b> triggers</b> and f<b>loating FSMs</b>, that you script to behave as you desire.</p>
+      <p align="left">These entities can detect various <b> events</b> and send <b> messages</b> to each others to control the gameplay. For example when the player opens a door, it can send a message to the nearby enemies to make them come and investigate the noise.</p>
+      </blockquote>
+      <h2 align="left">Scripting FSM</h2>
+      <blockquote>
+      <p align="left">We'll do a small example involving FSM scripting. We'll do a trigger which toggles a flame on and off. It will involve state switching and particle effects.</p>
+      <p align="left">First, open up the <b>Work.lv2 </b> of this tutorial.</p>
+      <p align="left">Before we start, let's check that the display filter settings are correct for this tutorial. Press F1 to bring up the display filter and make sure that "Triggers" and "Keypoints" are checked on. Also, check that the sub-flag "Names" is on for both "Triggers" and "Keypoints".</p>
+      <p align="left">We'll create a floating FSM object which will be the origin of the flame itself. Go into
+      <b> F4-mode</b> and point at the floor and press <b>A</b>, to align the grid with the floor. Then point at the spot where you want the flame to appear, and in
+      <b> F3-mode</b> press <b>N</b>. Choose FSM from the dropdown -menu and press
+      <b>OK</b>. The properties window of the FSM will open automatically. Give it a descriptive name, like "flame", and press <b>OK</b>.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_grid_align.jpg" width="561" height="430"></p>
+      <blockquote>
+      <p align="left">Let's leave the FSM for now and move on to the trigger.</p>
+      <p align="left">Move near the door opening so that you see the wall clearly. Press
+      <b> F4 </b> and move the cursor over the wall so the wall polygon is selected. Press
+      <b> A</b> to align the grid against the wall. Then move the cursor to the spot you want the trigger to appear.</p>
+      </blockquote>
+
+      <blockquote>
+      <p align="left">Point the cursor at the desired spot and go to <b> F3-mode</b> and press
+      <b>N</b>. A dialog will open where you can choose an entity for placement. Choose "Trigger" from the dropdown menu and press
+      <b>OK</b>.</p>
+      <p align="left">The properties window of the trigger will open automatically. Check the "Use" flag so that the trigger will activate when it is being used.
+      Also name the trigger to "t_flame" in the top editbox.
+      </p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_trigger_dialogue.jpg" width="561" height="430"></p>
+      <blockquote>
+      <p align="left">After that, press <b> OK</b> and choose the trigger in <b> F5
+      mode</b>. Then press <b> B</b> which will open the FSM-dialog. First we need to add two states: ON and OFF. You can do that by pressing
+      <b>Alt-S</b> on the keyboard or then right-click on the "States" -handler and choose "Add State Specific Handler" from the
+      menu</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_adding_states.gif" width="407" height="227"></p>
+      <blockquote>
+      <p align="left">Name the first one as "off" and the second one as "on". It should look like
+      this:</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_trigger_fsm_dialog_2.gif" width="624" height="236"></p>
+      <blockquote>
+      <p align="left">The state which is in bold is the default, initial, state. You can change the default state by right clicking on any handler and choosing "Set as default state". We want to have the "OFF" -state as default.</p>
+      <p align="left">Now, let's start adding some functionality. The idea is that when the trigger switches states, it will send a message to the floating FSM to trigger a
+      <b> custom event</b>.</p>
+      <p align="left">First open the "ON" state -event, like in the picture and click the editing area of "OFF" -state in the right part of the dialog. This means that when the state is switched to "ON" from the "OFF""-state, these messages will be sent.</p>
+      <p align="left">Then type</p>
+        <blockquote>
+      <p align="left" class="fixed">::Startroom::flame->PS_StartEffect(fire_small,"");</p>
+        </blockquote>
+      <p align="left">The first part of the message (::startroom::flame) is the object address. After the arrow we issue a command which starts particle effects. In the parenthesis we have two parameters 'fire_small' and the bone name. There are no bones in floating FSMs so we just type two quotation marks.</p>
+      <p align="left">We might want a sound as well so press return so you move to the next line and type</p>
+        <blockquote>
+      <p align="left" class="fixed">::Startroom::flame->A_Play3DSound(generic,fire_small_loop,"");</p>
+        </blockquote>
+      <p align="left">When the state is switched to OFF, we need to stop the particle effect and stop the looping flame sound. So click on the "OFF" handler on the left part of the window and go to the editing area of "ON" on the right window.</p>
+      <p align="left">These messages will stop the particle -and sound effect:</p>
+        <blockquote>
+      <p align="left" class="fixed">::startroom::flame->PS_StopAllEmissions("");<br>
+      ::startroom::flame->A_StopAll3DSounds("");</p>
+        </blockquote>
+      <p align="left">In the parenthesis we have the bone name, and since there are none, we put simply two quotation marks. It should look like this:</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_trigger_fsm_dialog_4.gif" width="624" height="236"></p>
+      <blockquote>
+      <p align="left">Now we must tell the trigger to change states every time the trigger is used. So open the T_Activate handler.</p>
+      <p align="left">Then type in the OFF -editing area:</p>
+        <blockquote>
+      <p align="left" class="fixed">this->FSM_Switch(on);</p>
+        </blockquote>
+      <p align="left">And this in the ON -area:</p>
+        <blockquote>
+      <p align="left" class="fixed">this->FSM_Switch(off);</p>
+        </blockquote>
+      </blockquote>
+      <p align="left">So the contents of T_Activate should look like this:</p>
+      <p align="left"><img border="0" src="images/fsms_trigger_fsm_dialog_5.gif" width="624" height="236"><br>
+      </p>
+      <blockquote>
+      <p align="left">Let's see now what is happening in the scene. The player uses the trigger and the T_Activate -event is triggered. The trigger checks the state it is in and acts accordingly. So it is in state "OFF" and in state OFF there is a command "this->FSM_Switch(on);" So the trigger switches states to "ON". Now, in the ON-state the functionality says
+      <i>If you switch to state ON from state OFF, send these messages.</i> And those messages are the familiar</p>
+        <blockquote>
+      <p align="left" class="fixed">::startroom::flame->PS_StartEffect(fire_small,"");<br>
+      ::startroom::flame->A_Play3DSound(generic,fire_small_loop,"");</p>
+        </blockquote>
+        
+      <p align="left">That's it! Now try to memorize where the trigger is so you can use it. Export the level by choosing File -> Export and start it in the game.
+      If you can't find the trigger, press F4 in the game to enable the debug-mode. The cyan colored spheres are triggers.</p>
+     
+      <p align="left">There are several ways to do this and the way above is simply the fastest but on the long run also the dumbest. In the real level scripts where things tend to get more complex, it is a better idea to have the functionality of the objects contained within themselves as much as possible, instead of having separate entites sending a lot of messages around.</p>
+      <p align="left">So let's change the architecture of the script a bit. Let's use custom events to trigger the flame on and off for the flame FSM. So let's open the flame FSM dialog and add two custom events:
+      <b> Start</b> and <b>Stop</b>.&nbsp;</p>
+      <p align="left">Since we already call the FSM as 'flame' we really have no reason to be more specific. It's clear that we are starting and stopping a flame. But normally it's a good idea to be descriptive with Custom Event names, since you will be using them a lot.&nbsp;</p>
+      <p align="left">When the FSM dialog is open, press <b>Alt-E</b> or right-click on the Custom Event handler and choose "Add Custom Event handler". We need two, rename them to
+      <b> Start</b> and <b>Stop</b>. Then open the Start -event and type in the messages which starts the flame. They should go like this:</p>
+        <blockquote>
+      <p align="left" class="fixed">this->PS_StartEffect(fire_small,"");<br>
+      this->A_Play3DSound(generic,fire_small_loop,"");</p>
+        </blockquote>
+      <p align="left">This time we only have to send the messages to "this", since the messages are sent from the acting object itself. Now move to the Stop -event and add these messages:</p>
+        <blockquote>
+      <p align="left" class="fixed">this->PS_StopAllEmissions("");<br>
+      this->A_StopAll3DSounds("");</p>
+        </blockquote>
+      <p align="left">Now go back to the trigger and choose the ON -state handler and change the lines</p>
+        <blockquote>
+      <p align="left" class="fixed">::startroom::flame->PS_StartEffect(fire_small,"");<br>
+      ::startroom::flame->A_Play3DSound(generic,fire_small_loop,"");</p>
+        </blockquote>
+      <p align="left">To&nbsp;</p>
+        <blockquote>
+      <p align="left" class="fixed">::startroom::flame->FSM_Send(Start);</p>
+        </blockquote>
+      <p align="left">And in the OFF-state the same operation but with parameter "Stop".</p>
+        <blockquote>
+      <p align="left" class="fixed">::startroom::flame->FSM_Send(Stop);</p>
+        </blockquote>
+      <p align="left">If you export the level to the game now you will see that the functionality appears to be the same for the player, but the only difference is that the system stays manageable without having to remember what sends what to where, which is quite a strain in full gameplay scripts.</p>
+      <p align="left">That's it. If you want, you can change trigger functionality and for instance change the type to "player" and put it into the doorway. Then every time you walk through the door, the flame will go on and off.</p>
+      <p align="left">And on top of the above, there are still many ways to implement what we did above. For example, if you wanted to toggle the flame on and off from multiple different triggers, the would go off-synch since the trigger here is switching state by itself without actually knowing what the flame FSM is doing. In such scenario you could do a separate system that keeps the triggers in synch, or you could be smart and just have a single "toggle" custom event for the flame FSM, which would decide for itself whether to turn the flame on or off. This way all the separate triggers could be dumb triggers simply triggering the "toggle" custom event.</p>
+      </blockquote>
+      <h2 align="left">The theory, FSM syntax and functionality</h2>
+      <blockquote>
+      <p align="left">Basic message might look like this:</p>
+        <blockquote>
+      <p align="left" class="fixed">::Cellar_Room2::Enemy1->AI_SetTactic(combat);</p>
+        </blockquote>
+      <p align="left">It consists of the <b> receiver</b> "::Cellar_Room2::Enemy1", the
+      <b> message</b> itself "AI_SetTactic", and finally the possible <b> parameters</b> "combat".</p>
+      <p align="left">Other examples:</p>
+        <blockquote>
+      <p align="left" class="fixed">::Room2::Door1->DO_StopAnimation();<br>
+      parent::Enemy4->C_GoTo( ::Street1::Waypoint1,1);<br>
+      Button->A_Play3DSound( dynamic, switch ,"" );<br>
+      this->C_PickUpWeapon( deserteagle );</p>
+        </blockquote>
+      <p align="left">If messages point to objects that are inside MaxED2, they require the hierarchy to be defined for the receiver. You can use absolute hierarchy or relative hierarchy from the message sender.<br>
+      Example: Object A is a top-level object. It has children B and C, and B has child D.</p>
+      <p align="left">A simple hierarchy example</p>
+        <blockquote>
+      <p align="left"><img border="0" src="images/fsms_trigger_hierarchy.gif" width="107" height="128"></p>
+        </blockquote>
+      <p align="left">The fully qualified names are:&nbsp;</p>
+        <blockquote>
+      <p align="left" class="fixed">A         ::A<br>
+      B         ::A::B<br>
+      C         ::A::C<br>
+      D         ::A::B::D&nbsp;</p>
+        </blockquote>
+      <p align="left">When you define relative names, you have keywords <b>this</b> and
+      <b>parent</b> at your disposal. An object can refer to itself by "this", and to its parent with "parent". An object can refer to its child directly by using the child's name.&nbsp;</p>
+      <p align="left">About whether you should use absolute or relative names, it really depends on the situation. Usually when you create an enclosed machine, such as a door, all the messages that the door sends to the different parts of itself should be relative to ensure that when you copy the door around, the copy will still have its messages defined correctly (=The new copy won't send messages to the original door).&nbsp;</p>
+      <p align="left">But then again if the machine sends messages outside of itself, for example if the door sends a message to an enemy somewhere else in the level, you might want to use absolute naming, which will ensure that the new copies of the door will do all the same things as the original. (=All the copies of the machine will send the same messages outside themselves)&nbsp;</p>
+      <p align="left">In addition to these, there's two more keywords that you can use some situations as the receivers; "Activator" and "Player". For example a collision trigger can send messages to the Activator when it's been touched, and some messages can be sent simply to the player (The character that represents the player).</p>
+        <blockquote>
+      <p align="left" class="fixed">activator->C_SetHealth( 0 );<br>
+      player->A_StopAll3DSounds( head );&nbsp;</p>
+        </blockquote>
+      <p align="left">As you can see, there's no hierarchy for these receivers. Likewise there's no hierarchy involved if the entities are sending messages to the game modes, for example to maxpayne_gamemode for changing the level, or maxpayne_hudmode for hudprint, or x_modeswitch to perform a modeswitch (between game, menus and graphic novels).</p>
+        <blockquote>
+      <p align="left" class="fixed">maxpayne_gamemode->gm_init(The_Next_Level):;<br>
+      maxpayne_hudmode->mphm_printdirect("All work and no play...&quot;);<br>
+      x_modeswitch->s_modeswitch(game);</p>
+        </blockquote>
+      <p align="left">The complete list of messages can be found from the <b><a href="fsm_messages.htm">List
+      of FSM messages</a></b>.</p>
+      </blockquote>
+      <h2 align="left">The dynamic entities and their purposes</h2>
+      <blockquote>
+      <p align="left">Here is a list of entities that you can create in MaxED and use as a part of your FSM scripting. You can create any of these entities by pressing N in F3 mode.</p>
+        <ul>
+          <li>
+            <p align="left"><b>AIN</b> - A node for the AI network</li>
+          <li>
+            <p align="left"><b>Waypoint</b> - This entity is used for AI scripting. Enemies can be commanded to move to waypoints.</li>
+          <li>
+            <p align="left"><b>Jumppoint</b> - This is the entity where player spawns to. The level can include multiple jumppoints, and you can jump between them with insert and delete in the game, if developermode is on. The initial jumppoint is defined in levels.txt. The level won't run in normal mode if it isn't defined, although in developer mode you will just get an error message about it.</li>
+          <li>
+            <p align="left"><b>Enemy</b> - A character, usually an enemy, although due to the flexible nature of the AI scripting, any enemy can be used as a
+            harmless NPC. You can select what type of an enemy or NPC you want this to be from the properties of the entity. (Press enter in F5 mode or click RMB to it in the hierarchy tree and select "Properties".)</li>
+          <li>
+            <p align="left"><b>Level item</b> - Any item you can find in the game, like ammunition, weapons or painkillers. You can choose the type of the level item from the properties.</li>
+          <li>
+            <p align="left"><b>Prefab Parent </b> - A parent object for prefab objects</li>
+          <li>
+            <p align="left"><b>Triangle Mesh</b> - Use this to insert a triangle mesh (3D Studio created objects) into the level</li>
+          <li>
+            <p align="left"><b>Flare</b> - A flare effect for lights</li>
+          <li>
+            <p align="left"><b>Volume lighting box</b> - If you place a VLB into a room, the volume lighting will only be calculated inside that box. You can place multiple VLB's. Useful for large rooms which has areas the player can not access.</li>
+          <li>
+            <p align="left"><b>Trigger</b> - A spherical trigger that can be enabled through specified activation types (player / use / enemy / bullet / look at / visibility). You can change the radius from the properties. After creating the trigger, you can select a type from the properties window.</li>
+          <li>
+            <p align="left"><b>FSM</b> - An invisible entity that can be used as a part of the FSM logics of a system or as an emitter for sounds and particle effects. It's basically an all-around relay entity for messages.</li>
+          <li>
+            <p align="left"><b>Dynamic Pointlight</b> - A Gouraud light for characters and the desired dynamic objects. The light itself is static in the world and cannot be moved. Nowadays mostly obsolete because of the new volume lighting system.</li>
+        </ul>
+      </blockquote>
+      <h2 align="left">Mesh Triggers</h2>
+      <blockquote>
+      <p align="left">In Max Payne 2 a new kind of trigger is introduced: a 'mesh trigger'. Basically it's a mesh transformed into a trigger. Otherwise it works as any other trigger in the level. Like with dynamic objects, the trigger mesh needs to be convex. (Include the explanation between convex and concave objects). The trigger area does not follow the mesh shape though, but it will be an axis aligned bounding box which is drawn around the mesh edges. If you would create a triangle shaped trigger, it would be a larger cube. (You can see the actual trigger shapes in the game in developer mode by F4)</p>
+      </blockquote>
+      <blockquote>
+      <p align="left">You can transform any mesh into a trigger by selecting the object and clicking the middle mouse button. Then select 'Make selection trigger' from the menu.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_mesh_trigger_menu.jpg" width="600" height="426"></p>
+      <blockquote>
+      <p align="left">That's it, now the trigger has the same properties and functionality as the classical sphere triggers. You can alter trigger shape like with any other mesh.</p>
+      <p align="left">If you want the mesh trigger to be more complex in shape, you can extend the trigger with static mesh children. Just create another convex object anywhere and group it to the original trigger, then the parent trigger will always be triggered when the
+      children are.</p>
+      <p align="left">For clarity, there is a indicator texture for mesh trigger
+      children in the indicator directory.</p>
+      <p align="left">Here's an example of a more complex mesh trigger. In the middle is the original mesh and at its sides are the static child meshes.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/fsms_trigger_with_childs.jpg" width="300" height="278"></p>
+      <blockquote>
+      <p align="left">There's also a new triggering method, called 'visibility'. It will trigger if the player is inside the trigger sphere/mesh and the
+      camera has a line of sight to the pivot point. It's useful if you want to trigger events when the player sees a certain spot.</p>
+      </blockquote>
+      <h2 align="left">FSM Scripting with prefabs</h2>
+      <blockquote>
+      <p align="left">When you are using prefabs that include FSM content, there's couple of things you need to take into account. Basically, the prefabs can include messages that are contained within the prefab (and use relative hierarchy pointing), and messages from other
+      entities can be sent into the prefabs freely "::Room::Door::prefab::Door1->FSM_Send( Open );", but
+      <b> messages cannot be sent out from the prefabs directly.</b></p>
+      <p align="left">The only instance-specific content for a prefab can be added to the FSM of the
+      <b> prefab parent node</b>, and this is also used as an interface to send messages out from the prefab. If you add custom events, states, timers or any messages to the prefab parent node, they will NOT be saved to the prefab master, but are instead all found only from the very prefab parent node you put them into.</p>
+      <p align="left">But there is an exception; if you edit a prefab (R in F5 mode), and then add a custom event, state or timer with a prefix of "pre_", it WILL be saved to the master prefab (but messages within these events are never saved). For example if you look at the "door_wood.pre" prefab that came in with the tool pack, you can see its prefab parent having four custom events, "pre_closed", "pre_opened", "pre_locked", "pre_unlocked". These are all working as an interface to the outside, and messages can be added here that will be sent when the custom event is triggered.</p>
+      <p align="left">In short, the way it works is that the prefab content sends a relative message to its own parent, triggering the "pre_" prefixed custom event (parent::parent->FSM_Send( pre_opened ); which will then send (instance-specific) messages
+      elsewhere to the level.</p>
+      <p align="left">For example the prefab parent nodes of doors should usually send messages to enable and disable portals from their "pre_opened" and "pre_closed" events.</p>
+      <p align="left">Read more about prefabs from the <b><a href="prefabs.htm">Prefab
+      article</a></b>.</p>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>

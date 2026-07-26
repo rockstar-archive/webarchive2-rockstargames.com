@@ -1,0 +1,208 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - Skinning</title>
+<base target="main">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p align="left">&nbsp;</p>
+      <h1 align="left">Skin Tutorial</h1>
+      <blockquote>
+        <p>	This tutorial explains you step by step how to create and export your own character skins<br>
+	to the game by using 3D Studio Max 5.1, Character Studio 4 and Remedy 3D Studio Plugins.<br>
+	The tutorial requires that you already have some working experience with both 3DS Max and<br>
+	Character Studio.</p>
+        <p>Related files are available in here: <a href="downloads/Skin_examples.zip"><b>Skin_examples.zip</b></a></p>
+        <p><b>NOTE:</b> If you want to skip the skin-to-skeleton attachment process and just try out<br>
+		the KF2-Exporter, there is a _ExportPose.max-file for every example skin included<br>
+		in the tutorial. The files contain a pre-weighted skin attached to a skeleton that<br>
+		is ready for export.</p>
+      </blockquote>
+      <h2>Configuring 3D Studio Max</h2>
+      <blockquote>
+        <p>Before starting, set your 3DS Max units to Centimeters.</p>
+        <ul>
+          <li>Customize/Unit Setup->Metric/Centimeters</li>
+        </ul>
+      </blockquote>
+      <h2>Skeleton Setup</h2>
+      <blockquote>
+        <p>Load the "Male" or "Female"-skeleton (Male_SkinModeling_Pose.max or<br>
+        Female_SkinModeling_Pose.max)</p>
+        <ul>
+          <li>Select "Bip01"</li>
+          <li>Under &quot;Keyframing Tools" uncheck "Body Space Neck rotation"&nbsp;</li>
+          <li>Turn on Figure Mode by clicking on the "FigureMode On/Off"-icon. The icon turns<br>
+		yellow when Figure Mode is on.</li>
+        </ul>
+        <p align="center"><img border="0" src="images/skin_remedytoolsicons.gif" width="128" height="124"></p>
+      </blockquote>
+      <h2>Merging your Skin to the scene</h2>
+      <blockquote>
+        <p>From the File Menu click Merge. Browse to your character model and merge it.</p>
+        <p>Alternatively you can merge one of the included character skins. The available skins are:</p>
+        <ul>
+          <li>MaxPayne_Skin.max (male)</li>
+          <li>Cleaner_A_Skin.max (male)</li>
+          <li>MonaSax_B_Skin.max (female)</li>
+        </ul>
+        <p>If you choose to use one of these skins, you can skip the following steps and go straight to<br>
+		"Merging your Skin to the Skeleton".&nbsp;</p>
+        <ul>
+          <li>Collapse your skin into a single "Editable Mesh"-object</li>
+          <li>Select all faces and assign them all to Smoothing Group 1</li>
+          <li>Check that your character's joints conform to the skeleton joints as well	as possible.</li>
+          <li>Clean up your mesh: unify normals, remove double faces, edges and stray vertices.<br>
+		 Use "STL Check" and "Normal"-modifiers to do this.</li>
+          <li>Reset Xform. From the Utilities tab click on "Reset Xform" to reset the character<br>
+		scale and transforms. Go to the modifier stack and collapse the stack again to Editable<br>
+		 Mesh.</li>
+          <li>Move the skin's Pivot to World origin. From Hierarchy/Pivot/Adjust Pivot click<br>
+		 "Affect Pivot Only" and move the pivot to World origin (0,0,0). Under Adjust<br>
+		  Pivot/Alignment click "Align to World".</li>
+        </ul>
+      </blockquote>
+      <h2>Materials</h2>
+      <blockquote>
+        <p>Open the Material Editor and choose "KF Material" as the material type. The&nbsp;<br>
+		"KF Material" is the only material type supported by the game's skins.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/skin_material_1.jpg" width="500" height="359"></p>
+      <blockquote>
+        <p>Check "Diffuse", click on the material slot next to it and choose "Bitmap" from<br>
+		the list.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/skin_material_2.jpg" width="500" height="425"></p>
+      <blockquote>
+        <p>The only supported bitmap type is .DDS. Apply the material to the skin.</p>
+        <p>Use the "Multi/Sub-Object" material to apply multiple KF materials on one skin<br>
+		The Multi/Sub-Object material slot numbers correspond to the "Material ID" numbers<br>
+		under Editable Mesh. Open one of the included skin files for further reference.</p>
+      </blockquote>
+      <h2>Merging your Skin to the Skeleton</h2>
+      <blockquote>
+        <ul>
+          <li>Select your skin</li>
+          <li>Apply Physique modifier</li>
+          <li>From the Physique Level of Detail/Skin Update choose Deformable and uncheck all<br>
+		 except Link Blending. From Stack Updates check &quot;Reassign Globally"</li>
+        </ul>
+      </blockquote>
+          <p align="center"><img border="0" src="images/skin_physiqueinitiliazation1.gif" width="95" height="232"></p>
+      <blockquote>
+        <ul>
+          <li>Click "Attach to Node" and from the rollout choose "Bip01"</li>
+          <li>From the Physique Initialization/Link Settings uncheck Continuity and from<br>
+		Vertex - Link Assignment/Blending Between Links choose "4 links" and uncheck Create<br>
+		Envelopes. Click "Initialize".</li>
+        </ul>
+      </blockquote>
+      <p align="center"><img border="0" src="images/skin_physiqueinitiliazation2.gif" width="500" height="225"></p>
+      <blockquote>
+        <ul>
+          <li>Disable the unused links. This is done in order to avoid any problems while&nbsp;<br>
+		loading/saving the skin's vertex weights. Under Physique/Link choose the unused links<br>
+		and disable them by unchecking Active from the Link Settings. The deactivated links&nbsp;<br>
+		will turn black.&nbsp;</li>
+        </ul>
+      </blockquote>
+      <p align="center"><img border="0" src="images/skin_skeleton_unused_1.jpg" width="600" height="439"><br>
+      <img border="0" src="images/skin_skeleton_unused_2.jpg" width="600" height="439"><br>
+      <img border="0" src="images/skin_skeleton_unused_3.jpg" width="600" height="439"><br>
+      <img border="0" src="images/skin_skeleton_unused_4.jpg" width="600" height="439"></p>
+      <h2>Vertex Weighting</h2>
+      <blockquote>
+        <p>The vertex weighting is done the same way as any other character skinning in Character<br>
+		Studio. The only limitations are that you can 1) only weight your vertices to a maximum<br>
+		of four bones and 2) none of the vertices' weight values can go to zero. You can check<br>
+		if your model meets these limitations by using the "Remedy Physique Tool".</p>
+        <p><b>NOTE:</b> If you chose to use one of the skins we provided for the this tutorial, you can<br>
+		load their weighting directly from the _weights.txt-files. Jump to the next chapter to<br>
+		learn how to Load and Save vertex weights.</p>
+        <ul>
+          <li>Select Editable Mesh from your skin's modifier stack</li>
+          <li>Click the "Remedy Physique Tool"-icon</li>
+        </ul>
+      </blockquote>
+      <p align="center"><img border="0" src="images/skin_rmd_phytool.gif" width="107" height="291"></p>
+      <blockquote>
+        <p>A window opens, displaying the skin's vertex-to-bone influence distribution. In our<br>
+	    example picture we can see how MonaSax_B's 2399 vertices are weighted: 1824 vertices<br>
+	    are weighted to one bone, 521 to two bones, 53 to 3 bones and 1 vertex<br>
+	    to 4 bones. No vertices are weighted to more than 4 bones or are below the tolerance<br>
+	    weight or zero. If your skin has any of these problematic vertices do the following:</p>
+        <ul>
+          <li>Click the + button next to the ">4 Bones" to select and show the problem vertices.</li>
+          <li>Click "Kill Lowest Influence Node" to remove the least affecting bone from the<br>
+	    vertices' weighting.</li>
+          <li>Click the + button next to the "Below Tolerance" to select and show the problem<br>
+	     vertices.</li>
+          <li>Click "Kill Nodes Below Tolerance" to remove any zero weights from the weighting.</li>
+          <li>Click Refresh and check if any vertices have appeared that have "0 bone" weights.<br>
+	    Every vertex must be weighted to at least one bone.</li>
+        </ul>
+        <p><b>Tip: </b> Lock vertices before modifying the underlying skin. This way you avoid messing<br>
+		 up the vertex weights when making modifications.&nbsp;</p>
+      </blockquote>
+      <h2>	Loading/Saving Vertex Weights</h2>
+      <blockquote>
+        <p>To Save and Load your skin's vertex weights click the "MP2_SaveLoad" icon.</p>
+        <p align="center"><img border="0" src="images/skin_mp2saveload.gif" width="117" height="222"></p>
+        <p>In the bottom of the rollout there are three buttons. The Save/Load vertex weights are<br>
+		self-explanatory. You can load old skin weights to any new model, but the results will<br>
+		not be predictable if the new model varies greatly from the original.&nbsp;<br>
+		"Load indexed weights" works only if the skin's vertex count hasn't been changed (no<br>
+		vertices have been added or deleted).</p>
+      </blockquote>
+      <h2>Exporting .KF2</h2>
+      <blockquote>
+        <p>Before exporting, check that all the skin transforms are reset (Position [0,0,0], Rotation<br>
+		[0,0,0] and Scale [100,100,100]). If not, choose Hierarchy->Adjust Transform and click<br>
+		Reset: Transform and Scale. Check also that the pivot is still located at the origo<br>
+        (0,0,0).</p>
+        <ul>
+          <li>Remove zero vertex weights and >4 bone weight assignments by using the "Remedy Physique<br>
+		 Tool"</li>
+          <li>Select "Bip01"</li>
+          <li>Apply Figure Mode</li>
+          <li>Load the Male or Female SkinExport_Pose.fig, depending on your base skeleton type.<br>
+		The skin's fingers curl up to the export pose. You can revert your biped back to its<br>
+		 original modeling pose by loading Male or Female SkinModeling_Pose.fig.</li>
+          <li>From the File Menu choose "Export". Browse to your desired export directory.<br>
+		 Under "Save as Type" choose "KF2 Exporter". Use the following settings:</li>
+          <li>[KF2_Exporter.psd].</li>
+          <li>Press OK.</li>
+        </ul>
+      </blockquote>
+      <h2>Adding a new Skin to the game</h2>
+      <blockquote>
+        If you want the skin to be a player controllable character (like Max Payne or<br>
+            Mona Sax), you should begin by duplicating the "database\skins\MaxPayne.txt" to<br>
+            a new file name such as "database\skins\MySkin.txt". Then create a new folder<br>
+            called "MySkin" and copy your 3dsmax exported "MySkin.kf2" and "MySkin.skd"<br>
+            files there. Then edit (at the bottom of the file) the "MySkin.txt" to use your<br>
+            own .kf2 and .skd files.
+        <p>If you want to add a new enemy to the game, you should use the same process,<br>
+            but begin with one of the Cleaner skins for example. This is as the player<br>
+            skins require very different skeletal movement and other definitions to work<br>
+            properly.<br>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - Releasing Your Mod</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<base target="main">
+<script type="text/javascript" src="https://museum.rockstarnexus.com/websites/2011-05/games/maxpayne/cookieCheck.js"></script>
+<!-- Header Analytics (UA-15984839-3) -->
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(["_setAccount", "UA-15984839-3"]);
+				_gaq.push(["_trackPageview"]);
+				(function() {
+					var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+					ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+					var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+				})();
+				
+				(function(window) {
+					var domReady = function($) {
+						var filetypes = /\.(zip|exe|dmg|pdf|doc*|xls*|ppt*|mp3|jpg|themepack|wmv|mp4|mov|flv)$/i;
+						$("a").filter(function() { return !$(this).data("notrack"); }).each(function() {
+							var href = $(this).attr("href");
+							if(!href)
+								return;
+							if(href.substr(0, 4) == "aim:") {
+								$(this).click(function() {
+									var url = href.replace("aim:", "");
+									_gaq.push(["_trackEvent", "Download", "Click-aim", url]);
+								});
+								return;		
+							}
+
+							if(href.substr(0, 7) == "mailto:") {
+								$(this).click(function() {
+									var emailAddr = href.replace("mailto:", "");
+									_gaq.push(["_trackEvent", "Email", "Click", emailAddr]);
+								});
+								return;
+							}
+
+							if(!href.match(/^https?\:/))
+								return;
+
+							if(href.match(filetypes)) {
+								$(this).click(function() {
+									var extParts = href.split(".");
+									var ext = extParts[extParts.length - 1];
+									_gaq.push(["_trackEvent", "Download", "Click-" + ext, href]);
+
+									if($(this).attr("target") == "_blank")
+										return;
+									setTimeout(function() { location.href = href }, 250);
+									return false;
+								});
+								return;
+							}
+							
+							if(href.indexOf(document.domain) >= 0)
+								return;
+
+							$(this).click(function() {
+								var link = href.replace(/^https?\:\/\//, "");
+								_gaq.push(["_trackEvent", "External", "Click", link]);
+								if($(this).attr("target") == "_blank")
+									return;
+								setTimeout(function() { location.href = href }, 250);
+								return false;
+							});
+						});
+					};
+
+					if(!window.jQuery || typeof(window.jQuery) != "function") {
+						(function() {
+							var jq = document.createElement("script"); jq.type = "text/javascript";
+							jq.src = "http://media.rockstargames.com/js/jquery/jquery-1.4.4.min.js";
+							var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(jq, s);
+						})();
+						
+						var ljq;
+						var _ljqi = 0;
+						(ljq = function() {
+							if(_ljqi > 20)
+								return;
+							if(window.jQuery && typeof(window.jQuery) == "function")
+								return window.jQuery(document).ready(domReady);
+							_ljqi++;
+							setTimeout(ljq, 250);
+						})();
+					} else {
+						window.jQuery(document).ready(domReady);
+					}
+				})(window);
+			</script>
+<!-- End Header Analytics (UA-15984839-3) -->
+</head>
+
+<body onLoad="javascript:cookieCheck();" >
+
+				<!--
+				Start of DoubleClick Floodlight Tag: Please do not remove
+				Activity name of this tag: Rockstar Games Homepage
+				URL of the webpage where the tag is expected to be placed: http://www.rockstargames.com/
+				This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+				Creation Date: 02/01/2011
+				-->
+				<script type="text/javascript">
+					var axel = Math.random() + "";
+					var a = axel * 10000000000000;
+					document.write('<iframe style="position:absolute;left:-10000px;top:-10000px" src="http://fls.doubleclick.net/activityi;src=3055121;type=rocks806;cat=rocks465;ord=' + a + '?" width="1" height="1" frameborder="0"></iframe>');
+				</script>
+				<noscript>
+					<iframe style="position:absolute;left:-10000px;top:-10000px" src="http://fls.doubleclick.net/activityi;src=3055121;type=rocks806;cat=rocks465;ord=1?" width="1" height="1" frameborder="0"></iframe>
+				</noscript>
+				<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p>&nbsp;</p>
+      <h1>
+      Releasing your mod</h1>
+      <blockquote>
+        <p align="left">This tutorial covers the little things you should be aware of when you want to release a mod. I.e. editing the menus, testing, packing your data into .MPM files and other miscellaneous tips.</p>
+      </blockquote>
+      <h2 align="left">Editing the menus</h2>
+      <blockquote>
+        <p align="left">Since you want to make it as easy as possible for people to play your mod, you
+        probably want to edit the menu.txt to add an option to start your custom levels (if you have any) straight from the menus. You do this by editing the file
+        <b>...\data\menu\menu.txt</b>.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/releasing_1.gif" width="640" height="579"></p>
+      <blockquote>
+        <p align="left">Just copy/paste the "GCID_STARTTUTORIAL" item and edit its GM_Init to point at your level, as you can see has been done in the example above.</p>
+        <p align="left">And as you probably noticed, you can also modify the menu bitmaps to give your mod a fresh feeling. The original bitmaps can be found from
+        <b>...\data\menu\bitmaps</b>. Note that even though the original files are .TGA files, you can use .JPG file just as well, to save some download time from the gamers.</p>
+      </blockquote>
+      <h2 align="left">Testing</h2>
+      <blockquote>
+        <p align="left">Never forget to test  your mod thoroughly. Run through the levels and try weird things that might break the level. Make your friends try it a few times. Try it in maximum texture detail settings (It's very easy to use too much texture memory by having too much textures and different characters in the levels, so watch out for that). Fix whatever errors you might find, and test the changes.</p>
+        <p align="left">Once you know it works well, pack all the needed data files
+        into an .MPM file. You can do this for example by copying all the data files
+        you have created or changed into a temporary directory. Into their own respective subdirectories. It could look little bit something like this:</p>
+        <blockquote>
+          <p align="left" class="fixed">C:\TEMP\data<br>
+          C:\TEMP\data\database<br>
+          C:\TEMP\data\menu<br>
+          C:\TEMP\data\globalconfig.txt<br>
+          C:\TEMP\data\database\levels<br>
+          C:\TEMP\data\database\materials.txt<br>
+          C:\TEMP\data\database\levels\Mylevels<br>
+          C:\TEMP\data\database\levels\levels.txt<br>
+          C:\TEMP\data\database\levels\Mylevels\Level1.ldb<br>
+          C:\TEMP\data\database\levels\Mylevels\Level2.ldb<br>
+          C:\TEMP\data\menu\menu.txt<br>
+          </p>
+        </blockquote>
+        <p align="left">And then using RasMaker:</p>
+        <blockquote>
+          <p align="left" class="fixed">rasmaker -a -p c:\temp mymod.mpm</p>
+        </blockquote>
+        <p align="left">This will pack everything you've got in a C:\Temp directory into a Max Payne Mod file called
+        <b> mymod.mpm</b>. Now you should still test that it works and all the required data is in the pack. To do this, you should have a fresh install of Max Payne somewhere. This means the database shouldn't be extracted from the .RAS files. If you have the original .RAS files somewhere safe, you can just copy them to the Max Payne directory, and rename the \data -directory into something else while you are testing. Or better yet, you can simply re-install Max Payne into another directory which you use for testing and running
+        .MPM files.</p>
+        <p align="left">If you attempt to run an .MPM file while you have the database extracted, it will just prefer files from the exported database over the files inside your mod file, and you won't know if it actually worked or not.</p>
+      </blockquote>
+      <h2 align="left">Making your mod available</h2>
+      <blockquote>
+        <p align="left">If you don't have the bandwidth for making the mod available on your own, there are numerous Max sites out there that might help you getting the mod out there, at least if it's any good. For example
+        you can ask for help from
+        <a href="http://www.3drealms.com/forums.html" target="_blank"> 3D Realms Forums</a>, which is also a nice place to make people aware of your mod.</p>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

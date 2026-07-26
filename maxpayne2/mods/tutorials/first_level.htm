@@ -1,0 +1,323 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>MaxED - Creating your first level</title>
+<base target="main">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="640">
+  <tr>
+    <td>
+      <p align="left">&nbsp;</p>
+      <h1 align="left">Creating your first level</h1>
+      <blockquote>
+        <p>In this tutorial you are going to learn how to create a basic level that you can export and launch in the game.</p>
+        <p>Download the resulting level of this tutorial <b><a href="downloads/First_Level_result.zip">First_Level_result.zip</a></b></p>
+      </blockquote>
+      <h2>About tool installation and exporting</h2>
+      <blockquote>
+        <p>After installing the Max Payne 2 -tools with default options, you will find all the tools in "C:\MaxPayne2Dev\"-directory, and an extra copy of Max Payne 2 in "C:\MaxPayne2Dev\Game\"-directory.&nbsp;</p>
+        <p>The latter contains the developer version of the game and all game
+        data that MaxED2 requires in order to work correctly. If you compare
+        your standard installation and the developer installation, you will
+        notice that the developer version has so called RAS-packages (Remedy
+        Archive System) opened and all game data is in more accessible form
+        under &quot;C:\MaxPayne2Dev\Game\Data\&quot;. In addition to visible
+        file structure differences, some menu items and game options are set
+        differently: when opening the developer version, the startup animation
+        is skipped, the game appears in window and the console output and input
+        with all developer related special keys are activated (for instance, go
+        to free camera mode with F3 during the game).</p>
+        <p>Before starting to make the first level, we should verify your
+        workpath by simply exporting the example level that comes with the mod tools.
+        Launch MaxEd2 and click <b>File/Open</b> and open up the "ExampleLevel.lv2" from
+        &quot;C:\MaxPayne2Dev\Levels\&quot;</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_010.jpg" width="512" height="372"></p>
+      <blockquote>
+        <p>Now simply click <b>File/Export</b> and MaxED2 will ask where to export, showing you the directory "C:\MaxPayne2Dev\Game\data\database\levels\" by default. Just select go to "work" subdirectory and export onto
+        &quot;ExampleLevel.LDB&quot;</p>
+        <p>MaxED will display the export information on its output console, and once it's done it will display "Export complete" and export time. The export time in this example level is quite minimal, but with large levels the exporting can take minutes.</p>
+        <p>Now with the level exported properly to the game database, we can launch Max Payne 2 to take a look at the level. Note that the level was NOT exported to the database that your actual game installation uses, but to the database that the "Max Payne 2 Developer"-copy of the game uses. The tool installer also added a shortcut to "Max Payne 2 Developer" to your desktop, so launch that.</p>
+        <p>Once in the game, simply click the specialty of the developer
+        version: "Start Example Level", which has been added to the menus during tool installation.
+        Hopefully everything works. Now you have established your workpath and
+        can be sure that your tools are installed correctly.</p>
+      </blockquote>
+      <h2>Camera and editing modes</h2>
+      <blockquote>
+        <p>Now that you have some idea about the database structure, we can start making a level of our own. Switch back to MaxED, close the example level, and open a new level
+        <b>File/New</b>.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_020.jpg" width="512" height="372"></p>
+      <blockquote>
+        <p>MaxED is based on <b>modes</b>. This simplifies the UI and editing
+        process by distributing different functions to relevant groups like
+        &quot;all object related&quot; and &quot;all polygon related&quot;.
+        Depending on the task at hand, you need to pick the right mode to be
+        able to do certain things.</p>
+        <p>The mouse cursor is indicating the current editing mode. In brief, you can switch between editing modes with function keys, and the modes are:</p>
+        <blockquote>
+          <p><b>F3</b> - Build, for building new meshes and creating new entities.<br>
+          <b>F4</b> - Polygon, for polygon-level manipulation<br>
+          <b>F5</b> - Object, for object-level manipulation<br>
+          <b>F6</b> - Texture, for texture manipulation<br>
+          <b>F7</b> - Portal, for portal creation<br>
+          <b>F12</b> - Grid, for grid manipulation (most of grid manipulation functions are available in some other modes too)</p>
+        </blockquote>
+        <p>Plus there is a <b> camera mode</b> for moving around. You can toggle it on and off with
+        <b>SPACE</b>.</p>
+        <p><b>NOTE: </b>Unlike in previous MaxED, the camera mode is now a
+        &quot;supermode&quot;, which works &quot;on top&quot; of the current
+        mode, and does not interrupt anything. For example you can start drawing
+        a new mesh in F3 mode, go to camera mode, move to a new location, come
+        back to F3 mode (either by pressing <b>S</b><b>pace</b> or <b>F3</b>)
+        and place the next vertex.</p>
+        <p>Let's try the camera mode first. Press <b> SPACE</b> to toggle the camera mode on. You will see the mouse cursor changing into a camera icon to indicate you are in camera mode.</p>
+        <p>Moving the mouse while holding down LEFT MOUSE BUTTON (<b>LMB</b>), you can freely look around. Holding down RIGHT MOUSE BUTTON
+        (<b>RMB</b>), you can move forwards and backwards. Holding down MIDDLE MOUSE BUTTON
+        (<b>MMB</b>) or SHIFT you can strafe to all directions.</p>
+        <p><b>NOTE</b>: MaxED2 assumes that you have a three button mouse.
+        Unfortunately you can not use MaxED without a third button, as there is
+        no shortcut to replace this function and so many of the commands are
+        only accessible through the middle button menu.</p>
+        <p><b>TIP: </b> Additionally, by holding <b>Ctrl</b> and <b> LMB</b> you can rotate the camera around the geometry under the mouse pointer. Try it once we have built some geometry.</p>
+        <p>After familiarizing yourself with moving a bit, let's try building our first room. First let's reset the camera to its initial position by switching to F12-mode and hitting MMB for the command menu. Select
+        <b>Reset Camera.</b></p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_030.gif" width="350" height="300"></p>
+      <h2>Creating geometry</h2>
+      <blockquote>
+        <p>To create new geometry, you need to draw the desired outline onto the grid in F3-mode. Let's create an outline of two small rooms, connected with a small corridor.</p>
+        <p>1.	Enter F3-mode (build) by pressing <b> F3</b><img border="0" src="images/first_040.gif" align="right" width="90" height="163"></p>
+        <ul>
+          <li>The cursor will change indicating the editing mode</li>
+        </ul>
+        <p>2.	Make sure the grid size is set to 1 meter</p>
+        <ul>
+          <li>Grid size is indicated right above the MaxED2 main view.</li>
+          <li>You can change grid size with <b> numpad +/-</b></li>
+        </ul>
+        <p>3.	Click onto the grid with <b> LMB</b> to place the first vertex and start drawing the room shape</p>
+        <ul>
+          <li>To toggle between move mode and F3 mode, press
+        <b> space</b> at any time.</li>
+          <li>To cancel the drawing, press <b> escape</b></li>
+          <li>To remove the previous vertex, press <b> delete</b></li>
+        </ul>
+        <p>4.	Looking at the length indicator in the lower left corner of MaxED2, make the first line 8 meters long.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_050.gif" width="388" height="327"></p>
+      <blockquote>
+        <p>5.	Keep drawing the shape as in the pictures (grid size is 1 meter)</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_060.gif" width="160" height="160">&nbsp;
+        <img border="0" src="images/first_070.gif" width="250" height="180"></p>
+      <blockquote>
+        <p>6.	Once you have clicked in the final corner, click <b> RMB</b> to generate a 3D mesh.</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_080.jpg" width="503" height="385"></p>
+      <blockquote>
+        <p align="left">If you made a mistake and the room doesn't look right, you can go to
+        <b> F5</b> mode, select the mesh with <b> LMB</b> and simply <b> delete</b> it.
+        Come back to F3 mode and start over.</p>
+        <p>The resulting mesh has its faces pointing inwards, which is the way the room geometry is built in Max Payne 2 so that's how we want it. But this room is still only 1 meter high so we need to make it higher.</p>
+        <p>1.	Enter F4-mode (polygon) by pressing <b> F4</b></p>
+        <ul>
+          <li>The cursor will change and the polygon under the mouse pointer will always be highlighted</li>
+          <li>Press the "culled" button down at the toolbar to enable the selection of backface culled
+            polygons.	Handy shortcut to this is <b> insert</b><br>
+          </li>
+        </ul>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_090.gif" width="249" height="117"></p>
+      <blockquote>
+        <p><br>
+        3.	Point at the ceiling polygon, and press <b> down arrow</b> to extrude the room until it is 4 meters high</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_100.jpg" width="410" height="331"></p>
+      <blockquote>
+        <p>Now the mesh already looks like the way it will look in the game, but it doesn't meet the minimum requirements for it to be exported into the game yet. We still need to define the
+        <b> starting location</b> for the player, and we need to build <b> at least one portal</b> (Also called "exit") for purely technical reasons. Portals cut the level geometry into "rooms" and are used for visual optimization, just like in Max Payne 1.</p>
+        <p>First let's build the portal. We want to create it to the other end of the corridor.</p>
+        <p>1.	In F4-mode, point at the polygon as indicated in the picture, and press
+        <b>Shift-A</b> to place the grid there.</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_110.jpg" width="500" height="390"></p>
+      <blockquote>
+        <p>
+        2.	In F7-mode (portal), you can see a similar polygon / edge highlighting running actively as in F4 mode. Highlight any of the four edges that is intersecting with the grid, and click LMB to create the first vertex for the portal</p>
+        <ul>
+          <li>	To toggle between move mode and F7-mode, press space at any time.
+            Unlike in MaxED1, you can go to move mode during drawing and more
+            easily control the process.</li>
+        </ul>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_120.jpg" width="280" height="400"></p>
+      <blockquote>
+        <p>
+        3.	Keep building the shape, until you have placed all the 4 vertices.</p>
+        <ul>
+          <li>When drawing a portal, you MUST have highlighted an edge that is intersecting with the
+            grid (marked with red color in this picture).</li>
+        </ul>
+        <p>4.	When you have placed all the vertices, click <b> RMB</b> to create the portal. MaxED2 will still ask for vertex weld value, and we will accept the default value so just click OK.</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_130.jpg" width="280" height="400">&nbsp;&nbsp;
+        <img border="0" src="images/first_140.jpg" width="315" height="384"></p>
+      <blockquote>
+        <p>A cyan transparent surface will appear to indicate the portal (provided you have "exits" flag enabled in the
+        display filter), and the mesh will be divided into two rooms as you can see in the hierarchy view.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_160.gif" width="303" height="264">&nbsp;&nbsp;
+      <img border="0" src="images/first_150.jpg" width="236" height="379"></p>
+      <blockquote>
+        <p>To place the Jumppoint into the level to define the starting location of the player:</p>
+        <p>1.	Align the grid onto the floor (<b>Shift-A</b> in F4 mode)</p>
+        <p>2.	In F3 mode point at the desired location on the grid and press <b>N</b>
+        to create a new entity.</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_170.jpg" width="470" height="400"></p>
+      <blockquote>
+        <p>
+        3.	From the spawned &quot;New Entity&quot; dialog select &quot;Jumppoint&quot;</p>
+      </blockquote>
+        <p align="center"><img border="0" src="images/first_180.gif" width="469" height="246"></p>
+      <blockquote>
+        <p>
+        4.	From the spawned &quot;Entity Properties&quot; dialog we don't want to change anything. Just click OK.</p>
+        <p>A red sphere will appear on the floor indicating the starting location.</p>
+      </blockquote>
+      <p align="center"><img border="0" src="images/first_190.jpg" width="217" height="184"></p>
+      <blockquote>
+        <p>There can be multiple Jumppoints in the level, and the primary one is defined in the levels.txt script file in the game database. It is typically "::StartRoom::Jumppoint_00". When the game is not ran in developer mode, there HAS to be a
+        Jumppoint like that. In developer mode the game will just select one randomly if primary one is not found. To make this newly created
+        Jumppoint a primary one, let's still rename the room it is in as
+        &quot;StartRoom&quot;</p>
+        <p>1.	In F5-mode, point at the room with Jumppoint inside (don't click!) and hit enter for properties.</p>
+        <p>2.	To the "Name" field enter &quot;StartRoom</p>
+        <p><img border="0" src="images/first_200.gif" width="581" height="590"></p>
+        <p>The only other setting here that is applicable for rooms is <b>Sound
+        environment</b>, which is used to select the EAX pre-set for the room.</p>
+        <p>And now we are ready to export the level to the game and play it. To export to the game, let's export it on top of the ExampleLevel.LDB and launch the game to play the level.</p>
+        <p>If you are having problems with the exporting of the level, they are likely due to redundant vertex information in the .LV2 file (causing zero area triangles). To fix this, simply select all
+        (<b>Ctrl-A</b> in F5 mode), hit <b>F</b> and accept the default weld value.
+        If for some reason other problems appear, see if <b><a href="exporting.htm">Exporting
+        and optimization</a></b> article has some solutions to offer.</p>
+        <p align="center"><img border="0" src="images/first_220.jpg" width="512" height="384"></p>
+        <p align="left">Then you should go to game and test you new cool level,
+        as seen here. Admittedly the looks are quite barren still: no lighting,
+        details, appropriate texturing or enemies, but there is no escape from the truth: we
+        have made a new level from scratch and taken it to the game. The
+        first step is taken.</p>
+        <p>And there you go with the basics. To continue building more rooms you can create the meshes in F3 mode the same way as we did before, and then
+        Boolean the meshes together (In F5 mode press <b>U</b> for union, <b>S</b> for subtract and
+        <b>I</b> for intersect operations). Texturing, lighting and Booleans are
+        explained more closely in other articles and tutorials.&nbsp;</p>
+      </blockquote>
+      <h2>Extra words about the Display Filter<img border="0" src="images/first_210.gif" width="186" height="756" align="right"></h2>
+      <blockquote>
+        <p>In MaxED2 the user can use <b>Display Filter</b> (<b>F1</b>) to select which types of
+        entities they want to have displayed in the main view. Basically you set the flags on the objects you want to have displayed at a certain time.
+        It also includes some other visualization options.</p>
+      </blockquote>
+      <blockquote>
+        <p>The shortcuts in the display filter refer to the corresponding numpad keys</p>
+        <p><b>Rooms</b> - Flag to toggle room count optimization on, and count for setting the number of hops from the active room</p>
+        <p><b>Show BB</b> - To display the bounding boxes of the rooms that are optimized by the above setting</p>
+        <p><b>Static Objects</b> - To display static objects</p>
+        <ul>
+          <li><b>No-Draw materials</b> - To display polygons of static objects that are using a no-draw
+            material (such as &quot;Dummy&quot; or &quot;CharacterCollisionNodraw&quot;)</li>
+        </ul>
+        <p><b>Dynamic Objects</b> - To display dynamic objects</p>
+        <ul>
+          <li><b>No-Draw materials</b> - To display polygons of dynamic objects that are using a no-draw material</li>
+          <li><b>Names</b> - To display the names of the dynamic objects in the main view</li>
+          <li><b>Types</b> - To display a "DO" text on the DOs in the main view</li>
+        </ul>
+        <p><b>Non-rendering objects</b> - To display objects with "Do not render" object property set.</p>
+        <p><b>Non-character-colliding objects</b> - To display objects without "Character Collisions" object property set</p>
+        <p><b>Non-bullet-colliding objects</b> - To display objects without "Bullet Collision" object property set</p>
+        <p><b>Non-exporting objects</b> - To display objects with "Exclude from Game" object property set.</p>
+        <p><b>AI nodes</b> - To display the AI nodes</p>
+        <p><b>Keypoints</b> - To display floating FSMs, Characters, Jumppoints, Waypoints, Level items and Flares</p>
+        <ul>
+          <li><b>Names</b> - To display the names of above entities</li>
+          <li><b>Types</b> - To display the types of above entities</li>
+        </ul>
+        <p><b>Triggers</b> - To display all types of triggers</p>
+        <ul>
+          <li><b>Names</b> - To display the names of the triggers</li>
+          <li><b>Types</b> - To display the types of the triggers, basically displays what propery flags the triggers have set (Player collision, Use, Enemy collision, Bullet collision, Look At, Visibility)</li>
+        </ul>
+        <p><b>Pointlights</b> - To display the pointlights</p>
+        <ul>
+          <li><b>Falloffs</b> - To display the falloffs of pointlights</li>
+        </ul>
+        <p><b>Exits</b> - To display the portals</p>
+        <ul>
+          <li><b>Names</b> - To display the names of the portals</li>
+        </ul>
+        <p><b>Radiosity Lights</b> - To visualize the radiosity light emitters</p>
+        <ul>
+          <li><b>Spotlight Visualization</b> - To visualize the spotlight cones</li>
+        </ul>
+        <p><b>Volume Lighting Boxes </b> - To display the volume lighting boxes (If there are volume lighting boxes in the rooms, they will get volume lighting calculated only inside the boxes. Otherwise the whole room gets volume lighting. Volume lighting is used to light the characters and selected
+        DOs)</p>
+        <p><b>Gameplay-critical objects</b> - To display all the gameplay critical objects. (Gameplay critical objects are all the objects with any dynamic properties, all the rooms, and all the static objects and AI-nodes with with "Gameplay Critical" object property set. Basically this flag is used only when doing "File" -> "Export Selection Gameplay Critical", which means the game doesn't export all the static geometry nor all the AI nodes which aren't necessarily needed when testing some small things the levels, and the user can still include some objects to the gameplay critical export as well)</p>
+        <p><b>Non-gameplay-critical objects</b> - To display AI-nodes and static objects without "Gameplay Critical" object property set. This is a handy tool for selecting the critical ones you want to have included in the export.</p>
+        <p><b>Prefab Parent Nodes</b> - To display the prefab parent nodes. Prefab parents are also hidden when a prefab is not being edited, but this flag is handy when editing a prefab whose prefab parent node tends to get in the way.</p>
+        <ul>
+          <li><b>Names</b> - To display the prefab master names of the visible prefab parent nodes. That is, the name of the prefab as it is in the prefab list, NOT the name the instance has in the level hierarchy.</li>
+        </ul>
+        <p><b>Make Ungrouped Red</b> - To display all the ungrouped objects with red bounding box.</p>
+        <p><b>Grid</b> - To display the grid</p>
+        <p><b>Locator icons</b> - To display locator icons that are used for example when locating prefabs or materials from the level.</p>
+        <p><b>Lightmap density</b> - To display the lightmap densities with color codes.</p>
+        <p><b>Bounding Box Hulls</b> - To display a red wireframe bounding box for objects with "Generate Bounding Box Hull" object property set. This is used to view the orientation of the bounding box hull, as it is always oriented the same way as the pivot point of the object and may need re-orientation of the pivot point. Bounding Box Hulls can be used to quickly and easily simplify the "character collision" geometry, which is used for ragdolls and physical objects as well as living characters. Thus the object needs to be character colliding before this object property can be used. The bullet collisions are still performed against the exact visual geometry.</p>
+        <p>Many of the entities in the levels are affected by multiple different flags of the display filter, and in those cases you need to have all of the affecting flags set in order for the object to be displayed. For example if you have a dynamic object that is also set to non-rendering in its object properties ("Do not render"), you need to have both "Dynamic Objects" and "Non-rendering objects" set.</p>
+      </blockquote>
+      <h2>Extra words about the Grid</h2>
+      <blockquote>
+        <p>In MaxED2, the grid is probably your most important tool. The whole editing philosophy revolves around one free-camera viewport and freely alignable grid.</p>
+        <p>The grid can be aligned by highlighting a polygon in F4-mode and pressing
+        <b>A</b> (Align grid to selected face) or <b>Shift-A</b> (align in world coordinate system).</p>
+        <p>Aligning grid to selected face (<b>A</b>) means the grid will be aligned on the plane of the highlighted polygon, orientated by the highlighted edge (red line indication), and snapped to the highlighted vertex (white square
+        indication, a tick mark).</p>
+        <p>Align in world (<b>Shift-A</b>) means the grid will be aligned, orientated and snapped along the absolute world coordinate that is closest to the highlighted polygon. The current grid size selection is used as the world grid division as well.</p>
+        <p>As a rule of thumb you should always when possible use <b>Shift-A</b>
+        to ensure that the microscopic deviations in the geometry don't cumulate over time when
+        continuously aligning grid to misaligned surfaces/edges. The floating point inaccuracy alone prevents objects to stay in perfect alignment and for that reason you should use the fixed absolute world coordinates as your alignment authority. Note that the selected grid size also determines the grid size of the absolute world coordinates.</p>
+        <p>You can also re-orientate and re-snap the grid by any other edge and/or vertex in the world. To do this you must be in F3-mode, highlight an edge and a vertex, and press
+        <b>A.</b> The grid will be re-orientated according to the projection of the edge along the normal of the grid, and the pivot point of the grid will be snapped to the projection of the
+        highlighted vertex (along the normal of the grid).</p>
+        <p>You can also snap the grid pivot point to an intersection point of an edge and the grid. To do this, in F3-mode highlight an edge that is in intersecting alignment to the grid, and press
+        <b>Shift-A.</b></p>
+        <p>Additionally in F12 mode you can rotate the grid freely (Hold <b>1</b>, <b> 2</b> or
+        <b> 3</b> and drag), rotate the grid by 90 degrees (<b>4</b>, <b> 5</b> or
+        <b>6</b>), move grid (<b>LMB</b> or <b> RMB</b> and drag, or <b> Arrow keys</b> and
+        <b> PageUp</b> &amp; <b>PageDown</b>)</p>
+        <p>With free rotation, as with all free rotation in MaxED2, the system snaps by the user-selected angle value, as displayed tool bar along the Grid size, and Camera movement speed. You can change this angle by SHIFT + numpad +/-</p>
+        <p>Play around with the grid for a while and you'll get the hang of it.
+        Fluent grid use is the key to fluent MaxED2 use especially when creating
+        new geometry.
+        </p>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+
+
+</body>
+
+</html>
