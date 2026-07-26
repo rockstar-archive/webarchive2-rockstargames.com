@@ -1,0 +1,235 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!--rockstararchive script-->
+<script type="text/javascript" src="https://rockstar-archive.h0rizon.dev/webarchive/js/rgPatcher.js"></script>
+<!--rockstararchive script-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>ROCKSTAR GAMES PRESENTS THE MANHUNT2 RADIO REBELLION SWEEPSTAKES</title>
+<script type="text/javascript">
+var playURL = window.location.href;
+var queryString = playURL.split("?")[1];
+
+if(queryString){
+	params = queryString.split("play=")[1]
+}else{
+	params = "none";
+}
+if(!params){
+	params = "none";
+}
+
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+if (navigator.appVersion.indexOf("MSIE")!=-1){
+	eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=660,height=434');");
+}else{
+	eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=640,height=428');");
+}
+
+}
+</script>
+<script src="mainCookieCheck.js" type="text/javascript"></script>
+<script>
+var expireDate = new Date();
+var year = expireDate.getYear(); 
+year = (year < 1900) ? year + 1900 : year;
+expireDate.setYear(year + 3);
+
+function cookieCheck() {
+  var allcookies = document.cookie;
+  var detectCookie = allcookies.indexOf("contest_mh2contest_check=");
+   var strQueryString = allcookies.substr(allcookies.indexOf("=")+1, 2).toLowerCase(); 	
+	if (detectCookie != -1) {
+		if(strQueryString <= 13){
+			location.replace("http://www.rockstargames.com/esrb/");
+		}else{
+			location.replace("rules.html");
+		}
+	}
+}
+	
+//creates a cookie with the values passed in
+function my_setCookie(nam, val, expire, domain, path) {
+	var cookie_str = "";
+	cookie_str += nam + "=" + escape(val);
+	cookie_str += "; expires=" + expire.toGMTString();
+	document.cookie = cookie_str;
+};
+
+function setCookie(age) {    
+	my_setCookie("contest_mh2contest_check", age , expireDate, ".rockstargames.com", "/");
+} 	
+
+function checkIt(){
+	var agt=navigator.userAgent.toLowerCase();
+	var appVer = navigator.appVersion.toLowerCase();
+	var is_mac = (agt.indexOf("mac")!=-1);
+	var iePos  = appVer.indexOf('msie');
+	
+	if(iePos !=-1 && is_mac){
+		location.href="index_ie.html";
+	}
+}
+	//window.onload=checkIt;
+</script>
+
+<script>
+function validate(){
+	result = true;
+	for(x=0; x<8; x++) {
+		if (document.frmReg.elements[x].value=='') result = false;
+	}
+	
+	if (!result) {alert('Please fill out all the fields.');}
+	else{
+		//check email
+		str = document.frmReg.elements[3].value;
+		strLen=str.length;
+		
+		//check if @ and . exist
+		if((str.indexOf(".") < 1) || (str.indexOf("@") < 2) || (str.indexOf(".")+1 >= strLen)){
+			result = false;
+			alert('Please enter a valid email address.');
+		}
+		//if @ and . exist check if anything else exists
+		else{
+			if(strLen<6){
+				result = false;
+				alert('Please enter a valid email address.');
+			}
+			else{
+				//check age
+				str='';
+				str=isNaN(document.frmReg.elements[2].value);
+				if(str){
+					result = false;
+					alert('Please enter a valid age.');
+				}
+				else{
+					agizzle=document.frmReg.elements[2].value;
+					if(agizzle < 18){
+						document.frmReg.reset();
+						result = false;
+						setCookie(agizzle);
+						if(agizzle >= 13){
+							alert('Sorry, but your entry is not valid.  Please see the official rules for details.');
+							document.location.href="rules.html";
+						}
+						else{
+							alert('Sorry, but your entry is not valid.  Please see our privacy policy for more information.');
+							document.location.href="http://www.rockstargames.com/esrb/";
+						}
+					}
+					else{
+						result = true;
+					}
+				}
+			}
+		}
+	}
+	return result;
+}
+</script>
+<script type="text/javascript" src="iefix.js"></script>
+<style type="text/css">
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;	
+}
+
+.fillme {
+	font-family: Georgia;
+	font-color: #000000;
+	font-size: 11px;
+}
+
+.legal {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 10px;
+}
+
+
+			</style></head>
+<body bgcolor="#000000" onLoad="cookieCheck();">
+
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+		<a href="dixmor"></a>
+		<script type="text/javascript">
+		evilIE();
+		</script>
+	</td>
+  </tr>
+  <tr align="center">
+    <td>
+	<img src="images/spacer.gif" height="22"><br>
+	<img src="images/enter.gif" width="372" height="87"><br>
+	<img src="images/spacer.gif" height="15"><br>
+	<img src="images/wii.jpg" width="400" height="107" border="0" usemap="#Map"><br>
+	<img src="images/spacer.gif" height="20"><br>
+	<img src="images/text1.gif" width="631" height="48"><br>
+	<img src="images/spacer.gif" height="15"><br>
+	<img src="images/text2.gif" width="526" height="50" border="0" usemap="#Map2"><br>
+	<img src="images/spacer.gif" height="15"><br>
+	<img src="images/text2-20.gif" width="548" height="16" border="0" usemap="#Map3"><br>
+	<img src="images/spacer.gif" height="40"><br>
+	</td>
+  </tr>
+  <tr align="center">
+	<td>
+		<table width="567" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr>
+				<td style="color:#ffffff;text-transform:uppercase;"><br><br>
+					This contest is now closed.  Winners will be announced to the Rockstar Games email list soon.  Click <a href="http://www.rockstargames.com/subscriptions/us/" target="_blank" style="color:#ffffff;text-transform:uppercase;">here</a> to subscribe.
+<br><br><br>
+				</td>
+			</tr>
+		</table>
+	</td>
+  </tr>
+  <tr align="center">
+    <td>
+		<img src="images/spacer.gif" height="34"><br>
+<img src="images/logos.gif" width="670" height="55" border="0" usemap="#Map4"><br>
+		<img src="images/spacer.gif" height="23"><br>
+		<!--<a href="http://www.rockstargames.com/legal" target="_blank"><img src="images/legal.gif" width="50" height="13" border="0"></a> --><br>
+	</td>
+  </tr>
+  <tr align="center">
+            	<td style="padding:10px 0;font-size:12px">
+            		<a href="http://www.rockstargames.com/privacy/" style="color:#ffffff;text-transform:uppercase;" target="_blank">PRIVACY POLICY</a>
+            	</td>
+            </tr>
+  <tr align="center">
+	<td>
+		<table width="670" border="0" align="center" cellpadding="0" cellspacing="0">
+			<tr align="center">
+				<td>
+					<span class="legal">© 2006 Rockstar Games. All rights reserved.  Rockstar Games, the <img src="images/legal_logo.gif"> logo, and related logos are trademarks and/or registered trademarks of Take-Two Interactive Software, Inc.  Wii and the Wii logo are trademarks of Nintendo. © 2006 Nintendo. This contest is not sponsored or endorsed by Nintendo.  The ratings icon is a trademark of the Entertainment Software Association.</span><br/><br/>
+				</td>
+			</tr>
+		</table>
+	</td>
+  </tr>
+</table>
+
+
+<map name="Map"><area shape="rect" coords="1,1,201,112" href="javascript:popUp('wii1.html')" ><area shape="rect" coords="201,2,400,112" href="javascript:popUp('wii2.html')" ></map>
+<map name="Map2"><area shape="rect" coords="163,32,391,50" href="http://www.myspace.com/radiorebellion" target="_blank"></map>
+<map name="Map3"><area shape="rect" coords="369,1,431,16" href="rules.html" target="_blank"></map>
+<map name="Map4"><area shape="rect" coords="87,0,211,58" href="http://www.myspace.com/radiorebellion" target="_blank">
+  <area shape="rect" coords="257,1,371,57" href="http://www.esrb.org" target="_blank">
+<area shape="rect" coords="412,1,482,53" href="http://www.nintendo.com" target="_blank">
+<area shape="rect" coords="524,1,582,65" href="http://www.rockstargames.com" target="_blank">
+
+
+</map></body>
+</html>
+
