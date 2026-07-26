@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hollywood >
+	<gallery carName="Chevrolet Corvette Z06">
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_2a.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_2a.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_2a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_2b.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_2b.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_2b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_2c.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_2c.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_2c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_2d.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_2d.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_2d.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_2e.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_2e.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_2e.jpg"/>
+	</gallery>
+</hollywood>

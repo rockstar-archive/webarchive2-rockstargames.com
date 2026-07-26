@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="1969 Ford Mustang Boss 302">
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_4a.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_4a.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_4a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_4b.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_4b.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_4b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_4c.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_4c.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_4c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_4d.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_4d.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_4d.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_4e.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_4e.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_4e.jpg"/>
+	</gallery>
+</doc>

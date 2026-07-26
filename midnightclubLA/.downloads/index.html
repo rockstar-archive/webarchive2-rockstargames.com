@@ -1,0 +1,44 @@
+<!--this file was added by the Rockstar Games Archive to recreate the redirect--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+
+<!-- Changed delay from 1 to 0 for instant redirect -->
+<meta http-equiv="refresh" content="0;url=../downloads">
+
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  a {
+    color: white; /* Forces link to be white instead of blue */
+    text-decoration: none; /* Optional: removes underline */
+  }
+</style>
+
+<script>
+  var targetUrl = '../downloads';
+
+  if (location.search) {
+    if (targetUrl.indexOf('?') === -1) {
+      targetUrl += location.search;
+    } else {
+      targetUrl += '&' + location.search.substring(1);
+    }
+  }
+
+  window.location.href = targetUrl;
+</script>
+</head>
+<body>
+  <!-- Text will now be white on black -->
+  <p>Redirecting to <a href="../downloads">/downloads REDIRECT BY ROCKSTAR GAMES ARCHIVE</a>...</p>
+</body>
+</html>
+<!--this file was added by the Rockstar Games Archive to recreate the redirect--> 

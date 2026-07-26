@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="Saleen S302 Extreme">
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_5a.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_5a.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_5a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_5b.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_5b.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_5b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_5c.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_5c.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_5c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_5d.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_5d.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_5d.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hollywood/thumb_5e.jpg" fullsize="http://media.rockstargames.com/mcla/img/hollywood/screen_5e.jpg" hidef="http://media.rockstargames.com/mcla/img/hollywood/hidef_5e.jpg"/>
+	</gallery>
+</doc>

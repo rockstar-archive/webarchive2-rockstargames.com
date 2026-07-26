@@ -1,0 +1,276 @@
+<xml limelight="http://media.rockstargames.com/mcla/" widgetassets="widget/a/" swf="http://www.rockstargames.com/midnightclubLA/widget/a/320.365/index.swf">
+	<videos title="Videos" folder="videos/" id="0">
+		<item title="South Central Trailer" thumb="sctrailer1-90.jpg" poster="sctrailer1-320.jpg" flv="MCLA_South_Central_320x180.flv" id="5" available="true"/>
+		<item title="Police Pursuit Trailer" thumb="copsthumb.jpg" poster="copsscreen.jpg" flv="MCLA COPS_US_60 MULTI_320.flv" id="4" available="true"/>
+		<item title="Trailer 4" thumb="tailer4thumb.jpg" poster="trailer4screen.jpg" flv="MCLA T4 - Rockstar ON_320.flv" id="3" available="true"/>
+		<item title="Trailer 3" thumb="Trailer_Thumbcaps_3.jpg?llsmd" poster="Trailer_Screen_Caps_3.jpg?llsmd" flv="mcla_tr3_320_b.flv" id="0" available="true"/>
+		<item title="Trailer 2" thumb="Trailer_Thumbcaps_2.jpg?llsmd" poster="Trailer_Screen_Caps_2.jpg?llsmd" flv="mcla_tr2_320_b.flv" id="1" available="true"/>
+		<item title="Trailer 1" thumb="Trailer_Thumbcaps_1.jpg?llsmd" poster="notrailercap_320x180.jpg" flv="mcla_tr1_320_b.flv" id="2" available="false"/>
+	</videos>
+	<cars title="Cars" folder="" id="1" listnum="12">
+	
+	
+	<item title="Mercedes-Benz S600 DUB Edition" id="24">
+			<text>The big-body Mercedes-Benz S600 may be a monolith of a German sedan, but this front-engine, all-wheel drive beast contains a 5.5-liter twin-turbo V12 with 510 HP.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/mercedes600/t1.jpg?iwtfc" full="cars/mercedes600/1.jpg?iwtfc" vid="video/hollywood/widget/flv/Mercedes S600_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/mercedes600/t2.jpg?iwtfc" full="cars/mercedes600/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		<item title="Audi R8" id="23">
+			<text>With quick accelerdoation, high top speed and superior handling, the Audi R8 is an audacious entry into the world of super sport cars.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/audir8/t1.jpg?iwtfc" full="cars/audir8/1.jpg?iwtfc" vid="video/hollywood/widget/flv/Audi R8_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/audir8/t2.jpg?iwtfc" full="cars/audir8/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		
+		
+		<item title="Saleen S7" id="22">
+			<text>Requiring an expert hand and steady nerves to handle properly, the Saleen S7 is a superlative supercar that can hit speeds of 250 mph.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/saleen7/t1.jpg?iwtfc" full="cars/saleen7/1.jpg?iwtfc" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/saleen7/t2.jpg?iwtfc" full="cars/saleen7/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		<item title="Mercedes-Benz SL65 AMG" id="21">
+			<text>A rare example of stylish luxury and brawny performance, the Mercedes-Benz SL65 AMG is meant for those with an appreciation for the best of both worlds.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/mercedesL65/t1.jpg?iwtfc" full="cars/mercedesL65/1.jpg?iwtfc" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/mercedesL65/t2.jpg?iwtfc" full="cars/mercedesL65/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		<item title="Lamborghini Murcielago Roadster" id="20">
+			<text>Named for a bull that defied death by sword 24 times, the Murcielago Roadster is one of the world’s most ferocious exotics.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/murcielago/t1.jpg?iwtfc" full="cars/murcielago/1.jpg?iwtfc" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/murcielago/t2.jpg?iwtfc" full="cars/murcielago/2.jpg?iwtfc" id="1"/>
+		</item>
+	
+	
+	
+	
+	
+	
+	
+		<item title="1999 Nissan Skyline GT-R V-SPEC" id="19">
+			<text>The cult-classic Skyline is a serious contender in the turns and drifts thanks to that renowned all-wheel drive and taut handling.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/skyline/t1.jpg?iwtfc" full="cars/skyline/1.jpg?iwtfc" vid="video/hollywood/widget/flv/Skyline_animrgb_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/skyline/t2.jpg?iwtfc" full="cars/skyline/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		<item title="Ducati 999R" id="18">
+			<text>The preferred mount for World Superbike riders, the Ducati 999R combines lightning fast acceleration with sharp handling for a ride that requires an extremely delicate touch.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/ducati/t1.jpg?iwtfc" full="cars/ducati/1.jpg?iwtfc" vid="video/hollywood/widget/flv/Ducati WebclipAnimRGB_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/ducati/t2.jpg?iwtfc" full="cars/ducati/2.jpg?iwtfc" id="1"/>
+		</item>
+		
+		<item title="1969 Ford Mustang Boss 302" id="17">
+			<text>Massive torque and rear-wheel drive combine to give the Ford Mustang Boss 302 the edge up on would-be competition.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/mustangboss/t1.jpg?llsmd" full="cars/mustangboss/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/mustangboss/t2.jpg?llsmd" full="cars/mustangboss/2.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="Mitsubishi Lancer Evolution IX MR" id="16">
+			<text>With excellent traction and solid power, the Mitsubishi Lancer Evolution, or "Evo" as it is known, is a superior mid-level tuner that can hold its own against any challenger.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/lancer/t1.jpg?llsmd" full="cars/lancer/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/lancer/t2.jpg?llsmd" full="cars/lancer/2.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="1971 Lamborghini Miura SV" id="15">
+			<text>With a groundbreaking 380 HP, V12 mid-engine mount and a timeless chassis designed by famed Italian car designer Marcello Gandini, the Lamborghini Miura is one of the most rare and beautiful sports cars in the world.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/miura/t1.jpg?llsmd" full="cars/miura/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/miura/t2.jpg?llsmd" full="cars/miura/2.jpg?llsmd" id="1"/>
+		</item>
+		
+		
+		
+		
+		
+		<item title="Chevrolet Camaro Concept DUB Edition" id="14">
+			<text>The Camaro Concept is proof positive that GM still knows how to deliver beauty and brawn in one superb package.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/camaro_dub/t1.jpg?llsmd" full="cars/camaro_dub/1.jpg?llsmd" vid="video/hollywood/widget/flv/Camaro__320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/camaro_dub/t2.jpg?llsmd" full="cars/camaro_dub/2.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="1969 Chevrolet Camaro RS SS" id="13">
+			<text>A top-of-the-line classic sports coupe that packs a 396-inch big block V8 engine, this rear-wheel drive monster is near impossible to beat in quarter mile sprints.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/camaro_69/t2.jpg?llsmd" full="cars/camaro_69/2.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/camaro_69/t1.jpg?llsmd" full="cars/camaro_69/1.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="1979 Pontiac Firebird" id="12">
+			<text>Powered by a 400-cubic-inch V8 and the improved stopping power of four-wheel disc brakes, the Trans Am is a red-blooded, ass-kicking true American original.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/firebird/t2.jpg?llsmd" full="cars/firebird/2.jpg?llsmd" vid="video/hollywood/widget/flv/Firebird US_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/firebird/t1.jpg?llsmd" full="cars/firebird/1.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="Dodge Charger SRT-8" id="11">
+			<text>With the most powerful production engine Chrysler has ever produced, the Charger is a beast off the line and a champion on the straightaways.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/charger/t2.jpg?llsmd" full="cars/charger/2.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/charger/t1.jpg?llsmd" full="cars/charger/1.jpg?llsmd" id="1"/>
+		</item>
+		
+		<item title="Mazda RX-8 Shinka" id="10">
+			<text>Capable of delivering over 237 HP and handling that shines in the curves, the RX-8 is one of the best sports cars available for less than $30,000.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/shinka/t1.jpg?llsmd" full="cars/shinka/1.jpg?llsmd" vid="video/hollywood/widget/flv/shinka.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/shinka/t2.jpg?llsmd" full="cars/shinka/2.jpg?llsmd" id="1"/>
+		</item>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<item title="Kawasaki Ninja ZX-14" id="9">
+			<text>Quick as a whip, the ZX-14 is always first off the line, but proper handling at high speeds takes a sure and delicate touch.</text>
+			
+			<item type="vid" title="Bike Vid" thumb="cars/kawasaki/t2.jpg?llsmd" full="cars/kawasaki/2.jpg?llsmd" vid="video/hollywood/widget/flv/Kawasaki Ninja Final anim rgb_320.flv" id="0"/>
+			<item type="img" title="Bike Shot" thumb="cars/kawasaki/t1.jpg?llsmd" full="cars/kawasaki/1.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Aston Martin V8 Vantage Roadster" id="5">
+			<text>With a 4.3-liter V8 engine that produces 380 HP and a top speed of 178 mph, the Aston Martin Vantage is the complete package.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/astonmartind/t2.jpg?llsmd" full="cars/astonmartind/2.jpg?llsmd" vid="video/hollywood/widget/flv/Aston Martin US Anim RGB_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/astonmartind/t1.jpg?llsmd" full="cars/astonmartind/1.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Volkswagen R32" id="6">
+			<text>With it's 3.2-liter, 250 HP V6 engine and four-wheel drive Haldex drive system, this is a Rabbit built to run hard.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/r32/t2.jpg?llsmd" full="cars/r32/2.jpg?llsmd" vid="video/hollywood/widget/flv/VlksWagon_animrgb_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/r32/t1.jpg?llsmd" full="cars/r32/1.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Pontiac Solstice" id="7">
+			<text>With its distinct lines and respected handling, the Solstice's 177 HP powerplant delivers ample muscle to move the car's 2,877 pounds.</text>
+			
+			<item type="img" title="Car Shot1" thumb="cars/pontiac/t1.jpg?llsmd" full="cars/pontiac/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot2" thumb="cars/pontiac/t2.jpg?llsmd" full="cars/pontiac/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="1999 Mitsubishi Eclipse GSX" id="8">
+			<text>With a clean exterior that serves as a perfect palette for customization, the Eclipse is a street racing legend that will serve you well.</text>
+			
+			<item type="img" title="Car Shot1" thumb="cars/eclipse/t1.jpg?llsmd" full="cars/eclipse/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot2" thumb="cars/eclipse/t2.jpg?llsmd" full="cars/eclipse/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Saleen S302 Extreme" id="0">
+			<text>Designed by Saleen to be the biggest, baddest production Mustang ever made, the S302 Extreme is one of the fastest muscle cars available.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/saleen/t1.jpg?llsmd" full="cars/saleen/1.jpg?llsmd" vid="video/hollywood/widget/flv/Saleen _FLA8_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/saleen/t2.jpg?llsmd" full="cars/saleen/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Lamborghini Gallardo Spyder" id="1">
+			<text>The Gallardo Spyder is the only convertible Lamborghini in production; with a 520 HP engine and six-speed manual transmission, it looks pretty but means serious business.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/lamborghini/t1.jpg?llsmd" full="cars/lamborghini/1.jpg?llsmd" vid="video/hollywood/widget/flv/Lamborghini US ANIM RGB_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/lamborghini/t2.jpg?llsmd" full="cars/lamborghini/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Ford GT" id="2" >
+			<text>Based on the original Le Mans-winning GT40, the Ford GT is a midengine marvel with a massive supercharged 5.4-liter V8 power plant, capable of 550 HP and a top speed of 205 mph.</text>
+			
+			<item type="img" title="Car Shot1" thumb="cars/fordgt/t1.jpg?llsmd" full="cars/fordgt/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot2" thumb="cars/fordgt/t2.jpg?llsmd" full="cars/fordgt/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Corvette Z06" id="3">
+			<text>Considered firmly within the top echelon of America’s elite sportscars, the Chevrolet Corvette Z06 is a modern update of a timeless classic.</text>
+			
+			<item type="img" title="Car Shot 1" thumb="cars/corvettez06/t1.jpg?llsmd" full="cars/corvettez06/1.jpg?llsmd" id="0"/>
+			<item type="img" title="Car Shot 2" thumb="cars/corvettez06/t2.jpg?llsmd" full="cars/corvettez06/2.jpg?llsmd" id="1"/>
+		</item>
+		<item title="Dodge Challenger Concept DUB Edition" id="4">
+			<text>A perfect example of retro styling done right, the Challenger Concept is the hotly anticipated return of a classic American muscle car.</text>
+			
+			<item type="vid" title="Car Vid" thumb="cars/challenger/t1.jpg?llsmd" full="cars/challenger/1.jpg?llsmd" vid="video/hollywood/widget/flv/Dodge_FLA8_320.flv" id="0"/>
+			<item type="img" title="Car Shot" thumb="cars/challenger/t2.jpg?llsmd" full="cars/challenger/2.jpg?llsmd" id="0"/>
+		</item>
+	</cars>
+	<screens title="Screenshots" folder="img/screenshots/" id="2">
+	
+	<item thumb="48x27/10.1.21.109-image1056X.jpg" full="320x180/10.1.21.109-image1056X.jpg" />
+	<item thumb="48x27/10.1.21.109-image117_3.jpg" full="320x180/10.1.21.109-image117_3.jpg" />
+	<item thumb="48x27/10.1.21.181-image13.jpg" full="320x180/10.1.21.181-image13.jpg" />
+	<item thumb="48x27/MCLA-South-Central-035_1.jpg" full="320x180/MCLA-South-Central-035_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-042_1.jpg" full="320x180/MCLA-South-Central-042_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-057_1.jpg" full="320x180/MCLA-South-Central-057_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-084_1.jpg" full="320x180/MCLA-South-Central-084_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-088_1.jpg" full="320x180/MCLA-South-Central-088_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-090_1.jpg" full="320x180/MCLA-South-Central-090_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-105_1.jpg" full="320x180/MCLA-South-Central-105_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-106_1.jpg" full="320x180/MCLA-South-Central-106_1.jpg" />
+	<item thumb="48x27/MCLA-South-Central-111_1b.jpg" full="320x180/MCLA-South-Central-111_1b.jpg" />
+	
+	
+	<item thumb="48x27/042.jpg?llsmd" full="320x180/042.jpg?llsmd" />
+	<item thumb="48x27/041.jpg?llsmd" full="320x180/041.jpg?llsmd" />
+	<item thumb="48x27/040.jpg?llsmd" full="320x180/040.jpg?llsmd" />
+	<item thumb="48x27/039.jpg?llsmd" full="320x180/039.jpg?llsmd" />
+	<item thumb="48x27/038.jpg?llsmd" full="320x180/038.jpg?llsmd" />
+	<item thumb="48x27/037.jpg?llsmd" full="320x180/037.jpg?llsmd" />
+	
+		<item thumb="48x27/036.jpg?llsmd" full="320x180/036.jpg?llsmd" />
+		<item thumb="48x27/035.jpg?llsmd" full="320x180/035.jpg?llsmd" />
+		<item thumb="48x27/034.jpg?llsmd" full="320x180/034.jpg?llsmd" />
+		<item thumb="48x27/033.jpg?llsmd" full="320x180/033.jpg?llsmd" />
+		<item thumb="48x27/032.jpg?llsmd" full="320x180/032.jpg?llsmd" />
+		<item thumb="48x27/031.jpg?llsmd" full="320x180/031.jpg?llsmd" />
+		<item thumb="48x27/030.jpg?llsmd" full="320x180/030.jpg?llsmd" />
+		<item thumb="48x27/029.jpg?llsmd" full="320x180/029.jpg?llsmd" />
+	
+		<item thumb="48x27/028.jpg?llsmd" full="320x180/028.jpg?llsmd" />
+		<item thumb="48x27/027.jpg?llsmd" full="320x180/027.jpg?llsmd" />
+		<item thumb="48x27/026.jpg?llsmd" full="320x180/026.jpg?llsmd" />
+		<item thumb="48x27/025.jpg?llsmd" full="320x180/025.jpg?llsmd" />
+		<item thumb="48x27/024.jpg?llsmd" full="320x180/024.jpg?llsmd" />
+		<item thumb="48x27/023.jpg?llsmd" full="320x180/023.jpg?llsmd" />
+		<item thumb="48x27/022.jpg?llsmd" full="320x180/022.jpg?llsmd" />
+		<item thumb="48x27/021.jpg?llsmd" full="320x180/021.jpg?llsmd" />
+		<item thumb="48x27/020.jpg?llsmd" full="320x180/020.jpg?llsmd" />
+		<item thumb="48x27/019.jpg?llsmd" full="320x180/019.jpg?llsmd" />
+		<item thumb="48x27/018.jpg?llsmd" full="320x180/018.jpg?llsmd" />
+		<item thumb="48x27/017.jpg?llsmd" full="320x180/017.jpg?llsmd" />
+		<item thumb="48x27/016.jpg?llsmd" full="320x180/016.jpg?llsmd" />
+		<item thumb="48x27/015.jpg?llsmd" full="320x180/015.jpg?llsmd" />
+		<item thumb="48x27/014.jpg?llsmd" full="320x180/014.jpg?llsmd" />
+		<item thumb="48x27/013.jpg?llsmd" full="320x180/013.jpg?llsmd" />
+		<item thumb="48x27/012.jpg?llsmd" full="320x180/012.jpg?llsmd" />
+		<item thumb="48x27/011.jpg?llsmd" full="320x180/011.jpg?llsmd" />
+		<item thumb="48x27/010.jpg?llsmd" full="320x180/010.jpg?llsmd" />
+		<item thumb="48x27/009.jpg?llsmd" full="320x180/010.jpg?llsmd" />
+		<item thumb="48x27/008.jpg?llsmd" full="320x180/008.jpg?llsmd" />
+		<item thumb="48x27/007.jpg?llsmd" full="320x180/007.jpg?llsmd" />
+		<item thumb="48x27/006.jpg?llsmd" full="320x180/006.jpg?llsmd" />
+		<item thumb="48x27/005.jpg?llsmd" full="320x180/005.jpg?llsmd" />
+		<item thumb="48x27/004.jpg?llsmd" full="320x180/004.jpg?llsmd" />
+		<item thumb="48x27/003.jpg?llsmd" full="320x180/003.jpg?llsmd" />
+		<item thumb="48x27/002.jpg?llsmd" full="320x180/002.jpg?llsmd" />
+		<item thumb="48x27/001.jpg?llsmd" full="320x180/001.jpg?llsmd" />
+		
+	</screens>
+	
+	<news title="News" xml="http://www.rockstargames.com/midnightclubLA/assets/xml/news.xml" id="3"/>
+	
+	<grab title="Grab It"/>
+	
+	<links title="Links">
+		<link name="Official Midnight Club LA Site" href="http://www.rockstargames.com/midnightclubLA" />
+		<link name="Downloads" href="http://www.rockstargames.com/midnightclubLA/downloads" />
+		<link name="Rockstar Games Mailing List" href="http://www.rockstargames.com/mailing" />
+		<link name="Rockstar Games RSS Feed" href="http://www.rockstargames.com/rss" />
+		<link name="Rockstargames.com" href="http://www.rockstargames.com" />
+	</links>
+</xml>

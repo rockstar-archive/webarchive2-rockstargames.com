@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="">
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/RangeRover/01.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/RangeRover/01.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/RangeRover/01.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/RangeRover/02.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/RangeRover/02.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/RangeRover/02.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/RangeRover/03.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/RangeRover/03.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/RangeRover/03.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/RangeRover/04.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/RangeRover/04.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/RangeRover/04.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/RangeRover/05.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/RangeRover/05.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/RangeRover/05.jpg"/>
+	</gallery>
+</doc>

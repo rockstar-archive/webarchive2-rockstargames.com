@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="">
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/CLK/10.1.21.109-image262.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/CLK/10.1.21.109-image262.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/CLK/10.1.21.109-image262.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/CLK/10.1.21.181-image6.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/CLK/10.1.21.181-image6.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/CLK/10.1.21.181-image6.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/CLK/10.1.21.181-image124.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/CLK/10.1.21.181-image124.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/CLK/10.1.21.181-image124.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/CLK/10.1.21.213-image421.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/CLK/10.1.21.213-image421.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/CLK/10.1.21.213-image421.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/CLK/10.1.21.213-image458.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/CLK/10.1.21.213-image458.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/CLK/10.1.21.213-image458.jpg"/>
+	</gallery>
+</doc>

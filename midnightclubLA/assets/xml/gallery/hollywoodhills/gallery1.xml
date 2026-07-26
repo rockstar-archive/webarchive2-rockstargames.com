@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="1999 Nissan Skyline GT-R V-SPEC">
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_1a.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_1a.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_1a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_1b.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_1b.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_1b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_1c.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_1c.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_1c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_1d.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_1d.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_1d.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/hh/thumb_1e.jpg" fullsize="http://media.rockstargames.com/mcla/img/hh/screen_1e.jpg" hidef="http://media.rockstargames.com/mcla/img/hh/hidef_1e.jpg"/>
+	</gallery>
+</doc>

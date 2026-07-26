@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	background: black;
+	font-family: arial, helvetica;
+}
+
+#wrapper{
+	width: 1000px;
+	margin: auto;
+
+}
+li, ul {
+	color:white;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+p{
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	width: 440px;
+}
+#main-nav {
+	background: black;
+	height: 24px;
+	color: #FFFFFF;
+}
+
+#header {
+	background-image: url(../img/main.jpg);
+	background-repeat: no-repeat;
+	height: 479px;
+	margin-bottom: 26px;
+}
+
+#content {
+	width: 528px;
+	height: 450px;
+	background: black;
+	background-image: url(https://museum.rockstarnexus.com/websites/2011-05/games/midnightclubLA/hollywood/img/mcla-logo.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-moz-box-sizing: border-box;
+
+}
+
+.screens{
+	height: 340px;
+	width: 430px;
+	margin: 0, 0, 31, 23px;
+	
+}
+
+#screens{
+	margin-right:10px;
+	float: right;
+	-moz-box-sizing: border-box;
+
+}
+.video{
+	height: 376px;
+	width: 503px;
+	margin: 0, 0, 31, 23px;
+}
+#video{
+	margin:0px;
+	float: left;
+	width: 480px;
+	margin-left:1.45em;
+	display:inline;
+	-moz-box-sizing: border-box;
+
+}
+
+a img{
+	border:none;
+}
+
+#footer{	
+	widows:300px;
+	height: 55px;
+}
+#footer-left{
+	float:left;
+}
+.footer-nav{
+	margin-top: 40px;
+}
+.clear{
+	clear:both;
+}

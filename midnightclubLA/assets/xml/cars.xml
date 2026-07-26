@@ -1,0 +1,579 @@
+﻿<?xml version="1.0"?>
+<cars>
+	<section name="Featured Vehicles" linkname="featured">
+		
+		<explain>
+			<![CDATA[Featuring select cars and bikes from the in-game Midnight Club Los Angeles collection.]]>
+		</explain>
+	
+		<featured_vehicles>
+		
+			<types>
+				<type name="Muscle Cars" classid="1" x="0" y="0" />
+				<type name="Luxury Cars" classid="2" x="0" y="205" />
+				<type name="Tuners" classid="3" x="230" y="130" />
+				<type name="Bikes" classid="4" x="0" y="150" />
+				<type name="Exotics" classid="5" x="230" y="0" />
+			</types>
+				
+			<vehicle
+				name="Mercedes-Benz SL65 AMG"
+				carclass="2"
+				linkname="mercedessl65"
+				zoom="1"
+				thumb="img/cars/thumbs/mercedessl65.jpg"
+				thumb_3d="img/cars/3d/Mercedes-Sl65.jpg"
+				custom="img/cars/full_sized/Benzsl65-custom.png"
+				stock="img/cars/full_sized/Benzsl65-stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Mercedes SL65 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Mercedes SL65 Zoom_480.flv"
+				three60size="7.0mb"
+				zoomsize="4.4mb">
+				<![CDATA[An exquisite combination of refined German styling and unbridled muscle, the Mercedes-Benz SL65 is intended for those with sophisticated automotive taste.  This two-seater convertible boasts a retractable hard top along with all the elegant fit and finish that Mercedes-Benz is known for. Under the hood, its V12 604 HP, rear-wheel drive engine means this is a car that delivers high-end performance in any situation.<br><br>A rare example of stylish luxury and brawny performance, the SL65 is meant for those with an appreciation for the best of both worlds.]]>
+			</vehicle>	
+			
+			<vehicle
+				name="Audi R8"
+				carclass="5"
+				linkname="audir8"
+				zoom="1"
+				thumb="img/cars/thumbs/audiR8.jpg"
+				thumb_3d="img/cars/3d/audi-r8.jpg"
+				custom="img/cars/full_sized/r8-custom.png"
+				stock="img/cars/full_sized/r8-stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Audi R8 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Audi R8Zoom_480.flv"
+				three60size="5.0mb"
+				zoomsize="mb">
+				<![CDATA[Announced in 2005 and introduced into production two years later, the Audi R8 is an audacious entry into the world of super sport cars.  This low slung head-turner features full time all-wheel drive, a mid-engine 4.2-liter V8 that outputs a monstrous 414 HP, and a revolutionary suspension featuring magneto rheological dampers. All of this adds up to one of the world’s most exhilarating and responsive rides.<br><br>Quick acceleration, high top speed and superior handling make the R8 one of the ultimate cars in the game.<br><br><span class="italic">* Note: this vehicle is exclusively unlockable via the &nbsp;&nbsp;<a href="http://socialclub.rockstargames.com/" target="_blank">Rockstar Social Club's</a>&nbsp; Driving Test Challenge.<br>Look for further info on that in the &nbsp;&nbsp;<a href="#/social-club/">Social Club</a>&nbsp; area of this site.</span>]]>
+			</vehicle>	
+			
+			<vehicle
+				name="Saleen S7"
+				carclass="5"
+				linkname="saleens7"
+				zoom="1"
+				thumb="img/cars/thumbs/saleens7.jpg"
+				thumb_3d="img/cars/3d/Saleens7.jpg"
+				custom="img/cars/full_sized/SaleenS7-Custom.png"
+				stock="img/cars/full_sized/SaleenS7-Stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Saleen S7 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Saleen S7 Zoom_480.flv"
+				three60size="4.4mb"
+				zoomsize="3.0mb">
+				<![CDATA[Defying the notion that a domestically produced vehicle cannot be considered ‘exotic’, the Saleen S7 is a true American original.  Hand-built at the Saleen production facility in Irvine, California, the S7 combines a space age honeycombed aluminum composite chassis, an all-carbon exterior, and a 750 HP twin-turbo V8 engine into one stunning package that can hit speeds of 250 mph.<br><br>Requiring an expert hand and steady nerves to handle properly, the Saleen S7 is a superlative supercar.]]>
+			</vehicle>	
+			
+			<vehicle
+				name="Lamborghini Murcielago Roadster"
+				carclass="5"
+				linkname="murcielago"
+				zoom="1"
+				thumb="img/cars/thumbs/lamboMurcielago.jpg"
+				thumb_3d="img/cars/3d/DUBLAMBO.jpg"
+				custom="img/cars/full_sized/lambomurci_custom.png"
+				stock="img/cars/full_sized/lambomurci_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Dub Lambo Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Dub Lambo Zoom_480.flv"
+				three60size="6.2mb"
+				zoomsize="2.9mb"
+				dub="true">
+				<![CDATA[Named for a bull that defied death by sword 24 times, the Murcielago Roadster is one of the world’s most ferocious exotics.  From the signature roar of its 6.2-liter V12 engine, to the unique side air ducts that open and close to provide optimum airflow at any speed, this car means business.<br><br>Add in the one-of-a-kind custom body kit and 24” rims on low profile tires featured on the Murcielago DUB Edition and you’re guaranteed maximum respect wherever you roll.]]>
+			</vehicle>	
+			
+			<vehicle
+				name="Mercedes-Benz S600 "
+				carclass="2"
+				linkname="mercedesS600"
+				zoom="1"
+				thumb="img/cars/thumbs/mercedes600.jpg"
+				thumb_3d="img/cars/3d/Mercedes-S600.jpg"
+				custom="img/cars/full_sized/benz600-custom.png"
+				stock="img/cars/full_sized/benz600-stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Mercedes S600 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Mercedes S600 Zoom_480.flv"
+				three60size="6.0mb"
+				zoomsize="3.6mb"
+				dub="true">
+				<![CDATA[The big-body Mercedes-Benz S600 may be a monolith of a German sedan, but don't be fooled; this front-engine, all-wheel drive beast contains a 5.5-liter twin-turbo V12 with 510 HP, which provides more than ample power to move its heavy frame, and makes it a contender in any matchup.<br><br>With a custom wide body kit and TIS rims on top of an already well-appointed design, the custom DUB Edition S600 is an American twist on European luxury, and the pinnacle of street style.]]>
+			</vehicle>	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			<vehicle
+				name="1999 Nissan Skyline GT-R V-Spec"
+				carclass="3"
+				linkname="1999nissanskyline"
+				zoom="1"
+				thumb="img/cars/thumbs/skyline.jpg"
+				thumb_3d="img/cars/3d/99NissanSkyline.jpg"
+				custom="img/cars/full_sized/Skyline-GT-R-Custom.png"
+				stock="img/cars/full_sized/Skyline-GT-R-Stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Skyline Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Skyline Zoom_480.flv"
+				three60size="16.3mb"
+				zoomsize="9.1mb">
+				<![CDATA[The 1999 Nissan Skyline V-SPEC is a direct descendant of the 1968 Nissan Skyline, the rally car that sparked a Japanese revolution in automotive race design. Although true to its heritage as a two-door all-wheel drive sports car, the '99 Skyline is a thoroughly modern racing machine that features a twin turbo, straight inline six-cylinder engine outputting 276 HP, as well as computer-assisted traction and steering.<br><br>The cult-classic Skyline is a serious contender in the turns and drifts thanks to that renowned all-wheel drive and taut handling.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Ducati 999R"
+				carclass="4"
+				linkname="ducati999r"
+				zoom="1"
+				thumb="img/cars/thumbs/ducati.jpg"
+				thumb_3d="img/cars/3d/Ducati999.jpg"
+				custom="img/cars/full_sized/Ducati-Superbike-Custom.png"
+				stock="img/cars/full_sized/Ducati-Superbike-Stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Ducatti Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Ducatti  Zoom_480.flv"
+				three60size="12.4mb"
+				zoomsize="11.5mb">
+				<![CDATA[The preferred mount for World Superbike riders, the Ducati 999R is powered by a world famous V-twin Desmodromic Valve-actuated engine, accelerates from 0-60 in under 3 seconds, and hits top speeds of well over 170 mph. Hailed as one of the best handling motorcycles of all time, and designed by the legendary Massimo Tamburini, the 999R is a racing machine in the truest sense.<br><br>Considering its lightning fast acceleration combined with sharp handling that requires an extremely delicate touch – make no mistake, the 999R is a vehicle for experts.]]>
+			</vehicle>
+			
+			<vehicle
+				name="1969 Ford Mustang Boss 302"
+				carclass="1"
+				linkname="1969fordmustang"
+				zoom="1"
+				thumb="img/cars/thumbs/mustangboss.jpg"
+				thumb_3d="img/cars/3d/69MustangBoss.jpg"
+				custom="img/cars/full_sized/1969-Ford-Mustang-Boss-Custom.png"
+				stock="img/cars/full_sized/1969-Ford-Mustang-Boss-Stock.png"
+				v_360="video/cars/_3Dscreenshots/360/69 Boss Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/69 Boss Zoom_480_1.flv"
+				three60size="16.3mb"
+				zoomsize="9.1mb">
+				<![CDATA[The legendary Ford Mustang was introduced in 1964, creating an entirely new sports car class known as "pony cars". Named after the World War II P-51 fighter plane, the Mustang was an instant commercial success with its affordable pricing and distinctive, muscular style. The 1969 Boss 302 variant featured reinforced sway bars, a four-speed manual transmission and the monster Ford Boss 302 engine, a power plant designed specifically for professional racing.<br><br>While its massive torque and rear-wheel drive combine to give the Boss 302 the edge up on would-be competition, it takes an experienced driver to manage it to the finish line.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Mitsubishi Lancer Evolution IX MR"
+				carclass="3"
+				linkname="mitsubishilancer"
+				zoom="1"
+				thumb="img/cars/thumbs/lancer.jpg"
+				thumb_3d="img/cars/3d/MitsubishiLancer.jpg"
+				custom="img/cars/full_sized/Mitsubishi-Lancer-Custom.png"
+				stock="img/cars/full_sized/Mitsubishi-Lancer-Stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Mitsubishi Lancer Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Mitsubishi Lancer Zoom_480.flv"
+				three60size="16.3mb"
+				zoomsize="9.1mb">
+				<![CDATA[The Mitsubishi Lancer Evolution, or "Evo" as it is known, is arguably the most famous street racer in the world. First introduced in 1992, it was intended strictly for Japanese distribution, but its wild popularity on the grey market import scene led to worldwide distribution in 1998. All IX Evos feature four-wheel drive and a turbo charged two-liter engine with the unofficial engine output of 317 HP. The MR package sports additional upgrades, including a tighter five-speed manual transmission, Brembo brakes and BBS wheels.<br><br>With excellent traction and solid power, the Evo IX MR is a superior mid-level tuner that can hold its own against any challenger.]]>
+			</vehicle>
+			
+			<vehicle
+				name="1971 Lamborghini Miura SV"
+				carclass="5"
+				linkname="1971lamborghinimiura"
+				zoom="1"
+				thumb="img/cars/thumbs/lambomiura.jpg"
+				thumb_3d="img/cars/3d/71LamboMiura.jpg"
+				stock="img/cars/full_sized/Lamborghini-Miura-Stock.png"
+				custom="img/cars/full_sized/Lamborghini-Miura-Custom.png"
+				v_360="video/cars/_3Dscreenshots/360/71 Lambo Spin_480_1.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/71 Lambo Zoom_480_1.flv"
+				three60size="16.3mb"
+				zoomsize="9.1mb">
+				<![CDATA[A groundbreaking 380 HP, V12 mid-engine mount and a timeless chassis designed by famed Italian car designer Marcello Gandini make the Lamborghini Miura one of the most rare and beautiful sports cars in the world. From 1966 to 1972, only 764 Lamborghini Miuras were ever produced, making this machine the very definition of exotic motoring.<br><br>With rear-wheel drive, racetrack speeds and sensitive handling, the Miura is a temperamental thoroughbred meant for confident drivers.]]>
+			</vehicle>
+			
+			
+			
+			
+			
+			<vehicle
+				name="Chevrolet Camaro Concept"
+				carclass="1"
+				linkname="camaroconcept"
+				zoom="1"
+				thumb="img/cars/thumbs/camarroconcept.jpg"
+				thumb_3d="img/cars/3d/camarrodub.jpg"
+				custom="img/cars/full_sized/camaroconcept_custom.png"
+				stock="img/cars/full_sized/camaroconcept_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Camaro Concept DUB Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Camaro Concept DUB Zoom_480.flv"
+				three60size="16.3mb"
+				zoomsize="9.1mb"
+				dub="true">
+				<![CDATA[The 2006 announcement of the Camaro Concept was met with universal excitement throughout the automotive world. With a 400 HP 6.0-liter V8 engine under the hood sitting on 22" wheels in the rear and 21-inchers up front, this two-door coupe is proof positive that GM still knows how to deliver beauty and brawn in one superb package.<br><br>The DUB Edition sports 24" wheels and rims, along with a custom widebody kit designed by the aftermarket masters at DUB for a mean, low-to-the-ground stance that preserves both the Camaro Concept's retro style and its aggressive performance.]]>
+			</vehicle>
+			
+			<vehicle
+				name="1969 Chevrolet Camaro RS SS"
+				carclass="1"
+				linkname="69camaro"
+				zoom="1"
+				thumb="img/cars/thumbs/69cammaro.jpg"
+				thumb_3d="img/cars/3d/69cammaro.jpg"
+				custom="img/cars/full_sized/69camarors_custom.png"
+				stock="img/cars/full_sized/69camarors_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/69 Camaro RS SS Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/69 Camaro RS SS Zoom_480.flv"
+				three60size="19mb"
+				zoomsize="8.2mb">
+				<![CDATA[General Motors answered America's demand for a compact sports car with the introduction of the Camaro, which became the pace car for the 1967 Indianapolis 500. The Rally Sport and Super Sport packages were combined to make the rare RS/SS, a top-of-the-line sports coupe that packs a 396-inch big block V8 engine with 375 HP, making this rear-wheel drive monster near impossible to beat in quarter-mile sprints.<br><br>Classic lines and awesome power make this one of the most iconic vehicles in the game, but the rear-wheel drive and massive torque require serious driving skills for proper handling.]]>
+			</vehicle>
+			
+			<vehicle
+				name="1979 Pontiac Firebird"
+				carclass="1"
+				linkname="pontiacfirebird"
+				zoom="1"
+				thumb="img/cars/thumbs/firebird.jpg"
+				thumb_3d="img/cars/3d/firebird.jpg"
+				custom="img/cars/full_sized/pontiacfirebird_custom.png"
+				stock="img/cars/full_sized/pontiacfirebird_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Pontiac Firebird Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Pontiac Firebird Zoom_480.flv"
+				three60size="18.1mb"
+				zoomsize="12.5mb">
+				<![CDATA[In 1979, Pontiac introduced the 10th anniversary Firebird Trans Am, regarded by many as the last great classic American muscle car.  Powered by a 400-cubic-inch V8 and the improved stopping power of four-wheel disc brakes, the Trans Am was a red-blooded, ass-kicking true American original.<br><br>Heavy on style, this legendary bird takes flight just like a muscle car should, with quick<br>quarter-mile performance and high top-end speeds.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Dodge Charger SRT-8"
+				carclass="1"
+				linkname="chargersrt8"
+				zoom="1"
+				thumb="img/cars/thumbs/chargersrt.jpg"
+				thumb_3d="img/cars/3d/dodgecharger.jpg"
+				custom="img/cars/full_sized/chargerSRT_custom.png"
+				stock="img/cars/full_sized/chargerSRT_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Dodge Charger Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Dodge Charger Zoom_480.flv"
+				three60size="15.7mb"
+				zoomsize="11.7mb">
+				<![CDATA[The Dodge Charger SRT-8 may have twice as many doors as its famous predecessor, but it's a long way from being a demure sedan. With the most powerful production engine Chrysler has ever produced - a 6.1-liter Hemi V8 engine putting out 425 HP - this modern twist on an American classic is a beast off the line and a champion on the straightaways.<br><br>With plenty of torque to offset its 4,000 plus pounds, this is a powerful muscle car born to race.]]>
+			</vehicle>
+		
+			<vehicle
+				name="Mazda RX-8 Shinka"
+				carclass="3"
+				linkname="mazdarx8"
+				zoom="1"
+				thumb="img/cars/thumbs/rx-8.jpg"
+				thumb_3d="img/cars/3d/mazda-rx-8.jpg"
+				custom="img/cars/full_sized/mazdarx8_custom.png"
+				stock="img/cars/full_sized/mazdarx8_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Mazda RX8 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Mazda RX8 Zoom_480.flv"
+				three60size="14.8mb"
+				zoomsize="10.1mb">
+				<![CDATA[Introduced in 2004, the Mazda RX-8 owes its unmistakable form and rotary engine to the beloved RX7, a legend of the tuner scene. With its four-seat configuration accessed by freestyle rear doors, aluminum/carbon/steel construction and 50-50 front-to-rear weight distribution; the RX-8 is a truly unique entry to the Japanese sports car market. Capable of delivering over 237 HP and handling that shines in the curves, the RX-8 is one of the best sports cars available for less than $30,000.<br><br>While not the fastest off the line, the RX-8's superior control and light weight make it a well-balanced, all-around machine that will serve you well in long distance street heats.]]>
+			</vehicle>
+		
+			<vehicle
+				name="Kawasaki Ninja ZX-14"
+				carclass="4"
+				linkname="KawasakiNinjaZX-14"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars7.jpg"
+				thumb_3d="img/cars/3d/_cars7.jpg"
+				custom="img/cars/full_sized/image7_custom.png"
+				stock="img/cars/full_sized/image7_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Kawasaki Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Kawasaki Zoom_480.flv"
+				three60size="12.4mb"
+				zoomsize="11.5mb">
+				<![CDATA[Weighing in at a spry 474 pounds, the Kawasaki Ninja ZX-14's 1325 cc engine is capable of a blistering 0-60 mph in only 2.5 seconds.  Kawasaki's most powerful sport bike features massive torque, but its incredible agility, lithe handling and stunning looks make it, for many riders, the ultimate motorbike.<br><br>Quick as a whip, the ZX-14 is always first off the line, but proper handling at high speeds takes a sure and delicate touch.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Volkswagen R32"
+				carclass="3"
+				linkname="VolkswagenR32"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars6.jpg"
+				thumb_3d="img/cars/3d/_cars6.jpg"
+				custom="img/cars/full_sized/image6_custom.png"
+				stock="img/cars/full_sized/image6_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/R32 Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/R32 Zoom_480.flv"
+				three60size="18.6mb"
+				zoomsize="9.1mb">
+				<![CDATA[The fifth generation of the hot hatch classic VW Rabbit GTI, the R32 is a limited-production rocket based on its progenitor's original wireframe. With its 3.2-liter, 250 HP V6 engine and four-wheel drive Haldex drive system, this is a Rabbit built to run hard.<br><br>Famous for its tight steering and quick acceleration, the R32 really shines in the twists while performing admirably on the straightaways.]]>
+			</vehicle>
+				
+			<vehicle
+				name="Pontiac Solstice"
+				carclass="3"
+				linkname="PontiacSolstice"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars9.jpg"
+				thumb_3d="img/cars/3d/_cars9.jpg"
+				custom="img/cars/full_sized/image9_custom.png"
+				stock="img/cars/full_sized/image9_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Solstice Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Solstice Zoom_480.flv"
+				three60size="14.8mb"
+				zoomsize="13.3mb">
+				<![CDATA[A runaway success for GM since its introduction in 2004, the Pontiac Solstice is an inexpensive two-seater descended directly from a 2002 concept car.  With its distinct lines, and respected handling, the Solstice's 177 HP powerplant delivers ample muscle to move the car's 2,877 pounds.<br><br>The strategic advantage of using this ride in street heats isn't so much for its top speed, as much as its velocity off the line and taut control.]]>
+			</vehicle>
+			
+			<vehicle
+				name="1999 Mitsubishi Eclipse GSX"
+				carclass="3"
+				linkname="MitsubishiEclipseGSX"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars8.jpg"
+				thumb_3d="img/cars/3d/_cars8.jpg"
+				custom="img/cars/full_sized/image8_custom.png"
+				stock="img/cars/full_sized/image8_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/GSX spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/GSX Zoom_480.flv"
+				three60size="16.2mb"
+				zoomsize="9.7mb">
+				<![CDATA[As renowned as it is ubiquitous, the Eclipse is the Japanese sports coupe by which all other compact sports cars are judged.  Largely unchanged since the early 1990's, the GSX features a 210 HP turbo-charged engine and all-wheel drive to deliver the solid performance that makes Mitsubishi beloved by tuner fans all around the world.<br><br>With a clean exterior that serves as a perfect palette for customization, and durable mid-range performance, the Eclipse is a street racing legend that will serve you well without breaking the bank.]]>
+			</vehicle>
+		
+			<vehicle
+				name="Aston Martin V8 Vantage Roadster"
+				carclass="5"
+				linkname="AstonMartin"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars5.jpg"
+				thumb_3d="img/cars/3d/_cars5.jpg"
+				custom="img/cars/full_sized/image5_custom.png"
+				stock="img/cars/full_sized/image5_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Vantage Spin_480.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Vantage Zoom_480.flv"
+				three60size="17.5mb"
+				zoomsize="12.9mb">
+				<![CDATA[Unveiled at the Los Angeles Auto Show in 2006, the Roadster variant of the Aston Martin Vantage became an instant classic. With a 4.3-liter V8 engine that produces 380 HP and a top speed of 178 mph, the Vantage Roadster is the complete package of beautiful lines and brawny power.<br><br>One of the most coveted vehicles in the game, its ace handling at high speeds and sexy looks announce to all challengers that you are a real player.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Saleen S302 Extreme"
+				carclass="1"
+				linkname="SaleenS302Extreme"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars0.jpg"
+				thumb_3d="img/cars/3d/_cars0.jpg"
+				custom="img/cars/full_sized/image0_custom.png"
+				stock="img/cars/full_sized/image0_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Saleen360_480nu.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Saleenzoom_480nu.flv"
+				three60size="20.2mb"
+				zoomsize="15mb">
+				<![CDATA[The 2008 S302 Extreme was designed by the aftermarket wizards of Saleen to be the biggest, baddest production Mustang ever made. With a supercharged Saleen/Parnelli all–forged 620 HP V8 engine under its aluminum hood, the S302 Extreme boasts the most powerful engine street legal in all 50 states.  Racecraft suspension and 6–speed manual transmission ensure that this beast is sport tuned, aggressive, and a proper bully on the streets.<br><br>With insane speed and torque, the Saleen S302 is one of the fastest muscle cars available, with handling finesse that compensates for its heavy chassis.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Chevrolet Corvette Z06"
+				carclass="1"
+				linkname="ChevroletCorvetteZ06"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars1.jpg"
+				thumb_3d="img/cars/3d/_cars1.jpg"
+				custom="img/cars/full_sized/image1_custom.png"
+				stock="img/cars/full_sized/image1_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/corvette360_480nu.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/corvetterzoom_480nu.flv"
+				three60size="29.6mb"
+				zoomsize="7.8mb">
+				<![CDATA[Considered firmly within the top echelon of America's elite sportscars, the Corvette Z06 is a modern update of a timeless classic. With a 505 HP, 7.0–liter V8 mated to a six–speed manual transmission, the Z06 is capable of sprinting from 0–60 in little over 4 seconds and has a top speed of nearly 200 mph.  With unforgettable lines and a deceivingly civilized daily ride, the Corvette Z06 is known for sharp handling and muscular torque.<br><br>For the loyal American car enthusiast, the Z06 delivers the ultimate combination of muscle and sport handling.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Dodge Challenger Concept"
+				carclass="1"
+				linkname="DodgeChallengerConcept"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars2.jpg"
+				thumb_3d="img/cars/3d/_cars2.jpg"
+				custom="img/cars/full_sized/image2_custom.png"
+				stock="img/cars/full_sized/image2_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Dodge360_480nu.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Dodgezoom_480nu.flv"
+				three60size="14.2mb"
+				zoomsize="10.7mb"
+				dub="true">
+				<![CDATA[A perfect example of retro styling done right, the Challenger Concept is the hotly anticipated return of a classic American Muscle car. Hot inside and out – with rear–wheel drive powered by a 425 HP 6.1-liter Hemi V–8, the Challenger is tough to handle in the turns, but is quick out of the gate and a killer on the straight–aways.<br><br>The DUB edition sports an exclusive custom–designed body kit and TIS rims to make sure heads turn down the Sunset strip.]]>
+			</vehicle>
+			
+			<vehicle
+				name="Ford GT"
+				carclass="5"
+				linkname="FordGT"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars4.jpg"
+				thumb_3d="img/cars/3d/_cars4.jpg"
+				custom="img/cars/full_sized/image4_custom.png"
+				stock="img/cars/full_sized/image4_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Ford GT360_480nu.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/FordGTzoom_480nu.flv"
+				three60size="16.4mb"
+				zoomsize="16.2mb">
+				<![CDATA[The Ford GT is many things: a science experiment, a retro reissue of a racing legend,  a work of art, and a blisteringly hot set of wheels all in one.  Based on the original Le Mans-winning GT40, the Ford GT is a midengine marvel with a massive supercharged 5.4-liter V8 power plant, capable of 550 HP and a top speed of 205 mph. With its aluminum body panels, engine cover and one-piece door panels, the Ford GT is drop dead gorgeous, super light and not for amateurs.<br><br>Incredible high-end speed combined with exceptionally light weight makes the Ford GT a bit difficult for a novice driver to handle, but unbeatable in the hands of an expert racer. ]]>
+			</vehicle>
+			
+			<vehicle
+				name="Lamborghini Gallardo Spyder"
+				carclass="5"
+				linkname="gallardo"
+				zoom="1"
+				thumb="img/cars/thumbs/_cars3.jpg"
+				thumb_3d="img/cars/3d/_cars3.jpg"
+				custom="img/cars/full_sized/image3_custom.png"
+				stock="img/cars/full_sized/image3_stock.png"
+				v_360="video/cars/_3Dscreenshots/360/Lambo360_480nu.flv"
+				v_zoom="video/cars/_3Dscreenshots/zoom/Lamborghinizoom_480nu.flv"
+				three60size="15.6mb"
+				zoomsize="8mb">
+				<![CDATA[Lamborghini's racing lineage is long and storied, and the Gallardo is a proud addition to the family. First introduced in 2003 to compete with its Italian rivals, it quickly became famous in its own right for its bold yet sexy Italian styling. The Gallardo Spyder is the only convertible Lamborghini in production; with a 520 HP engine and six–speed manual transmission, it looks pretty but means serious business. Even at top speed, its rear–wheel–biased all–wheel drive guarantees that it sticks to the road with uncanny precision.<br><br>Blazingly fast and agile, the Gallardo is one of the most versatile, and expensive, exotics in the game.]]>
+			</vehicle>
+			
+		</featured_vehicles>
+
+	</section>
+	
+	
+	
+	
+	<section name="Customization Options" linkname="customization"><![CDATA[Midnight Club Los Angeles continues the tradition of offering some of the deepest vehicle customization you will find in a videogame.  The hottest licensed cars and bikes in the world are at your disposal – kit them out, supe them up, and personalize them down to the last detail to make them all your own.  Visit the Club's in–game garages located in Hollywood and Santa Monica and let your imagination run wild – tweaking and fine tuning through three different types of vehicle modifications: Performance & Handling, Exterior and Interior.]]>
+		<sub name="Interior" linkname="interior" bmp="interior">
+			<![CDATA[Don't embarass yourself this pulling up with an outrageously kitted–up car that has a me–too factory interior.  Not a good look!  Spend time making your vehicle unique, inside and out.<br><br>Swap out your steering wheel with a range of designer options from Italian racing accessory specialists, Momo.<br>Customize the fabric colors and textures to suit your mood, right down to the color of the stitching on the leather.<br>Add interior lighting to glow as you blow by the competition...<br>Tweak the color of the backlighting on your dials...<br>Customize the gauge on your dashboard...<br>Drop in racing seats by Racetech or Seibon...<br>You're going to be spending a lot of time behind the wheel – so, renovate and make yourself comfortable.]]>
+		</sub>
+		<sub name="Exterior" linkname="exterior" bmp="exterior">
+			<![CDATA[Why even bother street racing if you're not going to do it in style.  Here in La La Land, everyone is trying to upstage the next guy and stand out amongst a concentrated crowd of attention seekers.  For the Midnight Club, stunting is a habit, and its clandestine Los Angeles garages have all the big boy toys needed to ensure heads turn in this jaded town.<br>From making sure your car is dripping in candy paint, to adding unique body kits, to dropping jaws with rims to fill your wheel well to the brim – the garage offers practically limitless possibilities to personalize your vehicle with aftermarket accessories and customization options.<br><br>Body kit modifications mean you can swap out hoods, change bumpers and add a spoiler for a more aggressive profile.  Pop on rims by famous makers like Dropstar, Lexani and Davin, adjust size and profile, and upgrade your treads to maximize performance with brands like Pirelli or BF Goodrich.   Lift the back axle for a classic hot rod look, or drop the whole chassis to go low rider with it.  Spend time with the paint shop to make your Aston Martin the same color as your favorite football team, or finesse a two–tone fade to match your favorite pair of Nikes... why not!  Finish it off with a metallic high–gloss sheen or matte for a more subtle approach.  
+Then tint out your windows in a variety of colors and opacities – or go sci–fi with neon under–lighting.<br><br>Top it off using the vinyl editor with a range of preset designs or load up the custom vinyl creator – let your imagination go wild creating your own designs to adorn your moving masterpiece.]]>
+		</sub>
+		<sub name="performance and handling" linkname="performanceandhandling" bmp="performance">
+			<![CDATA[The difference between being a winner and being a poser starts under the hood.  
+To become a street legend, you're going to have to tune your vehicle for maximum performance.  The garage offers three levels of upgrades for virtually every component on your vehicle.<br><br>Adjust the key performance groups –– acceleration, top speed and handling –– by upgrading your exhaust system, adding forced induction for higher RPM's, tuning engine settings to enhance torque and horse power, or replacing stock brakes with high–end replacements from Brembo and Project Mu.<br><br>With over ten different individual car components to upgrade, and a long list of licensed aftermarket accessories, it's up to you to craft the winning combination that will give you the edge up on the competition.]]>
+		</sub>
+		<sub name="after martket parts list" linkname="aftermarket">
+			<![CDATA[<span class="aftermarket_head">AFTERMARKET PARTS LIST<br></span><span class="aftermarket_main">Click on a category below to see an itemized list of parts by manufacturer.</span>]]>
+			<data>
+				<sub name="INTERIOR" link="interior">
+					<set a="left">
+						<t a="left">
+							<![CDATA[Momo<br>Momo<br>]]>
+						</t>
+						<t a="right">
+							<![CDATA[Steering Wheels<br>Seats]]>
+						</t>
+					</set>
+					<set a="middle">
+						<t a="left">
+							<![CDATA[Racetech<br>Seibon]]>
+						</t>
+						<t a="right">
+							<![CDATA[Seats<br>Seats]]>
+						</t>
+					</set>
+					<set a="right">
+						<t a="left">
+							<![CDATA[Sparco]]>
+						</t>
+						<t a="right">
+							<![CDATA[Seats]]>
+						</t>
+					</set>
+					<set a="rightright">
+						<t a="left">
+							<![CDATA[Sparco]]>
+						</t>
+						<t a="right">
+							<![CDATA[Steering Wheels]]>
+						</t>
+					</set>
+				</sub>
+			
+				<sub name="EXTERIOR" link="exterior">
+					<set a="left">
+						<t a="left">
+							<![CDATA[5 Zigen USA<br>American Racing<br>Apex'i<br>APR Performance<br>Asanti<br>BBS<br>BF Goodrich<br>Bomex USA<br>Borla<br>Brembo]]>
+						</t>
+						<t a="right">
+							<![CDATA[Rims<br>Rims<br>Exhaust Tips<br>Spoilers/Wings<br>Rims<br>Rims<br>Tires<br>Kits<br>Exhaust Tips<br>Brakes]]>
+						</t>
+					</set>
+					<set a="middle">
+						<t a="left">
+							<![CDATA[Carbontrix<br>C-WEST<br>Davin<br>DC Sports<br>Dropstar<br>Flowtech<br>Holley<br>Iforged<br>Kaminari<br>Konig]]>
+						</t>
+						<t a="right">
+							<![CDATA[Spoilers/Wings<br>Kits<br>Rims<br>Exhaust Tips<br>Rims<br>Exhaust Tips<br>Air Scoops<br>Rims<br>Kits<br>Rims]]>
+						</t>
+					</set>
+					<set a="right">
+						<t a="left">
+							<![CDATA[Lexani<br>Momo<br>Momo<br>Pirelli<br>PM Performance<br>Project Mu<br>RC Components<br>RK Sports<br>RK Sports<br>Seibon]]>
+						</t>
+						<t a="right">
+							<![CDATA[Rims<br>Exhaust Tips<br>Rims<br>Tires<br>Motorcycle Rims<br>Brakes<br>Motorcycle Rims<br>Kits<br>Spoilers/Wings<br>Hoods]]>
+						</t>
+					</set>
+					<set a="rightright">
+						<t a="left">
+							<![CDATA[Seibon<br>T.I.S.<br>T.I.S.M.<br>Tenzo Racing<br>Vis Racing<br>Volk Racing<br>Wings West<br>Wings West<br>Work Super Wheels]]>
+						</t>
+						<t a="right">
+							<![CDATA[Spoilers/Wings<br>Rims<br>Rims<br>Rims<br>Kits<br>Rims<br>Kits<br>Spoilers/Wings<br>Rims]]>
+						</t>
+					</set>
+				</sub>
+				
+
+
+
+				<sub name="PERFORMANCE &amp; HANDLING" link = "performanceandhandling">
+					<set a="left">
+						<t a="left">
+							<![CDATA[5 Zigen USA<br>5 Zigen USA<br>ACT<br>AEM<br>AEM<br>APC<br>APEXI<br>Apex'i<br>Apex'i<br>Apex'i<br>Apex'i<br>BF Goodrich<br>Borla<br>Brembo<br>Brute Force<br>Buschur Racing]]>
+						</t>
+						<t a="right">
+							<![CDATA[Exhaust Systems<br>Headers<br>Clutch<br>Cold Air Intake<br>Electronics<br>Cold Air Intake<br>Electronics<br>Exhaust Systems<br>Cold Air Intake<br>Forced Induction<br>Suspension<br>Tires<br>Exhaust Systems<br>Brakes<br>Headers<br>Exhaust Systems]]>
+						</t>
+					</set>
+					<set a="middle">
+						<t a="left">
+							<![CDATA[Buschur Racing<br>Buschur Racing<br>Buschur Racing<br>Centerforce<br>ClutchMasters<br>DC Sports<br>DC Sports<br>Eaton<br>Eibach<br>Eibach<br>Espelir<br>Espelir<br>Exedy<br>Flowtech<br>HKS<br>HKS]]>
+						</t>
+						<t a="right">
+							<![CDATA[Cold Air Intake<br>Forced Induction<br>Sway Bars<br>Clutch<br>Clutch<br>Exhaust Systems<br>Headers<br>Forced Induction<br>Suspension<br>Sway Bars<br>Exhaust Systems<br>Suspension<br>Clutch<br>Exhaust Systems<br>Exhaust Systems<br>Cold Air Intake]]>
+						</t>
+					</set>
+					<set a="right">
+						<t a="left">
+							<![CDATA[HKS<br>HKS<br>HKS<br>HKS<br>Holley<br>Hooker<br>Hooker<br>Injen<br>Injen<br>MAC<br>MAC<br>Moroso<br>Moser Engineering<br>Muzzys<br>]]>
+						</t>
+						<t a="right">
+							<![CDATA[Forced Induction<br>Electronics<br>Clutch<br>Suspension<br>Headers<br>Exhaust Systems<br>Headers<br>Exhaust Systems<br>Cold Air Intake<br>Exhaust Systems<br>Cold Air Intake<br>Exhaust Systems<br>Gear Kits<br>Motorcycle Exhaust Systems]]>
+						</t>
+					</set>
+					<set a="rightright">
+						<t a="left">
+							<![CDATA[Muzzys<br>NOS<br>Paxton<br>Pirelli<br>Pirelli<br>Project MU<br>Sard<br>Tenzo R<br>Turbo XS<br>Turbo XS<br>Turbo XS<br>Volant<br>Vortech<br>Weiand<br>ZEX]]>
+						</t>
+						<t a="right">
+							<![CDATA[Motorcycle Nitrous<br>Nitrous<br>Forced Induction<br>Motorcycle Tires<br>Tires<br>Brakes<br>Forced Induction<br>Cold Air Intake<br>Exhaust Systems<br>Cold Air Intake<br>Electronics<br>Cold Air Intake<br>Forced Induction<br>Forced Induction<br>Nitrous]]>
+						</t>
+					</set>
+				</sub>
+			</data>
+		</sub>
+	</section>
+	
+	<section name="Full Vehicle List" href="cars/">
+	
+	</section>
+</cars>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<remix>
+	<tag><![CDATA[<span class="tagline">AVAILABLE EXCLUSIVELY FOR PSP<span class="registered">®</span> (PlayStation<span class="registered">®</span>Portable) system</span>]]></tag>
+	<nav>
+		<item name="Overview" link="overview" logoX="40" tagX="40" navX="137">
+			<![CDATA[<span class="normal">The successor to the best-selling racing game of all time on the PSP® (PlayStation®Portable) system, Midnight Club L.A. Remix brings all the frenetic action of Midnight Club Los Angeles to the world of handheld gaming.<br><br>Optimized for portable gameplay with quicker races and reduced load times, Midnight Club L.A. Remix lets you race at breakneck speeds through the streets of Los Angeles and Tokyo, with the signature open city environments that fans of the Midnight Club series have come to expect.<br><br>Featuring the entire roster of licensed cars and bikes from Midnight Club Los Angeles; over 40 diverse vehicles spanning 5 unique classes, as well as in-depth car customization that includes body kits, paint styles, rims and vinyls - Midnight Club L.A. Remix is the definitive street racing experience for the PSP system.<br><br>Developed by Rockstar London in conjunction with series creators Rockstar San Diego, Midnight Club L.A. Remix is now available exclusively for the PSP system.</span>]]>
+		</item>
+		
+		<item name="Special Features" link="specialfeatures" logoX="40" tagX="40" navX="137">
+			<![CDATA[<span class="normal">Midnight Club L.A. Remix for the PSP system features all of the licensed cars, the deep customization, and the breakneck racing action from the console versions of Midnight Club Los Angeles, as well as these special unique gameplay elements and modes you will only find in this handheld release.<br><br><span class="title">Arcade & Career Modes</span><br>Midnight Club L.A. Remix has two distinct single player gameplay modes for different types of gamers.  In addition to a robust open-ended Career mode patterned after the one in Midnight Club Los Angeles, players can also jump into Arcade mode for quick-play races and modes, including the L.A. Remix-exclusive Frenzy – a points-based mode that requires quick reflexes and unmatched nerve to avoid a barrage of oncoming traffic, while racing against the clock through a series of checkpoints.<br><br><span class="title">Tokyo</span><br>On top of racing through a vastly detailed Los Angeles that includes real landmarks and streets, variable weather patterns and three different times of day, the Midnight Club ventures across the Pacific to the crowded streets of Tokyo for unique races and career challenges exclusive to Midnight Club L.A. Remix.<br><br><span class="title">Multiplayer</span><br>Midnight Club L.A. Remix features multiplayer racing for up to 4 players via local ad-hoc Wi-Fi.  In addition to the inclusion of many popular Midnight Club fan-favorite modes, L.A. Remix features a pair of exclusive multiplayer game types not found in the console version: Paint and Tag.<br><br><p class="indent"><span class="title_2">Paint</span><br>When Paint starts, a number of checkpoints will be scattered all over the city. During the race, each time a vehicle crosses through it, that checkpoint will become painted in a color assigned to that vehicle. The first player to mark a set limit of checkpoints in their color, or to have the most checkpoints in their color at the end of the time limit, wins.<br><br><span class="title_2">Tag</span><br>At the beginning of the race, a single checkpoint is revealed. The last driver to reach this checkpoint is made "It" and a zone is created around their car. Now all the other drivers can score points by staying inside this zone. The closer you get to the tagged racer, the more points you will score, but if you touch the tagged racer, you'll become the next target. Tag races are only available in Tokyo.</p></span>]]>
+		</item>
+		
+		<item name="Screenshots" link="screenshots"  logoX="275" tagX="110" navX="237">
+			<img src="img/remix/ss/1.jpg" />
+			<img src="img/remix/ss/2.jpg" />
+			<img src="img/remix/ss/3.jpg" />
+			<img src="img/remix/ss/4.jpg" />
+			<img src="img/remix/ss/5.jpg" />
+			<img src="img/remix/ss/6.jpg" />
+		</item>
+	</nav>
+</remix>

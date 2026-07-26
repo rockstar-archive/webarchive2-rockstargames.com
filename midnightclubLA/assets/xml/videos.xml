@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc vidlink="videos/">
+	<maincall><![CDATA[<span class="normal"><br>FOR THE VIDEOS PAGE<br>FEATURING:</span>]]></maincall>
+	<subcall><![CDATA[<span class="headline">PLUS HI-DEF AND OTHER FORMATS FOR DOWNLOAD</span>]]></subcall>
+	
+	<nav>
+		<item name="RACING VIDEOS" img="../../media.rockstargames.com/mcla/img/video/cars/305/Ninja_305.jpg" link="videos/?id=9"/>
+		<item name="OFFICIAL TRAILERS" img="../../media.rockstargames.com/mcla/img/video/trailer/305/cops.jpg" link="videos/?id=99"/>
+		<item name="SPECIAL CLIPS" img="../../media.rockstargames.com/mcla/img/video/cars/305/cutom-305.jpg" link="videos/?id=13"/>
+	</nav>
+</doc>

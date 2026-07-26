@@ -1,0 +1,283 @@
+body {
+	margin: 0;
+	background: #000;
+	text-align: center;
+	color: #fff;
+	font-family: Arial, "san-serif";
+	font-size: 12px;
+	}
+	
+a:link,
+a:visited {
+	color: #e9040c;
+	}
+	
+a:hover,
+a:visited:hover {	
+	color: #fff;
+	}
+	
+p {
+	margin: 0 0 15px 0;
+	line-height: 20px;
+	}
+
+#page_container {
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+	}
+	
+#header_wrapper {	
+	margin: 30px 0;
+	overflow: hidden;
+	clear: both;
+	}
+	
+#logo_container {	
+	margin: 0 0 30px 0;
+	overflow: hidden;
+	}
+	
+img#mcla_logo {
+	display: block;
+	float: left;
+	}
+	
+img#page_title {
+	display: block;
+	float: right;
+	margin: 40px 0 0 0;
+	}
+	
+#copy_container {
+	overflow: hidden;
+	padding: 0 15px;
+	clear: both;
+	}
+	
+#copy_col_left {
+	width: 450px;
+	overflow: hidden;
+	float: left;
+	margin: 0 50px 0 0;
+	}
+	
+#copy_col_right {
+	width: 450px;
+	overflow: hidden;
+	float: left;
+	}
+	
+#gallery_wrapper {
+	overflow: hidden;
+	margin: 0 0 30px 0;
+	}
+	
+#gallery_container {
+	width: 950px;
+	height: 337px;
+	overflow: hidden;
+	padding: 15px;
+	background: url(../images/container_bg.jpg) no-repeat center top;
+	}
+	
+#gallery_container img {
+	display: block;
+	border: 1px solid #000;
+	}
+	
+h4.screen_caption {
+	margin: 5px 0 25px 0;
+	font-weight: normal;
+	font-size: 12px;
+	font-style: italic;
+	}
+	
+#gallery_col_1 {
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	}
+	
+#gallery_col_2 {
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	margin: 0 25px;
+	}
+	
+#gallery_col_3 {
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	}
+	
+.artist_wrapper {
+	overflow: hidden;
+	margin: 0 0 30px 0;
+	clear: both;
+	}
+	
+.artist_container {
+	width: 950px;
+	overflow: hidden;
+	padding: 15px;
+	background: url(../images/container_bg.jpg) no-repeat center top;
+	}
+	
+.artist_col_left {
+	width: 605px;
+	overflow: hidden;
+	float: left;
+	}
+	
+.artist_col_right {
+	width: 300px;
+	background: url(../images/col_right_bg.jpg) no-repeat center top;
+	overflow: hidden;
+	float: right;
+	padding: 15px;
+	}
+	
+h1.wallpapers_title {
+	width: 117px;
+	height: 18px;
+	margin: 0 auto 2px auto;
+	background: url(../images/wallpapers_title.gif) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	}
+	
+.artist_col_right h4 {
+	font-size: 12px;
+	margin: 0 0 5px 0;
+	}
+	
+.artist_col_right ul {
+	margin: 0 0 15px 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #0f0f0f;
+	}
+
+.artist_col_right ul li {
+	border-bottom: 1px solid #0f0f0f;
+	display: block;
+	margin: 0;
+	padding: 0;
+	}
+	
+.artist_col_right ul li a:link,
+.artist_col_right ul li a:visited {
+	display: block;
+	padding: 4px 5px 5px 5px;
+	background: url(../images/list_icon.gif) no-repeat;
+	background-position: right 4px;
+	}
+	
+.artist_col_right ul li a:hover,
+.artist_col_right ul li a:visited:hover {
+	background-position: right -21px;
+	}
+	
+img.artwork {
+	border: 1px solid #000;
+	display: block;
+	margin: 0 0 20px 0;
+	}
+	
+#soto img.artwork {
+	border: 1px solid #181818;
+	display: block;
+	margin: 0 0 20px 0;
+	}
+
+h1#kofie_name {
+	width: 170px;
+	height: 20px;
+	margin: 0 auto 15px auto;
+	background: url(../images/kofie_name.jpg) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	}
+	
+h1#soto_name {
+	width: 100px;
+	height: 21px;
+	margin: 0 auto 15px auto;
+	background: url(../images/soto_name.gif) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	}
+	
+h1#coop_name {
+	width: 53px;
+	height: 20px;
+	margin: 0 auto 15px auto;
+	background: url(../images/coop_name.gif) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	}
+	
+h1#gallery_header {
+	width: 732px;
+	height: 45px;
+	margin: 0 auto 15px auto;
+	background: url(../images/gallery_header.jpg) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -2000px;
+	}
+	
+h1#gallery_sub {
+	width: 662px;
+	height: 19px;
+	margin: 25px auto 15px auto;
+	background: url(../images/gallery_sub.gif) no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -1500px;
+	clear: both;
+	}
+	
+#return_wrapper {	
+	overflow: hidden;
+	}	
+	
+#footer_wrapper {
+	overflow: hidden;
+	margin: 0 0 50px 0;
+	}
+	
+.return a:link,
+.return a:visited {	
+	float: left;
+	height: 14px;
+	width: 332px;
+	text-indent: -1500px;
+	display: block;
+	background: url(../images/return.gif) no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+	margin: 20px 0 0 0;
+	}
+	
+.return a:hover,
+.return a:visited:hover {	
+	background-position: 0 -14px;
+	}
+	
+a#rockstar_logo {
+	height: 49px;
+	width: 53px;
+	display: block;
+	overflow: hidden;
+	text-indent: -500px;
+	background: url(../images/rockstar_logo.gif) no-repeat;
+	float: right;
+	}

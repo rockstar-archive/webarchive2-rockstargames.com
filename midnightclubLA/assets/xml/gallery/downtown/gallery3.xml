@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="1979 Pontiac Firebird">
+		<screen thumb="http://media.rockstargames.com/mcla/img/downtown/thumb_3a.jpg" fullsize="http://media.rockstargames.com/mcla/img/downtown/screen_3a.jpg" hidef="http://media.rockstargames.com/mcla/img/downtown/hidef_3a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/downtown/thumb_3b.jpg" fullsize="http://media.rockstargames.com/mcla/img/downtown/screen_3b.jpg" hidef="http://media.rockstargames.com/mcla/img/downtown/hidef_3b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/downtown/thumb_3c.jpg" fullsize="http://media.rockstargames.com/mcla/img/downtown/screen_3c.jpg" hidef="http://media.rockstargames.com/mcla/img/downtown/hidef_3c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/downtown/thumb_3d.jpg" fullsize="http://media.rockstargames.com/mcla/img/downtown/screen_3d.jpg" hidef="http://media.rockstargames.com/mcla/img/downtown/hidef_3d.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/downtown/thumb_3e.jpg" fullsize="http://media.rockstargames.com/mcla/img/downtown/screen_3e.jpg" hidef="http://media.rockstargames.com/mcla/img/downtown/hidef_3e.jpg"/>
+
+	</gallery>
+</doc>

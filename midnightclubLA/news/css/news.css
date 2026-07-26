@@ -1,0 +1,178 @@
+#page-container {
+	width: 1000px;
+	margin: auto;
+	z-index:-100;
+	height:auto;
+}
+
+
+
+
+#main-nav {
+	background: black;
+	height: 31px;
+	color: #FFFFFF;
+	margin:auto;
+	background-position: center;
+	text-decoration:none;
+	border:none;
+	
+}
+
+#header {
+	background-image: url(../img/header_1.jpg);
+	background-repeat: no-repeat;
+	height: 453px;
+	margin: auto;
+	cursor:pointer;
+
+}
+#sidebar-news-headelines a:link, #sidebar-news-headelines a:visited {
+	color:#f00;
+}
+#sidebar-news-headelines {
+	margin-right:30px;
+	float: right;
+	width: 450px;
+	height: auto;
+	background: black;
+	z-index:999;
+}
+
+#news-headline {
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+}
+
+.clear{
+	clear:both;
+	}
+#content {
+	position:relative;
+	float:left;
+	width: 414px;
+	background-repeat: no-repeat;
+	margin: 0px 0 0 30px;
+}
+
+h1 {
+	margin: 90px 0 0 0;
+	float: left;
+	padding-right: 28px;
+	
+}
+
+h2 {
+	padding: 0;
+	float: left;
+	margin-top: 5px;
+}
+
+.news-date-text {
+	color: #ccc;
+	font-size: 10px;
+}
+
+.news-headline-text {
+	color: #FFFFFF;
+	font-size: 10px;;
+	margin-left: 10px;
+	
+}
+
+
+
+.news-headline-text-large {
+	color: #FF0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+.news-headline-text-date {
+	color: #b5b5b5;
+	font-size: 12px;
+}
+
+.share {
+	color: #FFFFFF;
+	font-size: 10px;
+}
+
+#article-text{
+	color:#FFFFFF;
+	font-size: 12px;
+	height:auto;
+}
+#article-text a:link, #article-text a:visited {
+	color:#f00;
+}
+.toplink a:link, .toplink a:visited {
+	font-size:x-small;
+	color:#f00;
+}
+
+#nav a:link, #nav a:visited {
+	color:#f00;
+}
+#article-item-spacer{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-image: url(../img/article-spacer.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#article-body-spacer{
+	margin-bottom: 25px;
+}
+
+#news-date {
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-top: 120px;
+	padding-right: 28px;
+}
+#all-updates-link{
+/*	margin-top: 50px;
+	margin-left: -5px;
+*/	margin: 30px 0px  0px 0px ;
+	float: left;
+	height:37px;
+	width: 290px;
+}
+.class{
+	clear:both;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: arial, helvetica;
+}
+
+#footer {
+	height:80px;
+	width:1000px;
+}
+
+#footer-right {
+	float:right;
+}
+
+#footer-left {
+		float:left;
+}
+
+.headline {
+	color:#fff;
+	font-size:12px;
+}
+#nav {
+	color:#fff;
+	margin-bottom:10px;
+}
+.navitem {
+	margin-bottom:10px;
+}

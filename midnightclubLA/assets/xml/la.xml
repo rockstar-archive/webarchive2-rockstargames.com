@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<la>
+	<section load="4" img="santam.jpg" link="santamonica/" width_a="114" width_b="42" x_b="0" brokenclick="true">
+		<![CDATA[<span class="headline">OCEAN AVE<br>SANTA MONICA<br>6:13 AM PST</span>]]>
+	</section>
+	<section load="2" img="BHillsVistaTres.jpg" link="beverlyhills/" width_a="114" width_b="42" x_b="-70" brokenclick="true">
+		<![CDATA[<span class="headline">N RODEO DRIVE<br>BEVERLY HILLS<br>1:09 PM PST</span>]]>
+	</section>
+	<section load="0" img="southcentral.jpg" link="southcentral/" width_a="262" width_b="42" x_b="-55" brokenclick="false">
+		<![CDATA[<span class="headlinebigger">CRENSHAW BLVD<br>SOUTH CENTRAL<br>4:45 PM PST</span>]]>
+	</section>
+	<section load="1" img="hollywood.jpg" link="hollywood/" width_a="262" width_b="42" x_b="-300" brokenclick="false">
+		<![CDATA[<span class="headlinebigger">SUNSET STRIP<br>HOLLYWOOD<br>5:35 PM PST</span>]]>
+	</section>
+	<section load="3" img="hollywoodhillsheader.jpg" link="hollywoodhills/" width_a="114" width_b="42" x_b="-630" brokenclick="true">
+		<![CDATA[<span class="headlinesmall">MULHOLLAND DR<br>HOLLYWOOD HILLS<br>7:03 PM PST</span>]]>
+	</section>
+	<section load="5" img="downtown-vista.jpg" link="downtown/" width_a="114" width_b="42" x_b="-585" brokenclick="true">
+		<![CDATA[<span class="headline">EAST 4th ST<br>DOWNTOWN LA<br>12:00 AM PST</span>]]>
+	</section>
+</la>

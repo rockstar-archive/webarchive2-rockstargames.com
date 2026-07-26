@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<multiplayer>
+	<config offsetX="65" thumbW="127" />
+
+	<default_top>
+		<![CDATA[<span class="headline">GO ONLINE FOR HIGH-SPEED THRILLS AND MIDNIGHT CLUB GLORY,<br>WITH UP TO 16-PERSON MULTIPLAYER</span>]]>
+	</default_top>
+
+	<default>
+		<![CDATA[<span class="normal">Midnight Club Los Angeles arrives for the new generation of consoles with an addictive lineup of online multiplayer modes -- from fan-favorite Capture-the-Flag modes to classic Midnight Club open city checkpoint racing to the wild arcadey mayhem of Stockpile.  Plus the freedom of Online Cruise and the Race Editor to craft your own racing path of checkpoints to challenge friends and foes with.<br><br>Browse the modes above for individual descriptions of all the action-packed multiplayer game types coming to Xbox Live® and PLAYSTATION®Network.</span>]]>
+	</default>
+
+	<nav>
+		<item name="Race Types" link="racetypes" />
+		<item name="Battle Modes" link="battlemodes" />
+		<item name="Online Cruise/Race Editor" link="editor">
+			<![CDATA[<span class="headline">Online Cruise/Race Editor</span><span class="normal"><br><br>Up to 16 players may enter Online Cruise and drive around the open city in a common session (complete with traffic), touring Los Angeles and racing with no rules. At any point, players may request a race (which gets entered into a queue if more than one race is requested at any time). If players do not wish to join the posted race, they may continue in Cruise or enter the online Race Editor without having to leave the Cruise session.<br><br>From the Race Editor, players can create custom races by setting waypoints around the city at will. Once your checkpoint path design is finished, simply add this race to the Cruise session queue, or save or exchange it with other players online.</span>]]>
+		</item>
+		<item name="Getting Started" link="gettingstarted" x="705">
+			<![CDATA[<span class="headline">Getting Started</span><span class="normal"><br><br>From the online menu, players can choose to join or host a player or ranked match. These are single events launched from a traditional networking lobby. In player matches, the host can customize the game mode / race settings and restrictions on the lobby. In ranked games, the game modes are a predetermined default setup. Players may join the game, choose their car and signal ready for the Host to launch the game. After completing a race or battle mode, players are returned to the lobby where the host can change the settings, race or game mode; and then launch again.<br><br>Check back here at game release for downloadable PDFs with specific instruction on how to get started on Xbox Live and PLAYSTATION Network respectively.</span>]]>
+		</item>
+	</nav>
+	
+	<content>
+		<item name="Ordered Races" link="orderedraces" nav="racetypes">
+			<![CDATA[<span class="headline">Ordered Races</span><span class="normal"><br><br>Multiple checkpoint races where the player must drive through checkpoints in the order that they appear. The first racer to the last checkpoint (marked in red) wins.</span>]]>
+		</item>
+		<item name="Circuit Races" link="circuitraces" nav="racetypes">
+			<![CDATA[<span class="headline">Circuit Races</span><span class="normal"><br><br>Multiple checkpoint races where the racers must complete several laps before reaching the final checkpoint. The first racer to the last checkpoint wins. In a Last-Man-Out variation, the player in last place on each lap is removed from the race.</span>]]>
+		</item>
+		<item name="Unordered Races" link="unorderedraces" nav="racetypes">
+			<![CDATA[<span class="headline">Unordered Races</span><span class="normal"><br><br>Multiple checkpoint races where the player can complete all checkpoints in any order. The first racer to the unique last checkpoint wins.</span>]]>
+		</item>
+		<item name="Landmark Races" link="landmarkraces" nav="racetypes">
+			<![CDATA[<span class="headline">Landmark Races</span><span class="normal"><br><br>Single checkpoint races from one side of the city to a specific landmark on the other side. The first racer to reach the landmark checkpoint wins.</span>]]>
+		</item>
+		<item name="Free-For-All CTF" link="freeforallctf" nav="battlemodes">
+			<![CDATA[<span class="headline">Free-For-All CTF</span><span class="normal"><br><br>Players must race to collect a flag and then return it to a drop off point while other players try to steal the flag for themselves. Once the flag has been dropped off, a new flag will spawn and the players must scramble for the next one. The player who has met the score limit or has the most captures when time runs out, wins.</span>]]>
+		</item>
+		<item name="Basewar CTF" link="basewarectf" nav="battlemodes">
+			<![CDATA[<span class="headline">Basewar CTF</span><span class="normal"><br><br>A team-based Capture the Flag, in which each side has a flag that spawns in their base. The goal is to acquire the other team's flag and bring it back to your own base. The first team to meet the score limit, or to have the most captures when time runs out, wins.</span>]]>
+		</item>
+		<item name="Splitbase CTF" link="splitbasectf" nav="battlemodes">
+			<![CDATA[<span class="headline">Splitbase CTF</span><span class="normal"><br><br>In this variation of team-based Capture the Flag, each side has a base and a neutral flag spawns right in between them. The goal is to acquire the neutral flag and bring it back to your own base. The first team to meet the score limit, or to have the most captures when time runs out, wins.</span>]]>
+		</item>
+		<item name="Stockpile" link="stockpile" nav="battlemodes">
+			<![CDATA[<span class="headline">Stockpile</span><span class="normal"><br><br>In this action-packed mode, a cluster of flags spawns instead of just one. Players must seize and deliver as many flags as possible from this cluster to a specified stockpile point. Once all of the flags have been captured, a new cluster will spawn. The player who has met the score limit or has the most captures when time runs out, wins.<br><br>Note: Be careful, as there is a chance that one flag in each cluster may be a bomb. Players will not know which flag is the bomb-in-disguise until it is picked up. The player with the bomb must transfer it hot-potato style to another player by bumping into that player 's car before time runs out or else your score will be docked.</span>]]>
+		</item>
+		<item name="Splitbase Stockpile" link="splitbasestockpile" nav="battlemodes">
+			<![CDATA[<span class="headline">Splitbase Stockpile</span><span class="normal"><br><br>A team-based version of Stockpile, in which each team has a base and a neutral cluster of flags spawns in between them. Each team must seize as many flags as possible and deliver to the specified stockpile point. Once all the flags in the cluster have been captured, a new cluster will spawn. The team that meets the score requirement first or has the most captures when time runs out, wins.</span>]]>
+		</item>
+		<item name="Keepaway" link="keepaway" nav="battlemodes">
+			<![CDATA[<span class="headline">Keepaway</span><span class="normal"><br><br>A solitary flag spawns and each player must race to acquire it. The player who has the flag acquires points that accrue throughout time of possession. Once you acquire the flag, flee and evade pursuers so they cannot steal the flag to acquire points themselves. The player who has met the score limit or has the most points when time runs out, wins.</span>]]>
+		</item>
+	</content>
+	
+	<gallery head="Screens Gallery">
+		<image thumb="MCLA-Multiplayer-001-A.jpg" full="MCLA-Multiplayer-001.jpg" />
+		<image thumb="MCLA-Multiplayer-006-A.jpg" full="MCLA-Multiplayer-006.jpg" />
+		<image thumb="MCLA-Multiplayer-009-A.jpg" full="MCLA-Multiplayer-009.jpg" />
+		<image thumb="MCLA-Multiplayer-010-A.jpg" full="MCLA-Multiplayer-010.jpg" />
+		<image thumb="MCLA-Multiplayer-012-A.jpg" full="MCLA-Multiplayer-012.jpg" />
+		<image thumb="MCLA-Multiplayer-013-A.jpg" full="MCLA-Multiplayer-013.jpg" />
+		<image thumb="MCLA-Multiplayer-014-A.jpg" full="MCLA-Multiplayer-014.jpg" />
+		<image thumb="MCLA-Multiplayer-016-A.jpg" full="MCLA-Multiplayer-016.jpg" />
+		<image thumb="MCLA-Multiplayer-018-A.jpg" full="MCLA-Multiplayer-018.jpg" />
+		<image thumb="MCLA-Multiplayer-019-A.jpg" full="MCLA-Multiplayer-019.jpg" />
+	</gallery>
+	
+</multiplayer>

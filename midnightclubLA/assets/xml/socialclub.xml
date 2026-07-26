@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<sc>
+	
+	<head><![CDATA[<span class="head">MIDNIGHT CLUB LOS ANGELES AT THE<br>ROCKSTAR GAMES SOCIAL CLUB</span>]]>
+	</head>
+	<tag><![CDATA[<span class="tag">Make sure you're signed up at the Rockstar Games Social Club to extend your Midnight Club<br>Los Angeles experience. Full, detailed player statistics and robust multiplayer leaderboards are just scratching the surface of what you can interact with. Earn the exclusive Audi R8, create and share user-created content, and rate the competition at Rockstar's online gaming community site.</span>]]>
+	</tag>
+	<bottomtag><![CDATA[<span class="tagline">Plus the LA FM music player that automatically pulls your in-game custom playlist so you can find the songs you love, and much more to come, including hosted tournaments series and the exclusive Midnight Club Los Angeles custom-screenshot music video generator.
+</span>]]>
+	</bottomtag>
+	<footer href="http://socialclub.rockstargames.com/"><![CDATA[<span class="tagline">CLICK HERE TO ACCESS THE ROCKSTAR GAMES<br>SOCIAL CLUB AND JOIN THE COMMUNITY</span>]]>
+	</footer>
+	
+	<default title="">
+		<![CDATA[<span class="tagline">Click on any of the icons to the right to learn about special features of Midnight Club Los Angeles at the Social Club.</span>]]>
+	</default>
+	
+	<nav>
+		<left>
+			<item linkname="ratemyride" icon="img/sc/MCLA_Widget_RateMyRide.png" y="330" title="Rate My Ride">
+				<![CDATA[With Rate My Ride, you can view and rate pictures of all of the user-customized cars and bikes uploaded by players worldwide.  Get busy yourself with the dizzying array of in-game modification options, from rims to custom paints to wide body kits and parts - and then upload a pic of your finished product and see how your ride fares against the rest of the competition online.]]>
+			</item>
+			<item linkname="playerprofile" icon="img/sc/MCLA_Widget_PlayerProfile.png" y="105" title="Player Profile">
+				<![CDATA[Track your personal gameplay statistics and select which ones you're proudest of to have displayed for your Xbox Live® and PLAYSTATION®Network Friends to see within the Social Club. Customize your profile from there with a selection of background options as well as your choicest user-uploaded screenshots.]]>
+			</item>
+			<item linkname="drivingtest" icon="img/sc/MCLA_Widget_DrivingTest.png" y="210" title="Driving Test">
+				<![CDATA[Win the red hot Audi R8 for in-game and online play exclusively through the Social Club by completing the top level of Driving Test challenges. Work your way up through three levels of statistical-milestone challenges, attaining a special class of license and a corresponding in-game reward with each level completed - including hydraulics, special rims and the ultimate prize, the coveted Audi R8.]]>
+			</item>
+			<item linkname="tournaments" icon="img/sc/MCLA_Widget_Tournament.png" y="0" title="Tournaments">
+				<![CDATA[Battle for supremacy in the Midnight Club: Los Angeles Official World Championship Series. Tournaments will take place monthly during 2009 and feature prizes such as<br><a href="http://www.rockstargames.com/warehouse" target="_blank"><u>Rockstar Warehouse</u></a> shopping sprees and and rewards from some of our partners, including a Kawasaki Ninja motorcycle and a year of free pizza from Pizza Hut.
+For more information, visit: <br><a href="http://www.rockstargames.com/socialclub/tournamentsinfo" target="_blank"><u>http://www.rockstargames.com/socialclub/tournamentsinfo  </u></a>]]>
+			</item>
+		</left>
+	
+		<right>
+			<item linkname="hollywoodauto" icon="img/sc/MCLA_Widget_Garage.png" y="0" title="HOLLYWOOD AUTO">
+				<![CDATA[Browse a gallery of all the in-game vehicles, with beauty shots and detailed statistics for each.  Here, you can also see which cars and bikes are statistically to-date the most popular, the most driven and which have won the most races online - to help strategize your next online victory.]]>
+			</item>
+			<item linkname="gallery" icon="img/sc/MCLA_Widget_Gallery.png" y="120" title="Gallery">
+				<![CDATA[Once you have captured your proudest moments and hottest custom cars from Midnight Club Los Angeles using the in-game Photo Mode, you can come here to view a slick gallery of all of your shots. Then organize, edit, download, and share your selects with your Xbox Live® and PLAYSTATION®Network Friends within the Social Club.]]>
+			</item>
+			<item linkname="multiplayer" icon="img/sc/MCLA_Widget_MultiPlayer.png" y="230" title="Multiplayer">
+				<![CDATA[Robust leaderboards and stat tracking for all online multiplayer modes in the game to see how you and your Xbox Live® and PLAYSTATION®Network Friends stack up in almost every conceivable way.]]>
+			</item>
+		</right>
+		
+	</nav>
+		
+</sc>

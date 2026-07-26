@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="">
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/Impala/01.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/Impala/01.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/Impala/01.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/Impala/02.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/Impala/02.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/Impala/02.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/Impala/03.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/Impala/03.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/Impala/03.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/Impala/04.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/Impala/04.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/Impala/04.jpg"/>
+		
+		<screen
+			thumb="http://media.rockstargames.com/mcla/img/SC/Thumb/Impala/05.jpg"
+			fullsize="http://media.rockstargames.com/mcla/img/SC/Mid/Impala/05.jpg"
+			hidef="http://media.rockstargames.com/mcla/img/SC/High/Impala/05.jpg"/>
+	</gallery>
+</doc>

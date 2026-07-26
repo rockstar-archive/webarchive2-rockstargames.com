@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc >
+	<gallery carName="Volkswagen R32">
+		<screen thumb="http://media.rockstargames.com/mcla/img/santamonica/thumb_3d.jpg" fullsize="http://media.rockstargames.com/mcla/img/santamonica/screen_3d.jpg" hidef="http://media.rockstargames.com/mcla/img/santamonica/hidef_3d.jpg"/>
+		
+		<screen thumb="http://media.rockstargames.com/mcla/img/santamonica/thumb_3b.jpg" fullsize="http://media.rockstargames.com/mcla/img/santamonica/screen_3b.jpg" hidef="http://media.rockstargames.com/mcla/img/santamonica/hidef_3b.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/santamonica/thumb_3c.jpg" fullsize="http://media.rockstargames.com/mcla/img/santamonica/screen_3c.jpg" hidef="http://media.rockstargames.com/mcla/img/santamonica/hidef_3c.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/santamonica/thumb_3a.jpg" fullsize="http://media.rockstargames.com/mcla/img/santamonica/screen_3a.jpg" hidef="http://media.rockstargames.com/mcla/img/santamonica/hidef_3a.jpg"/>
+		<screen thumb="http://media.rockstargames.com/mcla/img/santamonica/thumb_3e.jpg" fullsize="http://media.rockstargames.com/mcla/img/santamonica/screen_3e.jpg" hidef="http://media.rockstargames.com/mcla/img/santamonica/hidef_3e.jpg"/>
+
+	</gallery>
+</doc>
