@@ -1,0 +1,480 @@
+/* ------------- SCREENS PAGE ----------------- */
+.container_screens {
+	background-color:#dff1ed;
+}
+.header_screens {
+	background:url("images/header/Screens.jpg") top left no-repeat #def1ed;
+}
+.body_screens {
+	background:url("images/body/Screens.jpg") top left no-repeat;
+	color:#61bba7;
+	height:197px;
+}
+.footer_screens {
+	background:url("images/footer/Screens.jpg") top left no-repeat;
+}
+.content_screens {
+	height:350px;
+}
+.back_to_top_screens a {
+	display:block;
+	background:url("https://museum.rockstarnexus.com/websites/2011-05/games/vicecitystories/noflash/images/navigation/screens/back_to_top.jpg") no-repeat;
+	width:101px;
+	height:16px;
+	cursor:pointer;
+}
+.back_to_top_screens a:hover {
+	background:url("https://museum.rockstarnexus.com/websites/2011-05/games/vicecitystories/noflash/images/navigation/screens/back_to_top_over.jpg");
+}
+.screens_row {
+	clear:both;
+}
+.screens_group div {
+	display:inline;
+}
+/* SCREENS */
+#return_to_screens {
+	text-align:center;
+}
+#return_to_screens a {
+	background:url(images/navigation/screens/return_to_screens.jpg) no-repeat;
+	width:480px;
+	height:36px;
+	display:block;
+}
+#return_to_screens a:hover {
+	background:url(images/navigation/screens/return_to_screens_over.jpg) no-repeat;
+}
+#return_to_screens span {
+	visibility:hidden;
+}
+#screen_1 span, #screen_2 span, #screen_3 span, #screen_4 span, #screen_5 span, #screen_6 span, #screen_7 span, #screen_8 span {
+	visibility:hidden;
+}
+.screens_row div span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+#screen_1 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc1.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;
+}
+#screen_1 a:hover {
+	background:url(images/screens/thumbs/tsc1_over.jpg) #def1ed;
+}
+#screen_2 a {
+	background:url(images/screens/thumbs/tsc2.jpg) #def1ed;
+	float:left;
+	width:78px;
+	height:36px;
+	margin-left:3px;
+}
+#screen_2 a:hover {
+	background:url(images/screens/thumbs/tsc2_over.jpg) #def1ed;
+}
+#screen_3 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc3.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_3 a:hover {
+	background:url(images/screens/thumbs/tsc3_over.jpg) #def1ed;
+}
+#screen_4 a {
+	background:url(images/screens/thumbs/tsc4.jpg) #def1ed;
+	float:left;
+	display:block;
+	width:78px;
+	height:36px;
+	margin-left:3px;
+}
+#screen_4 a:hover {
+	background:url(images/screens/thumbs/tsc4_over.jpg) #def1ed;
+}
+#screen_5 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc5.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_5 a:hover {
+	background:url(images/screens/thumbs/tsc5_over.jpg) #def1ed;
+}
+#screen_6 a {
+float:left;
+	background:url(images/screens/thumbs/tsc6.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_6 a:hover {
+	background:url(images/screens/thumbs/tsc6_over.jpg) #def1ed;
+}
+#screen_7 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc7.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_7 a:hover {
+	background:url(images/screens/thumbs/tsc7_over.jpg) #def1ed;
+}
+#screen_8 a {
+float:left;
+	background:url(images/screens/thumbs/tsc8.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_8 a:hover {
+	background:url(images/screens/thumbs/tsc8_over.jpg) #def1ed;
+}
+#screen_9 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc9.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_9 a:hover {
+	background:url(images/screens/thumbs/tsc9_over.jpg) #def1ed;
+}
+#screen_10 a {
+	background:url(images/screens/thumbs/tsc10.jpg) #def1ed;
+	float:left;
+	width:78px;
+	height:36px;
+	margin-left:3px;
+}
+#screen_10 a:hover {
+	background:url(images/screens/thumbs/tsc10_over.jpg) #def1ed;
+}
+#screen_11 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc11.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_11 a:hover {
+	background:url(images/screens/thumbs/tsc11_over.jpg) #def1ed;
+}
+#screen_12 a {
+	background:url(images/screens/thumbs/tsc12.jpg) #def1ed;
+	float:left;
+	display:block;
+	width:78px;
+	height:36px;
+	margin-left:3px;
+}
+#screen_12 a:hover {
+	background:url(images/screens/thumbs/tsc12_over.jpg) #def1ed;
+}
+#screen_13 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc13.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_13 a:hover {
+	background:url(images/screens/thumbs/tsc13_over.jpg) #def1ed;
+}
+#screen_14 a {
+float:left;
+	background:url(images/screens/thumbs/tsc14.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_14 a:hover {
+	background:url(images/screens/thumbs/tsc14_over.jpg) #def1ed;
+}
+#screen_15 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc15.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_15 a:hover {
+	background:url(images/screens/thumbs/tsc15_over.jpg) #def1ed;
+}
+#screen_16 a {
+float:left;
+	background:url(images/screens/thumbs/tsc16.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_16 a:hover {
+	background:url(images/screens/thumbs/tsc16_over.jpg) #def1ed;
+}
+#screen_17 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc17.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-bottom:3px;
+	margin-left:3px;	
+}
+#screen_17 a:hover {
+	background:url(images/screens/thumbs/tsc17_over.jpg) #def1ed;
+}
+#screen_18 a {
+float:left;
+	background:url(images/screens/thumbs/tsc18.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_18 a:hover {
+	background:url(images/screens/thumbs/tsc18_over.jpg) #def1ed;
+}
+
+#screen_19 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc19.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_19 a:hover {
+	background:url(images/screens/thumbs/tsc19_over.jpg) #def1ed;
+}
+
+#screen_20 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc20.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_20 a:hover {
+	background:url(images/screens/thumbs/tsc20_over.jpg) #def1ed;
+}
+
+#screen_21 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc21.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_21 a:hover {
+	background:url(images/screens/thumbs/tsc21_over.jpg) #def1ed;
+}
+
+#screen_22 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc22.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_22 a:hover {
+	background:url(images/screens/thumbs/tsc22_over.jpg) #def1ed;
+}
+
+#screen_23 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc23.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_23 a:hover {
+	background:url(images/screens/thumbs/tsc23_over.jpg) #def1ed;
+}
+
+#screen_24 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc24.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_24 a:hover {
+	background:url(images/screens/thumbs/tsc24_over.jpg) #def1ed;
+}
+
+#screen_25 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc25.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_25 a:hover {
+	background:url(images/screens/thumbs/tsc25_over.jpg) #def1ed;
+}
+
+#screen_26 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc26.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_26 a:hover {
+	background:url(images/screens/thumbs/tsc26_over.jpg) #def1ed;
+}
+
+#screen_27 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc27.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_27 a:hover {
+	background:url(images/screens/thumbs/tsc27_over.jpg) #def1ed;
+}
+
+
+
+
+
+#screen_28 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc28.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_28 a:hover {
+	background:url(images/screens/thumbs/tsc28_over.jpg) #def1ed;
+}
+
+#screen_29 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc29.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_29 a:hover {
+	background:url(images/screens/thumbs/tsc29_over.jpg) #def1ed;
+}
+
+#screen_30 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc30.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_30 a:hover {
+	background:url(images/screens/thumbs/tsc30_over.jpg) #def1ed;
+}
+
+#screen_31 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc31.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_31 a:hover {
+	background:url(images/screens/thumbs/tsc31_over.jpg) #def1ed;
+}
+
+#screen_32 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc32.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_32 a:hover {
+	background:url(images/screens/thumbs/tsc32_over.jpg) #def1ed;
+}
+
+#screen_33 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc33.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_33 a:hover {
+	background:url(images/screens/thumbs/tsc33_over.jpg) #def1ed;
+}
+
+#screen_34 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc34.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_34 a:hover {
+	background:url(images/screens/thumbs/tsc34_over.jpg) #def1ed;
+}
+
+#screen_35 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc35.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_35 a:hover {
+	background:url(images/screens/thumbs/tsc35_over.jpg) #def1ed;
+}
+
+#screen_36 a {
+	float:left;
+	background:url(images/screens/thumbs/tsc36.jpg) #def1ed;
+	width:78px;
+	height:36px;
+	display:block;
+	margin-left:3px;
+}
+#screen_36 a:hover {
+	background:url(images/screens/thumbs/tsc36_over.jpg) #def1ed;
+}

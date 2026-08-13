@@ -1,0 +1,263 @@
+/* ------------- DOWNLOADS PAGE ----------------- */
+.container_downloads {
+	background-color:#f3e1ed;
+}
+.header_downloads {
+	background:  url("images/header/downloads.jpg") top left no-repeat #d1dcd6;
+}
+.body_downloads {
+	background:  url("images/body/downloads.jpg") top left no-repeat;
+	color:#628a77;
+	height:197px;
+}
+.footer_downloads {
+	clear:both;
+	background:  url("images/footer/downloads.jpg") top left no-repeat;
+}
+.back_to_top_downloads a {
+	display:block;
+	background:url("images/navigation/downloads/back_to_top.jpg") no-repeat  #628c78;
+	width:101px;
+	height:16px;
+	cursor:pointer;
+}
+.back_to_top_downloads a:hover {
+	background:url("images/navigation/downloads/back_to_top_over.jpg")  #628c78;
+}
+.thumbnail {
+	float:left;
+}
+.thumbnail_holder {
+	margin-bottom:10px;
+}
+.clear_both {
+	clear:both;
+	display:block;
+}
+/* DOWNLOADS BUTTONS */
+.thumbnail_button_holder {
+	float:left;
+}
+.thumbnail_button_holder2 {
+	float:left;
+}
+.thumbnail_button_holder div span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+.trailer_button_holder div span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+.downloads_group {
+	clear:both;
+}
+.downloads_group div {
+	display:inline;
+}
+.downloads_qtlo span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+.downloads_qtlo a {
+	display:block;
+	background:url("images/navigation/downloads/trailer_qtlo.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.downloads_qtlo a:hover {
+	background:url("images/navigation/downloads/trailer_qtlo_over.jpg") #628c78;
+}
+.downloads_qtlo a {
+	background:url("images/navigation/downloads/trailer_qtlo.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-bottom:3px;
+	display:block;
+	float:left;
+}
+.downloads_qtlo a:hover {
+	background:url("images/navigation/downloads/trailer_qtlo_over.jpg") #628c78;
+}
+
+.downloads_qtlo span, .downloads_qthi span {
+	visibility:hidden;
+}
+.downloads_qthi a {
+	background:url("images/navigation/downloads/trailer_qthi.jpg") #ffffff;
+	float:left;
+	display:block;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	margin-left:3px;
+	overflow:hidden;
+}
+.downloads_qthi a:hover {
+	background:url("images/navigation/downloads/trailer_qthi_over.jpg") #628c78;
+}
+.downloads_wmvlo a {
+	display:block;
+	float:left;
+	background:url("images/navigation/downloads/trailer_wmvlo.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.downloads_wmvlo a:hover {
+	background:url("images/navigation/downloads/trailer_wmvlo_over.jpg") #628c78;
+}
+.downloads_wmvhi a {
+	background:url("images/navigation/downloads/trailer_wmvhi.jpg") #ffffff;
+	float:left;
+	display:block;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	margin-left:3px;
+	overflow:hidden;
+}
+.downloads_wmvhi a:hover {
+	background:url("images/navigation/downloads/trailer_wmvhi_over.jpg") #628c78;
+}
+.downloads_psp a {
+	float:left;
+	background:url("images/navigation/downloads/trailer_PSP.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+	display:block;
+}
+.downloads_psp a:hover {
+	background:url("images/navigation/downloads/trailer_PSP_over.jpg") #628c78;
+}
+.downloads_ipod a {
+	margin-left:3px;
+	float:left;
+	background:url("images/navigation/downloads/trailer_iPod.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+	display:block;
+}
+.downloads_ipod a:hover {
+	background:   url("images/navigation/downloads/trailer_iPod_over.jpg") #628c78;
+}
+.wallpaper_1600x1200 a {
+	clear:both;
+	float:left;
+	background:url("images/navigation/downloads/wp_1600x1200.jpg") #ffffff;
+	width:74px;
+	height:15px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.wallpaper_1600x1200 a:hover {
+	background:url("images/navigation/downloads/wp_1600x1200_over.jpg") #628c78;
+}
+.wallpaper_1280x1024 a {
+	clear:both;
+	float:left;
+	background:url("images/navigation/downloads/wp_1280x1024.jpg") #ffffff;
+	width:74px;
+	height:15px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.wallpaper_1280x1024 a:hover {
+	background:url("images/navigation/downloads/wp_1280x1024_over.jpg") #628c78;
+}
+.wallpaper_1024x768 a {
+	clear:both;
+	float:left;
+	background:   url("images/navigation/downloads/wp_1024x768.jpg") #ffffff;
+	width:74px;
+	height:15px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.wallpaper_1024x768 a:hover {
+	background:   url("images/navigation/downloads/wp_1024x768_over.jpg") #628c78;
+}
+.wallpaper_800x600 a {
+	clear:both;
+	float:left;
+	background:   url("images/navigation/downloads/wp_800x600.jpg") #ffffff;
+	width:74px;
+	height:15px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.wallpaper_800x600 a:hover {
+	background:   url("images/navigation/downloads/wp_800x600_over.jpg") #628c78;
+}
+.wallpaper_psp a {
+	clear:both;
+	float:left;
+	background:   url("images/navigation/downloads/wp_psp.jpg") #ffffff;
+	width:74px;
+	height:15px;
+	margin-top:0px;
+	margin-bottom:3px;
+	overflow:hidden;
+}
+.wallpaper_psp a:hover {
+	background:   url("images/navigation/downloads/wp_psp_over.jpg") #628c78;
+}
+.thumbnail {
+	float:left;
+	clear:both;
+	display:block;
+	margin:0px 3px 15px 0px;
+}
+#downloads_one h1 {
+	clear:both;
+	background:url("images/navigation/downloads/trailer_1_title.jpg") top left no-repeat;
+	height:30px;
+}
+#downloads_one span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+#downloads_three h1 {
+	clear:both;
+	background:url("images/navigation/downloads/trailer_2_title.jpg") top left no-repeat;
+	height:30px;
+}
+#downloads_three span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+#downloads_four h1 {
+	clear:both;
+	background:url("images/navigation/downloads/trailer_3_title.jpg") top left no-repeat;
+	height:30px;
+}
+#downloads_four span {
+	visibility:hidden;
+	font-size:xx-small;
+}
+#downloads_two h1 {
+	background:url("images/navigation/downloads/wallpaper_title.jpg") top left no-repeat;
+	height:30px;
+	clear:both;
+}
+#downloads_two span {
+	visibility:hidden;
+	font-size:xx-small;
+}

@@ -1,0 +1,191 @@
+/* ------------- MUSIC PAGE ----------------- */
+.clear_both {
+	clear:both;
+}
+.body_music {
+	color:#41b9b6;
+	height:0px;
+}
+.content_spacer_y {
+	display:block;
+	height:90px;
+}
+.container_music {
+	background-color:#00FF99;
+}
+.header_music {
+	background:url("images/header/music.jpg") top left no-repeat #c5e9e9;
+}
+.body_music {
+	height:70px;
+}
+.footer_music {
+	background:url("images/footer/music.jpg") top left no-repeat #c5e9e9;
+}
+.back_to_top_music a {
+	display:block;
+	background:url("images/navigation/music/back_to_top.jpg") no-repeat;
+	width:101px;
+	height:16px;
+	cursor:pointer;
+}
+.back_to_top_music a:hover {
+	background:url("images/navigation/music/back_to_top_over.jpg");
+}
+
+.back_to_top_music span {
+	visibility:hidden;
+}
+/* NAVSTYLES */
+
+#music_one_link a {
+	display:block;
+	background:   url("images/navigation/music/music_one.jpg");
+	width:90px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_one_link a:hover {
+	background:   url("images/navigation/music/music_one_over.jpg");
+}
+#music_one h1 {
+	background:   url("images/navigation/music/music_one_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_one span {
+	visibility:hidden;
+}
+
+#music_two_link a {
+	display:block;
+	background:   url("images/navigation/music/music_two.jpg");
+	width:70px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_two_link a:hover {
+	background:   url("images/navigation/music/music_two_over.jpg");
+}
+#music_two h1 {
+	background:   url("images/navigation/music/music_two_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_two span {
+	visibility:hidden;
+}
+
+#music_three_link a {
+	display:block;
+	background:   url("images/navigation/music/music_three.jpg");
+	width:85px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_three_link a:hover {
+	background:   url("images/navigation/music/music_three_over.jpg");
+}
+#music_three h1 {
+	background:   url("images/navigation/music/music_three_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_three span {
+	visibility:hidden;
+}
+
+#music_four_link a {
+	display:block;
+	background:   url("images/navigation/music/music_four.jpg");
+	width:100px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_four_link a:hover {
+	background:   url("images/navigation/music/music_four_over.jpg");
+}
+#music_four h1 {
+	background:   url("images/navigation/music/music_four_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_four span {
+	visibility:hidden;
+}
+
+#music_five_link a {
+	display:block;
+	background:   url("images/navigation/music/music_five.jpg");
+	width:100px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_five_link a:hover {
+	background:   url("images/navigation/music/music_five_over.jpg");
+}
+#music_five h1 {
+	background:   url("images/navigation/music/music_five_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_five span {
+	visibility:hidden;
+}
+
+#music_six_link a {
+	display:block;
+	background:   url("images/navigation/music/music_six.jpg");
+	width:120px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_six_link a:hover {
+	background:   url("images/navigation/music/music_six_over.jpg");
+}
+#music_six h1 {
+	background:   url("images/navigation/music/music_six_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_six span {
+	visibility:hidden;
+}
+
+#music_seven_link a {
+	display:block;
+	background:   url("images/navigation/music/music_seven.jpg");
+	width:85px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_seven_link a:hover {
+	background:   url("images/navigation/music/music_seven_over.jpg");
+}
+#music_seven h1 {
+	background:   url("images/navigation/music/music_seven_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_seven span {
+	visibility:hidden;
+}
+
+#music_eight_link a {
+	display:block;
+	background:   url("images/navigation/music/music_eight.jpg");
+	width:85px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#music_eight_link a:hover {
+	background:   url("images/navigation/music/music_eight_over.jpg");
+}
+#music_eight h1 {
+	background:   url("images/navigation/music/music_eight_title.jpg") top left no-repeat;
+	height:70px;
+}
+#music_eight span {
+	visibility:hidden;
+}

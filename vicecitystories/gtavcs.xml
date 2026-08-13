@@ -1,0 +1,825 @@
+<xml>
+<wet>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>BAIT AND SWITCH</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>boats_icon.swf</path>
+		</icon>
+		<detail>
+			<path>boats_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>CAMUS JEANS</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>camusJeans_icon.swf</path>
+		</icon>
+		<detail>
+			<path>camusJeans_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>DR. HOROWITZ</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>drHorowitz_icon.swf</path>
+		</icon>
+		<detail>
+			<path>drHorowitz_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>RELEASE GUM</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>releaseGum_icon.swf</path>
+		</icon>
+		<detail>
+			<path>releaseGum_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>PARADISE FM</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>paradiseFM_icon.swf</path>
+		</icon>
+		<detail>
+			<path>paradiseFM_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>TRAILER PARK MAFIA PROLIFERATES IN VICE CITY</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>mafia_icon.swf</path>
+		</icon>
+		<detail>
+			<path>mafia_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>DOMESTOBOT</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>domestobot_icon.swf</path>
+		</icon>
+		<detail>
+			<path>domestobot_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>V-ROCK</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>vRock_icon.swf</path>
+		</icon>
+		<detail>
+			<path>vRock_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>GEORGE MOORHEAD</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>vcpr_icon.swf</path>
+		</icon>
+		<detail>
+			<path>vcpr_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>EVACUATOR: THE PLAYSET</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>evacuator_icon.swf</path>
+		</icon>
+		<detail>
+			<path>evacuator_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>THE DARK UNDERSIDE OF LIFE ON THE BASE</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>militaryCompound_icon.swf</path>
+		</icon>
+		<detail>
+			<path>militaryCompound_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>EXPERT SPEAKS OF DRUG MENACE</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>deaAgent_icon.swf</path>
+		</icon>
+		<detail>
+			<path>deaAgent_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>A WORD FROM JOCK CRANLEY</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>antiDrugPSA_icon.swf</path>
+		</icon>
+		<detail>
+			<path>antiDrugPSA_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>WAVE 103</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>wave103_icon.swf</path>
+		</icon>
+		<detail>
+			<path>wave103_detail.swf</path>
+		</detail>
+	</content>
+	
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>EMPIRE</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>empire_icon.swf</path>
+		</icon>
+		<detail>
+			<path>empire_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>BARFS</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>barfs_icon.swf</path>
+		</icon>
+		<detail>
+			<path>barfs_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>RENI</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>reni_icon.swf</path>
+		</icon>
+		<detail>
+			<path>reni_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>FLASH FM</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>flashfm_icon.swf</path>
+		</icon>
+		<detail>
+			<path>flashfm_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>atvs</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>atvs_icon.swf</path>
+		</icon>
+		<detail>
+			<path>atvs_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>ATHENA</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>athena_icon.swf</path>
+		</icon>
+		<detail>
+			<path>athena_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>CHOLOS</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>cholos_icon.swf</path>
+		</icon>
+		<detail>
+			<path>cholos_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>BUY AMERICAN</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>buyamerican_icon.swf</path>
+		</icon>
+		<detail>
+			<path>buyamerican_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>SWIMMING</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>swimming_icon.swf</path>
+		</icon>
+		<detail>
+			<path>swimming_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>FRUIT LC</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>fruit_icon.swf</path>
+		</icon>
+		<detail>
+			<path>fruit_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>EMOTION</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>emotion_icon.swf</path>
+		</icon>
+		<detail>
+			<path>emotion_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>newworldorder</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>newworldorder_icon.swf</path>
+		</icon>
+		<detail>
+			<path>newworldorder_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>Chaos</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>chaos_icon.swf</path>
+		</icon>
+		<detail>
+			<path>chaos_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>Vice City For Lovers</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>VCFL_icon.swf</path>
+		</icon>
+		<detail>
+			<path>VCFL_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>Ambulance</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>ambulance_icon.swf</path>
+		</icon>
+		<detail>
+			<path>ambulance_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>Angel and the Knight</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>angelandtheknight_icon.swf</path>
+		</icon>
+		<detail>
+			<path>angelandtheknight_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>Cabrones</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>cabrones_icon.swf</path>
+		</icon>
+		<detail>
+			<path>cabrones_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>Espantoso</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>espantoso_icon.swf</path>
+		</icon>
+		<detail>
+			<path>espantoso_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>SPLITZ 6</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>splitz_icon.swf</path>
+		</icon>
+		<detail>
+			<path>splitz_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>Ammunation</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>ammunation_icon.swf</path>
+		</icon>
+		<detail>
+			<path>ammunation_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>diamond</shape>
+			<title>Veterans</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>veterans_icon.swf</path>
+		</icon>
+		<detail>
+			<path>veterans_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>circle</shape>
+			<title>Fast-Forward</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>ffwd_icon.swf</path>
+		</icon>
+		<detail>
+			<path>ffwd_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>square</shape>
+			<title>Helicopters</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>helicopters_icon.swf</path>
+		</icon>
+		<detail>
+			<path>helicopters_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>triangle</shape>
+			<title>Robard</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>importExport_icon.swf</path>
+		</icon>
+		<detail>
+			<path>importExport_detail.swf</path>
+		</detail>
+	</content>
+	<content>
+		<nav>
+			<shape>rectangle</shape>
+			<title>Fresh 105</title>
+			<subtitle>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</subtitle>
+		</nav>
+		<icon>
+			<path>fresh105_icon.swf</path>
+		</icon>
+		<detail>
+			<path>fresh105_detail.swf</path>
+		</detail>
+	</content>
+</wet>
+<background>
+	<gradient>
+		<name>Cyan 100 to 25</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="25">95d4f0</bottom>
+	</gradient>
+	<gradient>
+		<name>Pink 100 to 25</name>
+		<top pct="100">f4abcd</top>
+		<bottom pct="25">f4abcd</bottom>
+	</gradient>
+	<gradient>
+		<name>Green 100 to 25</name>
+		<top pct="100">8fe3a3</top>
+		<bottom pct="25">8fe3a3</bottom>
+	</gradient>
+	<gradient>
+		<name>Dk Blue 100 to 25</name>
+		<top pct="100">7589bf</top>
+		<bottom pct="25">7589bf</bottom>
+	</gradient>
+	<gradient>
+		<name>Lilac 100 to 25</name>
+		<top pct="100">c1b3d7</top>
+		<bottom pct="25">c1b3d7</bottom>
+	</gradient>
+	<gradient>
+		<name>Orange 100 to 25</name>
+		<top pct="100">fca985</top>
+		<bottom pct="25">fca985</bottom>
+	</gradient>
+	<gradient>
+		<name>Dk Green 100 to 25</name>
+		<top pct="100">48b5a3</top>
+		<bottom pct="25">48b5a3</bottom>
+	</gradient>
+	<gradient>
+		<name>Cyan 100 to Yellow 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">faf182</bottom>
+	</gradient>
+	<gradient>
+		<name>Cyan 100 to Pink 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">f4abcd</bottom>
+	</gradient>
+	<gradient>
+		<name>Cyan 100 to Green 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">8fe3a3</bottom>
+	</gradient>
+	<gradient>
+		<name>Cyan 100 to Lilac 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">c1b3d7</bottom>
+	</gradient>
+	<gradient>
+		<name>Pink 100 to Yellow 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">faf182</bottom>
+	</gradient>
+	<gradient>
+		<name>Pink 100 to Lilac 100</name>
+		<top pct="100">95d4f0</top>
+		<bottom pct="100">c1b3d7</bottom>
+	</gradient>
+	<gradient>
+		<name>Green 100 to Yellow 100</name>
+		<top pct="100">8fe3a3</top>
+		<bottom pct="100">faf182</bottom>
+	</gradient>
+	<gradient>
+		<name>Green 100 to Cyan 100</name>
+		<top pct="100">8fe3a3</top>
+		<bottom pct="100">95d4f0</bottom>
+	</gradient>
+	<gradient>
+		<name>Dk Blue 100 to Lilac 100</name>
+		<top pct="100">7589bf</top>
+		<bottom pct="100">c1b3d7</bottom>
+	</gradient>
+	<gradient>
+		<name>Orange 100 to Yellow 100</name>
+		<top pct="100">fca985</top>
+		<bottom pct="100">faf182</bottom>
+	</gradient>
+	<gradient>
+		<name>Dk Pink 100 to Lt Pink 100</name>
+		<top pct="100">ff8697</top>
+		<bottom pct="25">ffb2c2</bottom>
+	</gradient>
+	<gradient>
+		<name>Dk Green 100 to Green 100</name>
+		<top pct="100">48b5a3</top>
+		<bottom pct="100">8fe3a3</bottom>
+	</gradient>
+</background>
+<colorPalette>
+		<value>94D4F0</value>
+		<value>F5ABCE</value>
+		<value>FBF182</value>
+		<value>8FE4A3</value>
+		<value>7589BE</value>
+		<value>C1B3D7</value>
+		<value>FCAA85</value>
+		<value>48B5A2</value>
+		<value>B7C6E4</value>
+		<value>DBB6D7</value>
+		<value>A5D9DF</value>
+		<value>C7E3B9</value>
+		<value>E1E99F</value>
+		<value>91DCCB</value>
+		<value>8DC2E4</value>
+		<value>A9C4E4</value>
+		<value>F6B7C2</value>
+		<value>F8CDA9</value>
+		<value>FAE292</value>
+		<value>EAADD0</value>
+		<value>D0B1D4</value>
+		<value>E7EE89</value>
+		<value>AEE89A</value>
+		<value>FBE483</value>
+		<value>FCC883</value>
+		<value>7CD7A2</value>
+		<value>8592C3</value>
+		<value>AAA6CF</value>
+		<value>94D4F0</value>
+		<value>F5ABCE</value>
+		<value>FBF182</value>
+		<value>8FE4A3</value>
+		<value>7589BE</value>
+		<value>C1B3D7</value>
+		<value>FCAA85</value>
+		<value>48B5A2</value>
+		<value>B7C6E4</value>
+		<value>DBB6D7</value>
+		<value>A5D9DF</value>
+		<value>C7E3B9</value>
+		<value>E1E99F</value>
+		<value>91DCCB</value>
+		<value>8DC2E4</value>
+		<value>A9C4E4</value>
+		<value>F6B7C2</value>
+		<value>F8CDA9</value>
+		<value>FAE292</value>
+		<value>EAADD0</value>
+		<value>D0B1D4</value>
+		<value>E7EE89</value>
+		<value>AEE89A</value>
+		<value>FBE483</value>
+		<value>FCC883</value>
+		<value>7CD7A2</value>
+		<value>8592C3</value>
+		<value>AAA6CF</value>
+		<value>94D4F0</value>
+		<value>F5ABCE</value>
+		<value>FBF182</value>
+		<value>8FE4A3</value>
+		<value>7589BE</value>
+		<value>C1B3D7</value>
+		<value>FCAA85</value>
+		<value>48B5A2</value>
+		<value>B7C6E4</value>
+		<value>DBB6D7</value>
+		<value>A5D9DF</value>
+		<value>C7E3B9</value>
+		<value>E1E99F</value>
+		<value>91DCCB</value>
+		<value>8DC2E4</value>
+		<value>A9C4E4</value>
+		<value>F6B7C2</value>
+		<value>F8CDA9</value>
+		<value>FAE292</value>
+		<value>EAADD0</value>
+		<value>D0B1D4</value>
+		<value>E7EE89</value>
+		<value>AEE89A</value>
+		<value>FBE483</value>
+		<value>FCC883</value>
+		<value>7CD7A2</value>
+		<value>8592C3</value>
+		<value>AAA6CF</value>
+	</colorPalette>
+	<dry>
+		<info>
+			<block>
+				<content><![CDATA[Vice City, 1984.  Opportunity abounds in a city emerging from the swamps, its growth fueled by the violent power struggle in a lucrative drugs trade.  Construction is everywhere as a shining metropolis rises from foundations of crime and betrayal.
+
+As a soldier, Vic Vance has always protected his dysfunctional family, his country, himself.  One bad decision later and that job is about to get much harder.  Kicked out onto the streets of a city torn between glamour and gluttony, Vic is faced with a stark choice - build an empire or be crushed.
+
+Developed by Rockstar Leeds and series creators Rockstar North, Grand Theft Auto: Vice City Stories is out now for PSP&#174; system and PlayStation&#174;2 computer entertainment system.]]></content>
+			</block>
+		</info>
+		<news>
+
+			<block>
+				<title color="2E7C85"><![CDATA[VICE CITY STORIES NOW ALSO AVAILABLE FOR PLAYSTATION&#174;2]]></title>
+				<date color="78aab0">March 6, 2007</date>
+				<content><![CDATA[Grand Theft Auto: Vice City Stories is now available for the PlayStation&#174;2 system.
+
+Check out the SCREENS section for newly added screenshots, and be sure to visit the MOVIES section for the official PlayStation 2 version trailer.  Online e-tail ordering links are also available in the BUY NOW section.]]></content>
+			</block>
+
+
+			<block>
+				<title color="2E7C85"><![CDATA[VICE CITY STORIES MOBILE RINGTONES AND WALLPAPERS]]></title>
+				<date color="78aab0">February 8, 2007</date>
+				<content><![CDATA[The official Vice City Stories mobile ringtones and graphics site is now live.  <a href="http://www.rockstargames.com/vicecitystories/mobile" target="_blank">Click here</a> for available artwork of characters like Ricardo Diaz and Bryan Forbes, as well as official game logos, and more.
+
+For your ringtone satisfaction, we offer the Vice City Stories theme song plus a selection of classic lines of in-game dialogue from the likes of Lance Vance and Umberto Robina.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[VICE CITY STORIES APPAREL NOW AVAILABLE]]></title>
+				<date color="78aab0">December 4, 2006</date>
+				<content><![CDATA[The Vice City Stories apparel collection is now available a the FINERY section of the <a href="http://www.rockstargames.com/warehouse" target="_blank">Rockstar Warehouse</a>.  This classic line includes a selection of sharp t-shirts, including the I Heart Vice City Tee, the Rockstar Says Relax Tee and more...
+
+Plus the Vice City Stories official Beach Chair in screaming hot pink, just in time for your peak-season holiday trip, as well as the coup d'grace: the extremely limited-edition Vice City Stories Members Only Jacket.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[VICE CITY STORIES' ACCOLADES]]></title>
+				<date color="78aab0">December 4, 2006</date>
+				<content><![CDATA[The praise for Vice City Stories continues to stack up.  Here's a sampling...
+
+SPIN: "The soundtrack features more than a hundred 80's classics, but the true highlight of this game is the pacing.  The levels are complicated enough to offer variety but compact enough to function on a portable system.  The next-gen consoles may have arrived, but Vice City Stories is a great reason to pony up for a PSP."
+
+GAMESPY.COM: "For a portable title, the graphics and scope of the environment are very impressive and defy comparison... The city is huge... and the sound is incredible, with a solid cast of talented voice actors and a licensed soundtrack that captures the essence of the 80's in an extremely broad range… There's just no other way to get a similar experience on a handheld platform..."
+
+1UP.COM: "...Vice City Stories impresses like few games have managed to do on the system... from side missions to the empire building to the story to the clever collectibles to the best sandbox-style "mess with the world as you'd like" action out there..."]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[GRAND THEFT AUTO: VICE CITY STORIES NOW AVAILABLE FOR PSP SYSTEM]]></title>
+				<date color="78aab0">October 31, 2006</date>
+				<content><![CDATA[No tricks.  Today, we deliver the ultimate treat for your PSP System.  Grand Theft Auto: Vice City Stories is now available.
+
+The story of Vic Vance - a man wrongly discharged from the US military, finding himself with his back against the wall, and in a position to do whatever he must to make a new life and make things right for himself and his family.  A return trip to Grand Theft Auto's tropical haven for tumult and excess... Vice City. 1984.
+Visit the BUY NOW section for order options, and make sure to check out the MUSIC section for information and download links for the Vice City Stories soundtrack collection on URGE.
+
+"Steal cars, fly helicopters, blow up everything and find out what your PSP can really do... Grand Theft Auto: Vice City Stories reasserts the series' dominance with another sprawling, open-world crime spree... Vice City Stories stands as one of the best games in the GTA series, as well as one of the best reasons to own a PSP." - GamesRadar.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[GIANT OFFICIAL SITE UPDATE PLUS ALL-NEW TRAILER #3]]></title>
+				<date color="78aab0">October 24, 2006</date>
+				<content><![CDATA[The release of this year's most anticipated PSP title is just one week away.
+This latest update to the official site includes another discovered episode of Vice City's short-lived 1984 news channel, MeTV News - full up with the footage, images and sounds that defined the era.  Also, be sure to check out the launch of the MULTIPLAYER section, which features an overview of all 10 modes available, as well as the debut of the MUSIC section, which contains a sample track listing (full track list coming soon).
+And last but certainly not least - the launch of Official Trailer #3: "IN SO DEEP".  Set to the tune of Phil Collins' "In the Air Tonight".  Can you feel it?
+
+Visit the BUY NOW section for pre-order options, so as not to be left out in the cold next week.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[MULTIPLAYER ONLINE PREVIEWS]]></title>
+				<date color="78aab0">October 24, 2006</date>
+				<content><![CDATA[The latest buzz to hit the mainstream gaming sites about Vice City Stories includes a look at the game's multiplayer modes, including in-depth sessions with the all-new "Might of the Hunter".  Be sure to read up on Vice City Stories' multiplayer at <a href="http://www.gamesradar.com/us/psp/game/previews/article.jsp?articleId=20061020125941276070&sectionId=1001&releaseId=2006051516155600026" target="_blank">GamesRadar</a>, <a href="http://psp.ign.com/articles/740/740174p1.html" target="_blank">IGN</a> and <a href="http://ugo.com/channels/Games/article.asp?articleID=20501" target="_blank">UGO</a>.]]></content>
+			</block>
+			
+			<block>
+				<title color="2E7C85"><![CDATA[PSM REVIEW]]></title>
+				<date color="78aab0">October 24, 2006</date>
+				<content><![CDATA[For the early word on Vice City Stories, check out PSM's review in their December 2006 issue, available on newsstands now.
+
+"Vice City Stories may be the best PSP game we've played so far.  It's got everything a GTA should have and more - and it's portable... If you don't have a PSP, get one just to play this game."]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[OFFICIAL SITE UPDATE & TRAILER #2]]></title>
+				<date color="78aab0">September 26, 2006</date>
+				<content><![CDATA[Today's massive official site update features some newly uncovered programming from MeTV News, with your host Jenny Mitchell; a heap of new and exclusive screenshots in the SCREENS section; and last but certainly not least, the debut of Trailer #2: "Ladies and Gentlemen, Let's Pop" in the MOVIES section.
+
+Be sure to sign up for the <a href="http://www.rockstargames.com/subscribe">Rockstar Games</a> mailing list to be notified about all future site updates.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[VICE CITY STORIES: ONLINE PREVIEWS]]></title>
+				<date color="78aab0">September 26, 2006</date>
+				<content><![CDATA[Major gaming sites have recently posted in-depth previews of Vice City Stories.  For details on the latest technical improvements and advancements, along with some background on the game's main character, Vic Vance, check out the latest previews from <a href="http://www.1up.com/do/previewPage?cId=3153595" target="_blank">1up</a>, <a href="http://psp.gamespy.com/playstation-portable/grand-theft-auto-psp-stories-2/732878p1.html" target="_blank">Gamespy</a> and <a href="http://psp.ign.com/articles/732/732639p1.html" target="_blank">IGN</a>.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[OFFICIAL SITE LAUNCH & DEBUT TRAILER]]></title>
+				<date color="78aab0">September 5, 2006</date>
+				<content><![CDATA[Today we present the launch of the official Grand Theft Auto: Vice City Stories website, featuring an archive of the short-lived Vice City cable channel MeTV News, along with the world premiere of the first official trailer, screenshots, pre-order options and more.]]></content>
+			</block>
+
+			<block>
+				<title color="2E7C85"><![CDATA[PSM PREVIEW]]></title>
+				<date color="78aab0">September 5, 2006</date>
+				<content><![CDATA[Check out the October issue of PSM magazine for an early look at Grand Theft Auto: Vice City Stories that includes a preview of new features, along with detailed impressions from a selection of the game's missions.
+
+Stay tuned for more previews and impressions hitting throughout the coming months.]]></content>
+			</block>
+		</news>
+		<multiplayer>
+			<title>TITLE text</title>
+			<content>Multiplayer text</content>
+		</multiplayer>
+		<music>
+			<intro>Click on the radio station logos above to browse information about all the music in Vice City Stories, including station overviews and partial tracklistings.  Or check out our download partners to the left for soundtrack purchase options.</intro>
+			<emotion  color="2E7C85" title="EMOTION"><![CDATA[The home for romance and power ballads - with your sentimental sensation Lionel Makepeace, and his roving reporter in the field of love.<br><br>Foreigner - I Want To Know What Love Is<br>The Assembly - Never, Never<br>Pat Benatar - We Belong]]></emotion>
+			<espantoso color="2E7C85" title="ESPANTOSO"><![CDATA[Wepa! El ritmo latino, con "el malo" Hector Hernandez.<br><br>Bobby Valentin - Mi Ritmo Es Bueno<br>Hector Lavoe - Mi Gente<br>Willie Colon - El Malo]]></espantoso>
+			<flash color="2E7C85" title="FLASH FM"><![CDATA[Pop til it blows!  The biggest and perkiest smashes in Vice City, hosted by girls-about-town, Teri and Toni.<br><br>Philip Bailey - Easy Lover<br>Alan Parsons Project - Games People Play<br>Pat Benatar - Love is a Battlefield]]></flash>
+			<fresh color="2E7C85" title="FRESH FM"><![CDATA[Big rap & electro beats brought to you by Vice City's most debaucherous DJ, LUKE.<br><br>Jonzun Crew - Pack Jam<br>Run DMC - It's Like That<br>Whodini - Freaks Come Out At Night]]></fresh>
+			<paradise  color="2E7C85" title="PARADISE FM"><![CDATA[Who says Disco is dead?  Experience the revival on Paradise FM.<br><br>Exodus - Together Forever<br>Class Action - Weekend<br>Sister Sledge - Lost in Music]]></paradise>
+			<vcfl color="2E7C85" title="VC FOR LOVERS"><![CDATA[The soul of Vice City comes alive with slow jams on VCFL, with Tina Jane.<br><br>Marvin Gaye - Sexual Healing<br>Earth Wind & Fire - Fantasy<br>Keni Burke - Keep Rising to the Top]]></vcfl>
+			<vrock color="2E7C85" title="VROCK"><![CDATA[Pure unadulterated rock from the top of the Vulture building, with Couzin Ed and his intern Lazlow.<br><br>Dio - Holy Diver<br>Dokken - Breaking the Chains<br>Ratt - Round and Round]]></vrock>
+			<wave color="2E7C85" title="WAVE103"><![CDATA[The latest from the front line of New Wave, with DJs Trish Camden and Adam First.<br><br>Human League - Love Action<br>Japan - Quiet Life<br>Yaz - Don't Go]]></wave>
+			<urge color="2E7C85" title="URGE"><![CDATA[<br><br><font color="#2e7c85"><u><a href="http://www.urge.com/launch/?page=franchise&id=66113&referrer=rockstar" target="_blank">Click here</a></u></font> to visit Urge.com's Vice City Stories soundtrack downloads.  Over 80 songs will be available as of game release (10.31.06).]]></urge>
+			<itunes color="2E7C85" title="ITUNES"><![CDATA[Vice City Stories radio station iMixes are now available from iTunes.  Click the links below for each station's playlist.<br><br>          <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456914&type=10&subid=" target="_blank">Emotion 98.3</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456914&type=10&subid="></u></font>           <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456912&type=10&subid=" target="_blank">Flash FM</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456912&type=10&subid="></u></font><br>      <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456910&type=10&subid=" target="_blank">Fresh 105</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456910&type=10&subid="></u></font>                <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456909&type=10&subid=" target="_blank">Paradise FM</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456909&type=10&subid="></u></font><br>      <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456908&type=10&subid=" target="_blank">Radio Espantoso</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456908&type=10&subid="></u></font>       <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456885&type=10&subid=" target="_blank">V-Rock</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456885&type=10&subid="></u></font><br>      <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456889&type=10&subid=" target="_blank">VCFL</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456889&type=10&subid="></u></font>                        <font color="#2e7c85"><u><a href="http://click.linksynergy.com/fs-bin/click?id=wpVex2CFBBc&offerid=78941.559456911&type=10&subid=" target="_blank">Wave 103</a><img alt="icon" width="1" height="1" src="http://ad.linksynergy.com/fs-bin/show?id=wpVex2CFBBc&bids=78941.559456911&type=10&subid="></u></font>]]></itunes>
+		</music>
+	</dry>
+</xml>

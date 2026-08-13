@@ -1,0 +1,47 @@
+/* ------------- INFO PAGE ----------------- */
+.clear_both {
+	clear:both;
+}
+.container_info {
+	background-color:#00FF99;
+}
+.header_info {
+	background:url("images/header/info_msg.jpg") top left no-repeat #effcde;
+}
+.body_info {
+	background:url("images/body/info_msg.jpg") top left no-repeat;
+	color:#7a9267;
+	height:197px;
+}
+.footer_info {
+	background:url("images/footer/info.jpg") top left no-repeat;
+}
+.back_to_top_info a {
+	display:block;
+	background:url("images/navigation/info/back_to_top.jpg") no-repeat;
+	width:101px;
+	height:16px;
+	cursor:pointer;
+}
+.back_to_top_info a:hover {
+	background:url("images/navigation/info/back_to_top_over.jpg");
+}
+/* NAVSTYLES */
+#info_one_link a {
+	display:block;
+	background:url("images/navigation/info/info_one.jpg");
+	width:138px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#info_one_link a:hover {
+	background:url("images/navigation/info/info_one_over.jpg");
+}
+#info_one h1 {
+	background:url("images/navigation/info/game_information_title.jpg") top left no-repeat;
+	height:30px;
+}
+#info_one span {
+	visibility:hidden;
+}

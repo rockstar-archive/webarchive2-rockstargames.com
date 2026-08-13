@@ -1,0 +1,111 @@
+/* ------------- BUY NOW PAGE ----------------- */
+.container_buynow {
+	background-color:#e4ded7;
+}
+.header_buynow {
+	background:url("images/header/buynow.jpg") top left no-repeat #e5ded8;
+}
+.body_buynow {
+	background:url("images/body/buynow.jpg") top left no-repeat;
+	color:#628678;
+	height:297px;
+}
+.content_buynow {
+}
+.footer_buynow {
+	/*background:url("images/footer/buynow.jpg") top left no-repeat;*/
+}
+.nav_spacer_y {
+	display:block;
+	height:60px;
+}
+/* NAVSTYLES */
+/* article styles */
+#rockstarwarehouse_link a {
+	display:block;
+	background:url("images/navigation/buynow/rockstarwarehouse.jpg") #ffffff;
+	width:147px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#rockstarwarehouse_link a:hover {
+	background:url("images/navigation/buynow/rockstarwarehouse_over.jpg") #628678;
+}
+#bestbuy_link a {
+	display:block;
+	background:url("images/navigation/buynow/bestbuy.jpg") #ffffff;
+	width:60px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#bestbuy_link a:hover {
+	background:url("images/navigation/buynow/bestbuy_over.jpg") #628678;
+}
+#ebgames_link a {
+	display:block;
+	background:url("images/navigation/buynow/ebgames.jpg") #ffffff;
+	width:68px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#ebgames_link a:hover {
+	background:url("images/navigation/buynow/ebgames_over.jpg") #628678;
+}
+#gamestop_link a {
+	display:block;
+	background:url("images/navigation/buynow/gamestop.jpg") #ffffff;
+	width:73px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#gamestop_link a:hover {
+	background:url("images/navigation/buynow/gamestop_over.jpg") #628678;
+}
+#circuitcity_link a {
+	display:block;
+	background:url("images/navigation/buynow/circuit_city.jpg") #ffffff;
+	width:81px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#circuitcity_link a:hover {
+	background:url("images/navigation/buynow/circuit_city_over.jpg") #628678;
+}
+#amazon_link a {
+	display:block;
+	background:url("images/navigation/buynow/amazon.jpg") #ffffff;
+	width:64px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#amazon_link a:hover {
+	background:url("images/navigation/buynow/amazon_over.jpg") #628678;
+}
+#amazonuk_link a {
+	display:block;
+	background:url("images/navigation/buynow/amazonuk.jpg") #ffffff;
+	width:91px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#amazonuk_link a:hover {
+	background:url("images/navigation/buynow/amazonuk_over.jpg") #628678;
+}
+#gameuk_link a {
+	display:block;
+	background:url("images/navigation/buynow/gameuk.jpg") #ffffff;
+	width:71px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#gameuk_link a:hover {
+	background:url("images/navigation/buynow/gameuk_over.jpg") #628678;
+}

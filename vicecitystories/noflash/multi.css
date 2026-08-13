@@ -1,0 +1,225 @@
+/* ------------- MULTIPLAYER PAGE ----------------- */
+.container_multiplayer {
+	background-color:#f3e1ed;
+}
+.header_multiplayer {
+	background:url("images/header/multiplayer.jpg") top left no-repeat #f3e1ed;
+}
+.body_multiplayer {
+	color:#b881ac;
+	height:0px;
+}
+.footer_multiplayer {
+	background:  url("images/footer/multiplayer.jpg") top left no-repeat;
+}
+.back_to_top_multiplayer a {
+	display:block;
+	background:  url("images/navigation/multiplayer/back_to_top.jpg") no-repeat;
+	width:101px;
+	height:16px;
+	cursor:pointer;
+}
+.back_to_top_multiplayer a:hover {
+	background:  url("images/navigation/multiplayer/back_to_top_over.jpg");
+}
+/* NAVSTYLES */
+/* article styles */
+#multiplayer_one_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_one.jpg");
+	width:140px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_one_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_one_over.jpg");
+}
+
+#multiplayer_one h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_one_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_one span {
+	visibility:hidden;
+}
+
+#multiplayer_two_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_two.jpg");
+	width:80px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_two_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_two_over.jpg");
+}
+
+#multiplayer_two h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_two_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_two span {
+	visibility:hidden;
+}
+
+#multiplayer_three_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_three.jpg");
+	width:160px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_three_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_three_over.jpg");
+}
+
+#multiplayer_three h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_three_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_three span {
+	visibility:hidden;
+}
+
+#multiplayer_four_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_four.jpg");
+	width:180px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_four_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_four_over.jpg");
+}
+
+#multiplayer_four h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_four_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_four span {
+	visibility:hidden;
+}
+
+#multiplayer_five_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_five.jpg");
+	width:145px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_five_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_five_over.jpg");
+}
+
+#multiplayer_five h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_five_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_five span {
+	visibility:hidden;
+}
+
+#multiplayer_six_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_six.jpg");
+	width:150px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_six_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_six_over.jpg");
+}
+
+#multiplayer_six h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_six_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_six span {
+	visibility:hidden;
+}
+
+#multiplayer_seven_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_seven.jpg");
+	width:135px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_seven_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_seven_over.jpg");
+}
+
+#multiplayer_seven h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_seven_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_seven span {
+	visibility:hidden;
+}
+
+#multiplayer_eight_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_eight.jpg");
+	width:90px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_eight_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_eight_over.jpg");
+}
+
+#multiplayer_eight h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_eight_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_eight span {
+	visibility:hidden;
+}
+
+#multiplayer_nine_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_nine.jpg");
+	width:105px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_nine_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_nine_over.jpg");
+}
+
+#multiplayer_nine h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_nine_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_nine span {
+	visibility:hidden;
+}
+
+#multiplayer_ten_link a {
+	display:block;
+	background:   url("images/navigation/multiplayer/multiplayer_ten.jpg");
+	width:145px;
+	height:16px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+#multiplayer_ten_link a:hover {
+	background:   url("images/navigation/multiplayer/multiplayer_ten_over.jpg");
+}
+
+#multiplayer_ten h1 {
+	background:   url("images/navigation/multiplayer/multiplayer_ten_title.jpg") top left no-repeat;
+	height:80px;
+}
+#multiplayer_ten span {
+	visibility:hidden;
+}

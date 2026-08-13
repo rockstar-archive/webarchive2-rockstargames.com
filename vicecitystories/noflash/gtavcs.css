@@ -1,0 +1,205 @@
+/* HTML */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	margin:0px;
+	padding:0px;
+}
+h3 {
+	font-size:9px;
+	margin-top:0px;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	cursor:pointer;
+}
+img {
+	border:0px;
+}
+/* GLOBAL STYLES */
+#container {
+	width:480px;
+}
+#header {
+	height:304px;
+	z-index:2;
+}
+#navbar {
+	width:448px;
+	height:24px;
+	position:absolute;
+	top:7px;
+	left:15px;
+	background-color:#FFFFFF;
+	z-index:4;
+	margin:0px;
+	padding:0px;
+}
+
+#navbar div {
+	display:block;
+	float:left;
+	height:24px;
+}
+#navbar span {
+	/*display:none;*/
+	visibility:hidden;
+	font-size:xx-small;
+}
+#body {
+	position:absolute;
+	top:190px;
+	z-index:3;
+	width:480px;
+}
+#footer {
+	height:120px;
+}
+#page_navigation {
+	margin-left:14px;
+	margin-right:20px;
+	margin-bottom:80px;
+}
+#page_navigation span {
+	/*display:none;*/
+	visibility:hidden;
+	font-size:xx-small;
+}
+#content {
+	margin-left:14px;
+	margin-right:25px;
+}
+#content p {
+	margin-left:15px;
+	text-align:left;
+}
+#content h1 {
+	margin-bottom:-10px;
+}
+/* TOP NAV STYLES */
+#nav_news span, #nav_music span, #nav_info span, #nav_screens span, #nav_multi span, #nav_downloads span, #nav_buy span {
+	/*display:none;*/
+	visibility:hidden;
+	font-size:xx-small;
+}
+#nav_news a {
+	display:block;
+	background:url("images/navigation/topnav/news.jpg") no-repeat;
+	width:48px;
+	height:24px;
+	margin:0px;
+}
+#nav_news_on a {
+	display:block;
+	background:url("images/navigation/topnav/news_over.jpg") no-repeat;
+	width:48px;
+	height:24px;
+	margin:0px;
+}
+#nav_news a:hover {
+	background:url("images/navigation/topnav/news_over.jpg") no-repeat;
+}
+#nav_info a {
+	display:block;
+	background:url("images/navigation/topnav/info.jpg") top left no-repeat;
+	width:43px;
+	height:24px;
+	margin:0px;
+}
+#nav_info_on a {
+	display:block;
+	background:url("images/navigation/topnav/info_over.jpg") top left no-repeat;
+	width:43px;
+	height:24px;
+	margin:0px;
+}
+#nav_info a:hover {
+	background:url("images/navigation/topnav/info_over.jpg") no-repeat;
+}
+#nav_screens a {
+	display:block;
+	background:url("images/navigation/topnav/screens.jpg") top left no-repeat;
+	width:62px;
+	height:24px;
+	margin:0px;
+}
+#nav_screens_on a {
+	display:block;
+	background:url("images/navigation/topnav/screens_over.jpg") top left no-repeat;
+	width:62px;
+	height:24px;
+	margin:0px;
+}
+#nav_screens a:hover {
+	background:url("images/navigation/topnav/screens_over.jpg") no-repeat;
+}
+#nav_multi a {
+	display:block;
+	background:url("images/navigation/topnav/multi.jpg") top left no-repeat;
+	width:82px;
+	height:24px;
+	margin:0px;
+}
+#nav_multi_on a {
+	display:block;
+	background:url("images/navigation/topnav/multi_over.jpg") top left no-repeat;
+	width:82px;
+	height:24px;
+	margin:0px;
+}
+#nav_multi a:hover {
+	background:url("images/navigation/topnav/multi_over.jpg") no-repeat;
+}
+#nav_music a {
+	display:block;
+	background:url("images/navigation/topnav/music.jpg") top left no-repeat;
+	width:50px;
+	height:24px;
+	margin:0px;
+}
+#nav_music_on a {
+	display:block;
+	background:url("images/navigation/topnav/music_over.jpg") top left no-repeat;
+	width:50px;
+	height:24px;
+	margin:0px;
+}
+#nav_music a:hover {
+	background:url("images/navigation/topnav/music_over.jpg") no-repeat;
+}
+#nav_downloads a {
+	display:block;
+	background:url("images/navigation/topnav/downloads.jpg") top left no-repeat;
+	width:91px;
+	height:24px;
+	margin:0px;
+}
+#nav_downloads_on a {
+	display:block;
+	background:url("images/navigation/topnav/downloads_over.jpg") top left no-repeat;
+	width:91px;
+	height:24px;
+	margin:0px;
+}
+#nav_downloads a:hover {
+	background:url("images/navigation/topnav/downloads_over.jpg") no-repeat;
+}
+#nav_buy a {
+	display:block;
+	background:url("images/navigation/topnav/buynow.jpg") top left no-repeat;
+	width:70px;
+	height:24px;
+	margin:0px;
+}
+#nav_buy_on a {
+	display:block;
+	background:url("images/navigation/topnav/buynow_over.jpg") top left no-repeat;
+	width:70px;
+	height:24px;
+	margin:0px;
+}
+#nav_buy a:hover {
+	background:  url("images/navigation/topnav/buynow_over.jpg") no-repeat;
+}
